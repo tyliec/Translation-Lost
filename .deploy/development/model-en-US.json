@@ -1,0 +1,250 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "translation lost",
+      "types": [
+        {
+          "name": "ANSWER_LIST",
+          "values": [
+            {
+              "id": null,
+              "name": {
+                "value": "I'll be back",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "I am your father",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "I'm going to make him an offer he can't refuse",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "May the force be with you",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "You talking to me",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Frankly my dear, I don't give a damn",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Go ahead make my day",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Bond, James Bond",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Show me the money",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "You can't handle the truth",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Houston, we have a problem",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Elementary my dear Watson",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Hasta la vista baby",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "I am Groot",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "I want to play a game",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "This is Sparta",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "You're a wizard, Harry",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Just keep swimming",
+                "synonyms": []
+              }
+            }
+          ]
+        },
+        {
+          "name": "blankType",
+          "values": [
+            {
+              "id": null,
+              "name": {
+                "value": "accent",
+                "synonyms": []
+              }
+            }
+          ]
+        },
+        {
+          "name": "blanktwoType",
+          "values": [
+            {
+              "id": null,
+              "name": {
+                "value": "give",
+                "synonyms": []
+              }
+            }
+          ]
+        },
+        {
+          "name": "blankthreeType",
+          "values": [
+            {
+              "id": null,
+              "name": {
+                "value": "hint",
+                "synonyms": []
+              }
+            }
+          ]
+        }
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "ITS_ANSWER",
+          "samples": [
+            "it's {answer}",
+            "{answer}"
+          ],
+          "slots": [
+            {
+              "name": "answer",
+              "type": "ANSWER_LIST"
+            }
+          ]
+        },
+        {
+          "name": "WHAT_BLANK_IS_THIS",
+          "samples": [
+            "what {blank} is this"
+          ],
+          "slots": [
+            {
+              "name": "blank",
+              "type": "blankType"
+            }
+          ]
+        },
+        {
+          "name": "I_BLANKTWO_UP",
+          "samples": [
+            "i {blanktwo} up"
+          ],
+          "slots": [
+            {
+              "name": "blanktwo",
+              "type": "blanktwoType"
+            }
+          ]
+        },
+        {
+          "name": "REPEAT_THE_BLANKTHREE",
+          "samples": [
+            "repeat the {blankthree}"
+          ],
+          "slots": [
+            {
+              "name": "blankthree",
+              "type": "blankthreeType"
+            }
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent"
+        }
+      ]
+    }
+  }
+}

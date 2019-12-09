@@ -1,0 +1,62 @@
+{
+  "manifest": {
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "isAvailableWorldwide": false,
+      "distributionCountries": [
+        "US"
+      ],
+      "distributionMode": "PUBLIC",
+      "category": "GAMES",
+      "testingInstructions": "replace with testing instructions",
+      "locales": {
+        "en-US": {
+          "name": "Translation Lost (development)",
+          "summary": "a game where you try and understand Alexa's accents",
+          "description": "Longer description, goes to the skill store. Line breaks are supported.",
+          "examplePhrases": [
+            "Alexa, launch Translation lost",
+            "Alexa, open Translation lost",
+            "Alexa, play Translation lost"
+          ],
+          "keywords": [
+            "game",
+            "fun",
+            "single player",
+            "modify this list as appropriate"
+          ],
+          "smallIconUri": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/default/icon-108.png",
+          "largeIconUri": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/default/icon-512.png"
+        }
+      }
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://www.example.com/privacy.html",
+          "termsOfUseUrl": "https://www.example.com/terms.html"
+        }
+      }
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0"
+        },
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0"
+            }
+          }
+        },
+        "interfaces": []
+      }
+    }
+  }
+}

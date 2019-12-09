@@ -1,0 +1,43 @@
+{
+  "variants": {
+    "development": {
+      "versions": [
+        {
+          "lastDeployment": {
+            "date": "12/8/2019, 2:58:04 PM",
+            "deploymentTypes": {
+              "lambda": true,
+              "assets": true,
+              "model": true,
+              "manifest": true
+            },
+            "git": "fatal: not a git repository (or any of the parent directories): .git\n",
+            "coreVersion": "0.3.1"
+          },
+          "assets-root": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/",
+          "deployedIconAssets": {
+            "default": {
+              "icon-108.png": {
+                "url": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/default/icon-108.png",
+                "md5": "661e635ca0aabc8f51aa39af9edf69cc"
+              },
+              "icon-512.png": {
+                "url": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/default/icon-512.png",
+                "md5": "300d90c2d2294ee39f4dce26c5618ad1"
+              }
+            }
+          },
+          "dynamoDBARN": "arn:aws:dynamodb:us-east-1:698018070896:table/lost-in-translation_development_litexa_handler_state",
+          "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
+          "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
+          "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
+          "skill-model-etag-en-US": "98f4f31983198feabef068704d5f5912",
+          "skill-manifest-assets-md5": "661e635ca0aabc8f51aa39af9edf69cc300d90c2d2294ee39f4dce26c5618ad1"
+        }
+      ]
+    }
+  },
+  "globals": {
+    "last-generated": 1575632014190
+  }
+}

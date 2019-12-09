@@ -1,0 +1,126 @@
+define @master as Master
+
+launch
+  say "Welcome to Translation Lost, a game where you try and understand me through my different accents."
+  say "I'm going to say a phrase, and you have to guess what I say."
+  say "For example, if I say"
+  soundEffect "bag_of_potatoes.mp3"
+  say "You would translate to,"
+  soundEffect "bag_of_potatoes2.mp3"
+
+  # say "There are two game modes, casual, and timed."
+  # say "Which would you like to play?"
+  # say "Ready?"
+  soundEffect "starto.mp3"
+
+  -> generateRandomSpeech
+  # ->  randomTheme?
+ 
+generateRandomSpeech
+  
+  if @master.speechAvailable == false
+    say "No more translations available."
+    say "Goodbye."
+    -> goodbye  
+
+  @speechKey = @master.getRandomSpeech()
+
+  if @master.seenBefore(@speechKey)
+    -> generateRandomSpeech
+  else
+    @master.seen(@speechKey)
+    @temp = "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/" + @speechKey +  '.mp3'
+    -> askForAnswer
+
+askForAnswer
+  # soundEffect "{@master.getRandomSpeech()}"
+  say "\<audio src='@temp' />"
+
+  say "What do you think I said?"
+  # add an automatic re-prompt, in case the user says nothing
+  reprompt "\<audio src='@temp' />"
+  -> waitForAnswer
+
+askForRepeat
+  say "\<audio src='@temp' />"
+  reprompt "\<audio src='@temp' />"
+  -> waitForAnswer
+
+giveHint
+  log 'giveHint'
+  if @master.hintAvailable(@speechKey) == false
+    say "There are no more hints."
+    -> waitForAnswer
+  else
+    @currentHint = @master.getHint(@speechKey)
+
+    if @master.seenHintBefore(@speechKey, @currenHint)
+      -> giveHint
+    else 
+      @master.seenHint(@speechKey, @currentHint)
+      say "@currentHint."
+      -> waitForAnswer
+
+
+waitForAnswer
+  when "it's $answer"
+    or "$answer"
+    with $answer = Master.js:getPotentialAnswers
+    if $answer and $answer == @master.getAnswer(@speechKey)
+      say "Correcto!"
+        or "Nice job."
+        or "<!awesome>."
+        or "<!aww yeah>."
+        or "<!bada bing bada boom>."
+        or "<!bingo>."
+      say "The answer was, @master.getAnswer(@speechKey)."
+      say "Let's go again."
+        or "One more time!"
+      -> generateRandomSpeech
+    else
+      say "Wrong! Here it is again."
+      -> askForRepeat
+
+  when "what $blank is this"
+    with $blank = "accent"
+    if $blank
+      say "@master.getAccent(@speechKey)."
+    else
+      say "Wrong!"
+      say "Here it is again."
+      -> askForRepeat
+
+  when "i $blanktwo up"
+    with $blanktwo = "give"
+    if $blanktwo
+      say "the answer was, @master.getAnswer(@speechKey)."
+      say "Let's go again."
+      -> generateRandomSpeech
+    else
+      say "Wrong! Here it is again."
+      -> askForRepeat
+
+  when "repeat the $blankthree"
+    with $blankthree = "hint"
+    if $blankthree
+      say "@currentHint."
+    else
+      say "Wrong! Here it is again."
+      -> askForRepeat
+
+  when AMAZON.RepeatIntent
+    -> askForRepeat
+
+  when AMAZON.HelpIntent
+    -> giveHint
+
+  when AMAZON.StopIntent
+    -> goodbye
+
+  otherwise
+    say "Sorry, I didn't understand. If you want a hint, say, Alexa, help, otherwise say, Alexa, then the answer"
+    LISTEN
+
+goodbye
+  END
+

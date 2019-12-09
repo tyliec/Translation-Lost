@@ -1,0 +1,131 @@
+{
+  "log": [
+    "✘ 1 tests run, 1 failed (10ms)\n",
+    "Testing in region en-US, language default out of [\"default\"]",
+    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to lost in translation, a game where you try and understand people's accents. I'm going to say a phrase, and you have to guess what I say, ready? <starto.mp3> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3' /> What do you think I said?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
+  ],
+  "cards": [],
+  "directives": [],
+  "raw": [
+    {
+      "ref": "2.  ❢      LaunchRequest        @ 3:01:05 PM",
+      "request": {
+        "session": {
+          "sessionId": "SessionId.uuid",
+          "application": {
+            "applicationId": "amzn1.ask.skill.uuid"
+          },
+          "attributes": {},
+          "user": {
+            "userId": "amzn1.ask.account.stuff"
+          },
+          "new": true
+        },
+        "context": {
+          "System": {
+            "device": {
+              "deviceId": "someDeviceId",
+              "supportedInterfaces": {
+                "Alexa.Presentation.APL": {},
+                "Display": {}
+              }
+            },
+            "user": {
+              "userId": "amzn1.ask.account.stuff"
+            },
+            "application": {
+              "applicationId": "amzn1.ask.skill.uuid"
+            }
+          }
+        },
+        "request": {
+          "type": "LaunchRequest",
+          "requestId": "litexaRequestId.203ffca4-95d7-44d7-be50-fe6a154cfcec",
+          "timestamp": "2017-10-02T01:01:05.000Z",
+          "locale": "default"
+        },
+        "version": "1.0"
+      },
+      "response": {
+        "version": "1.0",
+        "sessionAttributes": {},
+        "userAgent": "@litexa/core/0.3.1 Node/v12.10.0",
+        "response": {
+          "shouldEndSession": false,
+          "outputSpeech": {
+            "type": "SSML",
+            "ssml": "<speak>Welcome to lost in translation, a game where you try and understand people's accents. I'm going to say a phrase, and you have to guess what I say, ready? <audio src='test://default/starto.mp3'/> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3' /> What do you think I said?</speak>",
+            "playBehavior": "REPLACE_ALL"
+          },
+          "reprompt": {
+            "outputSpeech": {
+              "type": "SSML",
+              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3' /></speak>"
+            }
+          }
+        }
+      },
+      "db": {
+        "__monetization": {
+          "fetchEntitlements": true,
+          "inSkillProducts": []
+        },
+        "master": {
+          "database": {
+            "ill_be_back": {
+              "accent": "Polish",
+              "hints": [
+                "Quote from the movie Terminator.",
+                "Arnold Schwarzenegger"
+              ],
+              "answers": [
+                "I'll be back"
+              ],
+              "answer": "I'll be back"
+            },
+            "i_am_your_father": {
+              "accent": "Norwegian",
+              "hints": [
+                "Star Wars",
+                "Darth Vader"
+              ],
+              "answers": [
+                "I am your father"
+              ],
+              "answer": "I am your father"
+            },
+            "im_going_to_make_him_an_offer_he_cant_refuse": {
+              "accent": "Korean",
+              "hints": [
+                "Godfather"
+              ],
+              "answers": [
+                "I'm going to make him an offer he can't refuse"
+              ],
+              "answer": "I'm going to make him an offer he can't refuse"
+            }
+          },
+          "speechKey": "ill_be_back"
+        },
+        "speechKey": "ill_be_back.mp3",
+        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3",
+        "__currentState": "waitForAnswer",
+        "__settings": {
+          "resetOnLaunch": true
+        }
+      },
+      "trace": [
+        "launch",
+        "generateRandomSpeech",
+        "askForAnswer",
+        "waitForAnswer"
+      ]
+    }
+  ],
+  "summary": "✘ 1 tests run, 1 failed (10ms)\n",
+  "tallies": {
+    "successes": 0,
+    "fails": 1
+  },
+  "success": false
+}

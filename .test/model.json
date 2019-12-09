@@ -1,0 +1,75 @@
+{
+  "languageModel": {
+    "invocationName": "lost in translation",
+    "types": [
+      {
+        "name": "ANSWER_LIST",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "I'll be back",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "I am your father",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "I'm going to make him an offer he can't refuse",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StartOverIntent",
+        "samples": []
+      },
+      {
+        "name": "THE_ANSWER",
+        "samples": [
+          "the {answer}",
+          "{answer}"
+        ],
+        "slots": [
+          {
+            "name": "answer",
+            "type": "ANSWER_LIST"
+          }
+        ]
+      },
+      {
+        "name": "I_WANT_A_HINT",
+        "samples": [
+          "i want a hint",
+          "hint please",
+          "hint"
+        ]
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NavigateHomeIntent"
+      }
+    ]
+  }
+}

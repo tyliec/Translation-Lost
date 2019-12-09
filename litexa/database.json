@@ -1,0 +1,135 @@
+{
+	"ill_be_back":  {
+		"accent": "Polish",
+		"hints": ["Terminator.", "Arnold Schwarzenegger"],
+		"answer": "I'll be back",
+		"type": "Movie Quotes",
+		"difficulty": "10"
+	},
+	"i_am_your_father": {
+		"accent": "Norwegian",
+		"hints": ["Star Wars", "Darth Vader", "Luke Skywalker"],
+		"answer": "I am your father",
+		"type": "Movie Quotes",
+		"difficulty": "7"
+	},
+	"im_going_to_make_him_an_offer_he_cant_refuse": {
+		"accent": "Korean",
+		"hints":  ["Godfather"],
+		"answer": "I'm going to make him an offer he can't refuse",
+		"type": "Movie Quotes",
+		"difficulty": "6"
+	},
+	"may_the_force_be_with_you": {
+		"accent": "Icelandic",
+		"hints": ["Star Wars", "Fourth of May"],
+		"answer": "May the force be with you",
+		"type": "Movie Quotes",
+		"difficulty": "7"
+	},
+	"you_talking_to_me": {
+		"accent": "Romanian",
+		"hints": ["Robert DeNiro", "Taxi Driver"],
+		"answer": "You talking to me",
+		"type": "Movie Quotes",
+		"difficulty":  "10"
+	},
+	"frankly_my_dear_i_dont_give_a_damn": {
+		"accent": "Australian",
+		"hints": ["Gone with the Wind", "Clark Gable"],
+		"answer": "Frankly my dear, I don't give a damn",
+		"type": "Movie Quotes",
+		"difficulty": "2"
+	},
+	"go_ahead_make_my_day": {
+		"accent": "French",
+		"hints": ["Clint Eastwood", "Sudden Impact"],
+		"answer": "Go ahead make my day",
+		"type": "Movie Quotes",
+		"difficulty": "4"
+	},
+	"bond_james_bond": {
+		"accent": "Turkish",
+		"hints": ["zero zero seven", "famous spy movie series"],
+		"answer": "Bond, James Bond",
+		"type": "Movie Quotes",
+		"difficulty": "4"
+	},
+	"show_me_the_money": {
+		"accent": "Chinese",
+		"hints": ["Jerry Maguire", "Tom Cruise", "Cuba Gooding Jr", "Something a bank robber might say"],
+		"answer": "Show me the money",
+		"type": "Movie Quotes",
+		"difficulty": "2"
+	},
+	"you_cant_handle_the_truth": {
+		"accent": "Portugese",
+		"hints": ["A Few Good Men", "Jack Nicholson", "What can you handle?"],
+		"answer": "You can't handle the truth",
+		"type": "Movie Quotes",
+		"difficulty": "6"
+	},
+	"houston_we_have_a_problem": {
+		"accent": "German",
+		"hints": ["Apollo 13", "NASA", "When you're in trouble"],
+		"answer": "Houston, we have a problem",
+		"type": "Movie Quotes",
+		"difficulty": "4"
+	},
+	"elementary_my_dear_watson": {
+		"accent": "Japanese",
+		"hints": ["first through sixth grade", "Sherlock Holmes"],
+		"answer": "Elementary my dear Watson",
+		"type": "Movie Quotes",
+		"difficulty": "5"
+	},
+	"hasta_la_vista_baby": {
+		"accent": "Japanese",
+		"hints": ["Goodbye in Spanish", "Arnold Schwarzenegger", "Terminator"],
+		"answer": "Hasta la vista baby",
+		"type": "Movie Quotes",
+		"difficulty": "2"
+	},
+	"my_precious": {
+		"accent": "Korean",
+		"hints": ["A ring to rule them all", "Smeagol", "Lord of the Rings"],
+		"answer": "My precious",
+		"type": "Movie Quotes",
+		"difficulty": "2"
+	},
+	"i_am_groot": {
+		"accent": "Spanish Castilian",
+		"hints": ["Language of a sentient plant", "Green Tree Dude", "Guardians of the galaxy"],
+		"answer": "I am Groot",
+		"type": "Movie Quotes",
+		"difficulty": "5"
+	},
+	"i_want_to_play_a_game": {
+		"accent": "Portugese Brazilian",
+		"hints": ["Do you like games?", "Serial killer character", "Quote from the movie Saw"],
+		"answer": "I want to play a game",
+		"type": "Movie Quotes",
+		"difficulty": "3"
+	},
+	"this_is_sparta": {
+        "accent": "German",
+        "hints": ["An famous ancient Greek city", "Quote from 300"],
+        "answer": "This is Sparta",
+        "type": "Movie Quotes",
+        "difficulty": "2"
+    },
+    "youre_a_wizard_harry": {
+        "accent": "french",
+        "hints": ["Witchcraft and Wizardry", "Quote from Harry Potter"],
+        "answer": "You're a wizard, Harry",
+        "type": "Movie Quotes",
+        "difficulty": "2"
+    },
+    "just_keep_swimming": {
+        "accent": "German",
+        "hints": ["Don't give up", "Pixar", "Quote from Finding Nemo"],
+        "answer": "Just keep swimming",
+        "type": "Movie Quotes",
+        "difficulty": "6"
+    }
+}
