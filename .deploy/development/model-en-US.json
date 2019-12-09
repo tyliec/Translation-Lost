@@ -147,24 +147,24 @@
           ]
         },
         {
-          "name": "blanktwoType",
-          "values": [
-            {
-              "id": null,
-              "name": {
-                "value": "give",
-                "synonyms": []
-              }
-            }
-          ]
-        },
-        {
           "name": "blankthreeType",
           "values": [
             {
               "id": null,
               "name": {
                 "value": "hint",
+                "synonyms": []
+              }
+            }
+          ]
+        },
+        {
+          "name": "blankfourType",
+          "values": [
+            {
+              "id": null,
+              "name": {
+                "value": "options",
                 "synonyms": []
               }
             }
@@ -200,7 +200,8 @@
         {
           "name": "WHAT_BLANK_IS_THIS",
           "samples": [
-            "what {blank} is this"
+            "what {blank} is this",
+            "{blank}"
           ],
           "slots": [
             {
@@ -210,15 +211,10 @@
           ]
         },
         {
-          "name": "I_BLANKTWO_UP",
+          "name": "I_GIVE_UP",
           "samples": [
-            "i {blanktwo} up"
-          ],
-          "slots": [
-            {
-              "name": "blanktwo",
-              "type": "blanktwoType"
-            }
+            "i give up",
+            "i have no idea"
           ]
         },
         {
@@ -230,6 +226,18 @@
             {
               "name": "blankthree",
               "type": "blankthreeType"
+            }
+          ]
+        },
+        {
+          "name": "LIST_THE_BLANKFOUR",
+          "samples": [
+            "list the {blankfour}"
+          ],
+          "slots": [
+            {
+              "name": "blankfour",
+              "type": "blankfourType"
             }
           ]
         },

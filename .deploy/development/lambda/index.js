@@ -2003,12 +2003,17 @@ __language.dbTypes = {
   master: Master
 };
 enterState.launch = async function(context) {
-  context.say.push( "Welcome to lost in translation, a game where you try and understand my different accents." );
+  context.say.push( "Welcome to Translation Lost, a game where you try and understand me through my different accents." );
   context.say.push( "I'm going to say a phrase, and you have to guess what I say." );
   context.say.push( "For example, if I say" );
   context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes.mp3'/>"  );
-  context.say.push( "You would say," );
+  context.say.push( "You would translate to," );
   context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes2.mp3'/>"  );
+  context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
+  context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
+  context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
+  context.say.push( "You can relist all of these options during the game by saying, Alexa, options." );
+  context.say.push( "The current topic right now is, Movie Quotes." );
   context.say.push( "Ready?" );
   context.say.push(  "<audio src='" + litexa.assetsRoot + "default/starto.mp3'/>"  );
   context.nextState = 'generateRandomSpeech';
@@ -2053,8 +2058,8 @@ exitState.global = async function(context) {
 };
 
 enterState.generateRandomSpeech = async function(context) {
-  if (context.db.read('master').speechAvailable === false) {
-    context.say.push( "No more speech available." );
+  if (await context.db.read('master').speechAvailable() === false) {
+    context.say.push( "No more translations available," );
     context.say.push( "Goodbye." );
     context.nextState = 'goodbye';
   }
@@ -2082,7 +2087,14 @@ exitState.generateRandomSpeech = async function(context) {
 
 enterState.askForAnswer = async function(context) {
   context.say.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
-  context.say.push( "What do you think I said?" );
+  switch(pickSayString(context, 1, 2)) {
+    case 0:
+      context.say.push( "What do you think I said?" );
+      break;
+    default:
+      context.say.push( "What did I say?" );
+      break;
+  }
   context.reprompt.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
   context.nextState = 'waitForAnswer';
 };
@@ -2158,7 +2170,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
     }
     case 'ITS_ANSWER': {
       if (context.slots.answer && (context.slots.answer === await context.db.read('master').getAnswer(context.db.read('speechKey')))) {
-        switch(pickSayString(context, 1, 6)) {
+        switch(pickSayString(context, 2, 6)) {
           case 0:
             context.say.push( "Correcto!" );
             break;
@@ -2179,7 +2191,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
             break;
         }
         context.say.push( "The answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
-        switch(pickSayString(context, 2, 2)) {
+        switch(pickSayString(context, 3, 2)) {
           case 0:
             context.say.push( "Let's go again." );
             break;
@@ -2206,16 +2218,10 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       }
       break;
     }
-    case 'I_BLANKTWO_UP': {
-      if (context.slots.blanktwo) {
-        context.say.push( "the answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
-        context.say.push( "Let's go again." );
-        context.nextState = 'generateRandomSpeech';
-      }
-      else {
-        context.say.push( "Wrong! Here it is again." );
-        context.nextState = 'askForRepeat';
-      }
+    case 'I_GIVE_UP': {
+      context.say.push( "the answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
+      context.say.push( "Let's go again." );
+      context.nextState = 'generateRandomSpeech';
       break;
     }
     case 'REPEAT_THE_BLANKTHREE': {
@@ -2225,6 +2231,15 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       else {
         context.say.push( "Wrong! Here it is again." );
         context.nextState = 'askForRepeat';
+      }
+      break;
+    }
+    case 'LIST_THE_BLANKFOUR': {
+      if (context.slots.blankfour) {
+        context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
+        context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
+        context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
+        context.say.push( "You can relist all of these options during the game by saying, Alexa, options." );
       }
       break;
     }

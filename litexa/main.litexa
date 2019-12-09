@@ -8,9 +8,13 @@ launch
   say "You would translate to,"
   soundEffect "bag_of_potatoes2.mp3"
 
-  # say "There are two game modes, casual, and timed."
-  # say "Which would you like to play?"
-  # say "Ready?"
+  say "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat."
+  say "If you want to know the accent, ask me, Alexa, what accent is this."
+  say "You can give up on a phrase by saying, Alexa, I give up."
+  say "You can relist all of these options during the game by saying, Alexa, options."
+
+  say "The current topic right now is, Movie Quotes."
+  say "Ready?"
   soundEffect "starto.mp3"
 
   -> generateRandomSpeech
@@ -18,8 +22,8 @@ launch
  
 generateRandomSpeech
   
-  if @master.speechAvailable == false
-    say "No more translations available."
+  if @master.speechAvailable() == false
+    say "No more translations available,"
     say "Goodbye."
     -> goodbye  
 
@@ -37,6 +41,7 @@ askForAnswer
   say "\<audio src='@temp' />"
 
   say "What do you think I said?"
+    or "What did I say?"
   # add an automatic re-prompt, in case the user says nothing
   reprompt "\<audio src='@temp' />"
   -> waitForAnswer
@@ -82,6 +87,7 @@ waitForAnswer
       -> askForRepeat
 
   when "what $blank is this"
+    or  "$blank"
     with $blank = "accent"
     if $blank
       say "@master.getAccent(@speechKey)."
@@ -90,15 +96,11 @@ waitForAnswer
       say "Here it is again."
       -> askForRepeat
 
-  when "i $blanktwo up"
-    with $blanktwo = "give"
-    if $blanktwo
-      say "the answer was, @master.getAnswer(@speechKey)."
-      say "Let's go again."
-      -> generateRandomSpeech
-    else
-      say "Wrong! Here it is again."
-      -> askForRepeat
+  when "i give up"
+    or "i have no idea"
+    say "the answer was, @master.getAnswer(@speechKey)."
+    say "Let's go again."
+    -> generateRandomSpeech
 
   when "repeat the $blankthree"
     with $blankthree = "hint"
@@ -107,6 +109,14 @@ waitForAnswer
     else
       say "Wrong! Here it is again."
       -> askForRepeat
+  
+  when "list the $blankfour"
+    with $blankfour = "options"
+    if $blankfour
+      say "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat."
+      say "If you want to know the accent, ask me, Alexa, what accent is this."
+      say "You can give up on a phrase by saying, Alexa, I give up."
+    -> askForAnswer
 
   when AMAZON.RepeatIntent
     -> askForRepeat

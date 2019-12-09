@@ -4,14 +4,30 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/8/2019, 2:58:04 PM",
+            "date": "12/9/2019, 12:23:02 AM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
               "model": true,
               "manifest": true
             },
-            "git": "fatal: not a git repository (or any of the parent directories): .git\n",
+            "git": {
+              "currentCommitHash": "dce65873923ac7a1d2d8ccf93aca68783e01204b",
+              "currentCommitComment": [
+                "Initial Commit"
+              ],
+              "uncommittedChanges": [
+                "[modified] .deploy/development/assets.log",
+                "[modified] .deploy/development/lambda.log",
+                "[modified] .deploy/development/lambda.zip",
+                "[modified] .deploy/development/lambda/index.js",
+                "[modified] .deploy/development/local-cache.json",
+                "[modified] .deploy/development/manifest.log",
+                "[modified] .deploy/development/model-en-US.json",
+                "[modified] artifacts.json",
+                "[modified] litexa/main.litexa"
+              ]
+            },
             "coreVersion": "0.3.1"
           },
           "assets-root": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/",
@@ -31,7 +47,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "98f4f31983198feabef068704d5f5912",
+          "skill-model-etag-en-US": "8d3b84f03057ca9eacf6fb7a78e89b35",
           "skill-manifest-assets-md5": "661e635ca0aabc8f51aa39af9edf69cc300d90c2d2294ee39f4dce26c5618ad1"
         }
       ]
