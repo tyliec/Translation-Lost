@@ -1,31 +1,31 @@
 {
 	"ill_be_back":  {
 		"accent": "Japanese",
-		"hints": ["Terminator.", "Arnold Schwarzenegger"],
+		"hints": ["Quote from the movie, Terminator", "Arnold Schwarzenegger"],
 		"answer": "I'll be back",
-		"answer_annotation": "Spoken by Arnold Schwarzenegger in the movie Terminator",
+		"answer_annotation": "Spoken by the character Terminator, played by Arnold Schwarzenegger, from the movie, Terminator",
 		"type": "Movie Quotes",
-		"difficulty": "4"
+		"difficulty": "6"
 	},
 	"luke_i_am_your_father": {
 		"accent": "Norwegian",
 		"hints": ["Star Wars", "Darth Vader", "Luke Skywalker"],
 		"answer": "Luke, I am your father",
-		"answer_annotation": "Spoken by Darth Vader in the movie Star Wars",
+		"answer_annotation": "Spoken by the character Darth Vader, voiced by James Earl Jones, from the Star Wars movie series",
 		"type": "Movie Quotes",
-		"difficulty": "2"
+		"difficulty": "3"
 	},
 	"im_going_to_make_him_an_offer_he_cant_refuse": {
 		"accent": "Korean",
-		"hints":  ["Godfather"],
+		"hints":  ["Quote from the movie, Godfather", "Marlon Brando"],
 		"answer": "I'm going to make him an offer he can't refuse",
-		"answer_annotation": "Spoken by Don Vito Corleone in the movie The Godfather",
+		"answer_annotation": "Spoken by the character Don Vito Corleone, played by Marlon Brando, from the movie, The Godfather",
 		"type": "Movie Quotes",
-		"difficulty": "6"
+		"difficulty": "9"
 	},
 	"may_the_force_be_with_you": {
 		"accent": "Icelandic",
-		"hints": ["Star Wars", "Fourth of May"],
+		"hints": ["Quote from the Star Wars movie series", "Fourth of May"],
 		"answer": "May the force be with you",
 		"answer_annotation": "Spoken by various characters in the series Star Wars",
 		"type": "Movie Quotes",
@@ -33,22 +33,25 @@
 	},
 	"you_talking_to_me": {
 		"accent": "Romanian",
-		"hints": ["Robert DeNiro", "Taxi Driver"],
+		"hints": ["Robert DeNiro", "Quote from the movie, Taxi Driver", "Who am I talking to?"],
 		"answer": "You talking to me",
+		"answer_annotation": "Spoken by Travis Bickle, played by Robert DeNiro, from the movie, Taxi Driver",
 		"type": "Movie Quotes",
-		"difficulty":  "10"
+		"difficulty":  "8"
 	},
 	"frankly_my_dear_i_dont_give_a_damn": {
 		"accent": "Australian",
-		"hints": ["Gone with the Wind", "Clark Gable"],
+		"hints": ["Quote from the movie, Gone with the Wind", "Clark Gable"],
 		"answer": "Frankly my dear, I don't give a damn",
+		"answer_annotation": "Spoken by the character Rhett Butler, played by Clark Gable, from the movie, Gone with the Wind",
 		"type": "Movie Quotes",
 		"difficulty": "2"
 	},
 	"go_ahead_make_my_day": {
 		"accent": "French",
-		"hints": ["Clint Eastwood", "Sudden Impact"],
-		"answer": "Go ahead make my day",
+		"hints": ["Clint Eastwood", "Quote from the movie, Sudden Impact"],
+		"answer": "Go ahead, make my day",
+		"answer_annotation": "Spoken by the character Harry Callahan, played by Clint Eastwood, from the movie, Sudden Impact",
 		"type": "Movie Quotes",
 		"difficulty": "4"
 	},
@@ -56,197 +59,225 @@
 		"accent": "Turkish",
 		"hints": ["zero zero seven", "famous spy movie series"],
 		"answer": "Bond, James Bond",
+		"answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
 		"type": "Movie Quotes",
 		"difficulty": "4"
 	},
 	"show_me_the_money": {
 		"accent": "Chinese",
-		"hints": ["Jerry Maguire", "Tom Cruise", "Cuba Gooding Jr", "Something a bank robber might say"],
+		"hints": ["Quote from the movie, Jerry Maguire", "Tom Cruise", "Cuba Gooding Jr", "Something a bank robber might say"],
 		"answer": "Show me the money",
+		"answer_annotation": "Spoken by the character Rodney Tidwell, played by Cuba Gooding Jr., from the movie, Jerry Maguire",
 		"type": "Movie Quotes",
 		"difficulty": "2"
 	},
 	"you_cant_handle_the_truth": {
 		"accent": "Portugese",
-		"hints": ["A Few Good Men", "Jack Nicholson", "What can you handle?"],
+		"hints": ["Quote from the movie, A Few Good Men", "Jack Nicholson"],
 		"answer": "You can't handle the truth",
+		"answer_annotation": "Spoken by the character Colonel Nathan R. Jessup, played by Jack Nicholson, from the movie, A Few Good Men",
 		"type": "Movie Quotes",
 		"difficulty": "6"
 	},
 	"houston_we_have_a_problem": {
 		"accent": "German",
-		"hints": ["Apollo 13", "NASA", "When you're in trouble"],
+		"hints": ["Apollo 13", "NASA"],
 		"answer": "Houston, we have a problem",
+		"answer_annotation": "Spoken by the character Jim Lovell, played by Tom Hanks, from the movie, Apollo 13",
 		"type": "Movie Quotes",
 		"difficulty": "4"
 	},
 	"elementary_my_dear_watson": {
 		"accent": "Japanese",
-		"hints": ["first through sixth grade", "Sherlock Holmes"],
+		"hints": ["first through fifth or sixth grade", "Quote from Sherlock Holmes"],
 		"answer": "Elementary my dear Watson",
+		"answer_annotation": "Spoken by the character Sherlock Holmes from the Sherlock Holmes movie series",
 		"type": "Movie Quotes",
 		"difficulty": "5"
 	},
 	"hasta_la_vista_baby": {
 		"accent": "Japanese",
-		"hints": ["Goodbye in Spanish", "Arnold Schwarzenegger", "Terminator"],
+		"hints": ["Goodbye in Spanish", "Arnold Schwarzenegger", "Quote from the movie, Terminator"],
 		"answer": "Hasta la vista baby",
+		"answer_annotation": "Spoken by the character Terminator, played by Arnold Schwarzenegger, from the movie, Terminator",
 		"type": "Movie Quotes",
 		"difficulty": "2"
 	},
 	"my_precious": {
 		"accent": "Korean",
-		"hints": ["A ring to rule them all", "Smeagol", "Lord of the Rings"],
+		"hints": ["A ring to rule them all", "Smeagol", "Quote from Lord of the Rings"],
 		"answer": "My precious",
+		"answer_annotation": "Spoken by the character Smeagol/Golumn from the Lord of the Rings",
 		"type": "Movie Quotes",
 		"difficulty": "2"
 	},
 	"i_am_groot": {
 		"accent": "Spanish Castilian",
-		"hints": ["Language of a sentient plant", "Green Tree Dude", "Guardians of the galaxy"],
+		"hints": ["Language of a sentient plant", "Green Tree Dude", "Quote from Guardians of the galaxy"],
 		"answer": "I am Groot",
+		"answer_annotation": "Spoken by the character Groot from the Guardians of the Galaxy movie series",
 		"type": "Movie Quotes",
 		"difficulty": "5"
 	},
 	"i_want_to_play_a_game": {
 		"accent": "Portugese Brazilian",
-		"hints": ["Do you like games?", "Serial killer character", "Quote from the movie Saw"],
+		"hints": ["Do you like games?", "Serial killer character", "Quote from the movie, Saw"],
 		"answer": "I want to play a game",
+		"answer_annotation": "Spoken by the character Jigsaw from the Saw movie series",
 		"type": "Movie Quotes",
 		"difficulty": "3"
 	},
 	"this_is_sparta": {
-        "accent": "German",
-        "hints": ["An famous ancient Greek city", "Quote from 300"],
-        "answer": "This is Sparta",
-        "type": "Movie Quotes",
-        "difficulty": "2"
-    },
-    "youre_a_wizard_harry": {
-        "accent": "french",
-        "hints": ["Witchcraft and Wizardry", "Quote from Harry Potter"],
-        "answer": "You're a wizard, Harry",
-        "type": "Movie Quotes",
-        "difficulty": "2"
-    },
-    "just_keep_swimming": {
-        "accent": "German",
-        "hints": ["Don't give up", "Pixar", "Quote from Finding Nemo"],
-        "answer": "Just keep swimming",
-        "type": "Movie Quotes",
-        "difficulty": "6"
+		"accent": "German",
+		"hints": ["An famous ancient Greek city", "Quote from the movie, 300"],
+		"answer": "This is Sparta",
+		"answer_annotation": "Spoken by the character Leonidas, played by Gerald Butler, from the movie, 300",
+		"type": "Movie Quotes",
+		"difficulty": "2"
+    	},
+   	 "youre_a_wizard_harry": {
+		"accent": "french",
+		"hints": ["Witchcraft and Wizardry", "Quote from Harry Potter"],
+		"answer": "You're a wizard, Harry",
+		"answer_annotation": "Spoken by the character Rubeus Hagrid, played by Robbie Coltrane, from the Harry Potter movie series",
+		"type": "Movie Quotes",
+		"difficulty": "2"
+	},
+    	"just_keep_swimming": {
+		"accent": "German",
+		"hints": ["Don't give up", "Pixar", "Quote from the movie, Finding Nemo"],
+		"answer": "Just keep swimming",
+		"answer_annotation": "Spoken by the character Dory, voiced by Ellen DeGeneres, from the movie, Finding Nemo",
+		"type": "Movie Quotes",
+		"difficulty": "6"
 	},
 	"i_volunteer_as_tribute": {
-        "accent": "Dutch",
-        "hints": ["Quote from the Hunger Games series"],
-        "answer": "I volunteer as tribute",
-        "type": "Movie Quotes",
-        "difficulty": "3"
+		"accent": "Dutch",
+		"hints": ["Quote from the Hunger Games series"],
+		"answer": "I volunteer as tribute",
+		"answer_annotation": "Spoken by the character Katniss Everdeen, played by Jennifer Lawrence, from the movie, Hunger Games",
+		"type": "Movie Quotes",
+		"difficulty": "5"
 	},
 	"with_great_power_comes_great_responsibility": {
-        "accent": "Dutch",
-        "hints": ["Quote from Spider-man"],
-        "answer": "With great power, comes great responsibility",
-        "type": "Movie Quotes",
-        "difficulty": "4"
+		"accent": "Dutch",
+		"hints": ["Quote from Spider-man series"],
+		"answer": "With great power, comes great responsibility",
+		"answer_annotation": "Spoken by the character Uncle Ben from the Spider-man series",
+		"type": "Movie Quotes",
+		"difficulty": "5"
 	},
 	"you_will_ride_eternal_shiny_and_chrome": {
-        "accent": "Dutch",
-        "hints": ["Quote from the movie, Mad Max: Fury Road"],
-        "answer": "You will ride eternal, shiny, and chrome",
-        "type": "Movie Quotes",
-        "difficulty": "6"
+		"accent": "Dutch",
+		"hints": ["Quote from the movie, Mad Max: Fury Road"],
+		"answer": "You will ride eternal, shiny, and chrome",
+		"answer_annotation": "Spoken by the character Immortan Joe, played by Keays-Byrne, from the movie, Mad Max: Fury Road",
+		"type": "Movie Quotes",
+		"difficulty": "3"
 	},
 	"honey_where_is_my_super_suit": {
-        "accent": "Arabic",
-        "hints": ["Quote from the movie, The Incredibles", "Spoken by Frozone"],
-        "answer": "Honey, Where is my super suit",
-        "type": "Movie Quotes",
-        "difficulty": "2"
+		"accent": "Arabic",
+		"hints": ["Quote from the movie, The Incredibles", "Spoken by Frozone"],
+		"answer": "Honey, Where is my super suit",
+		"answer_annotation": "Spoken by the character Frozone, voiced by Samuel L. Jackson, from the movie, The Incredibles",
+		"type": "Movie Quotes",
+		"difficulty": "2"
 	},
 	"why_so_serious": {
-        "accent": "Italian",
-        "hints": ["Quote from the movie The Dark Knight", "Spoken by the Joker"],
-        "answer": "Why so serious",
-        "type": "Movie Quotes",
-        "difficulty": "1"
+		"accent": "Italian",
+		"hints": ["Quote from the movie, The Dark Knight", "Spoken by the Joker"],
+		"answer": "Why so serious",
+		"answer_annotation": "Spoken by the character Joker, played by Heath Ledger, from the movie, The Dark Knight",
+		"type": "Movie Quotes",
+		"difficulty": "1"
 	},
 	"you_shall_not_pass": {
-        "accent": "Icelandic",
-        "hints": ["Quote from The Lord of the Rings", "Spoken by Gandalf"],
-        "answer": "You shall not pass",
-        "type": "Movie Quotes",
-        "difficulty": "2"
+		"accent": "Icelandic",
+		"hints": ["Quote from The Lord of the Rings series", "Spoken by Gandalf"],
+		"answer": "You shall not pass",
+		"answer_annotation": "Spoken by the character Gandalf, played by Ian McKellen, from the Lord of the Rings series",
+		"type": "Movie Quotes",
+		"difficulty": "2"
 	},
 	"are_you_not_entertained": {
-        "accent": "Korean",
-        "hints": ["Quote from the movie, Gladiator", "Spoken by Maximus Decimus Meridius, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And he will have his vengeance, in this life or the next."],
-        "answer": "Are you not entertained",
-        "type": "Movie Quotes",
-        "difficulty": "2"
+		"accent": "Korean",
+		"hints": ["Quote from the movie, Gladiator", "Spoken by Maximus Decimus Meridius, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And he will have his vengeance, in this life or the next."],
+		"answer": "Are you not entertained",
+		"answer_annotation": "Spoken by the character Maximus Decimus Meridius, played by Russell Crowe, from the movie, Gladiator",
+		"type": "Movie Quotes",
+		"difficulty": "2"
 	},
 	"you_sit_on_a_throne_of_lies": {
-        "accent": "French",
-        "hints": ["Quote from the movie, Elf.", "Spoken by Buddy, an elf."],
-        "answer": "You sit on a throne of lies",
-        "type": "Movie Quotes",
-        "difficulty": "3"
+		"accent": "French",
+		"hints": ["Quote from the movie, Elf", "Spoken by Buddy, an elf"],
+		"answer": "You sit on a throne of lies",
+		"answer_annotation": "Spoken by the character Buddy the elf, played by Will Ferrell, from the movie, Elf",
+		"type": "Movie Quotes",
+		"difficulty": "3"
 	},
 	"i_live_my_life_a_quarter_mile_at_a_time": {
-        "accent": "Portuguese",
-        "hints": ["Quote from the movie, The Fast and the Furious.", "Spoken by Dominic Toretto."],
-        "answer": "I live my life a quarter mile at a time",
-        "type": "Movie Quotes",
-        "difficulty": "3"
+		"accent": "Portuguese",
+		"hints": ["Quote from the movie, The Fast and the Furious", "Spoken by the character Dominic Toretto, played by Vin Diesel", "25 cents"],
+		"answer": "I live my life a quarter mile at a time",
+		"answer_annotation": "Spoken by the character Dominic Toretto, played by Vin Diesel, from the movie, The Fast and the Furious",
+		"type": "Movie Quotes",
+		"difficulty": "9"
 	},
 	"i_can_do_this_all_day": {
-        "accent": "British",
-        "hints": ["Quote from the Avengers movie series.", "Spoken by Captain America."],
-        "answer": "I can do this all day",
-        "type": "Movie Quotes",
-        "difficulty": "1"
+		"accent": "British",
+		"hints": ["Quote from the Avengers movie series.", "Spoken by Captain America."],
+		"answer": "I can do this all day",
+		"answer_annotation": "Spoken by the character Captain America, played by Chris Evans, from the Avengers movie series",
+		"type": "Movie Quotes",
+		"difficulty": "1"
 	},
 	"e_t_phone_home": {
-        "accent": "Chinese",
-        "hints": ["Quote from the movie, E.T. the Extra-Terrestrial.", "Spoken by E.T."],
-        "answer": "E.T. Phone home",
-        "type": "Movie Quotes",
-        "difficulty": "1"
+		"accent": "Chinese",
+		"hints": ["Quote from the movie, E.T. the Extra-Terrestrial", "Spoken by E.T."],
+		"answer": "E.T. Phone home",
+		"answer_annotation": "Spoken by E.T. from the movie, E.T. the Extra-Terrestrial",
+		"type": "Movie Quotes",
+		"difficulty": "1"
 	},
 	"rosebud": {
-        "accent": "Italian",
-        "hints": ["Quote from the movie, Citizen Kane", "An undeveloped or embryonic shoot that normally occurs in the axil of a leaf or at the tip of a stem."],
-        "answer": "Rosebud",
-        "type": "Movie Quotes",
-        "difficulty": "2"
+		"accent": "Italian",
+		"hints": ["Quote from the movie, Citizen Kane", "An undeveloped or embryonic shoot that normally occurs in the axil of a leaf or at the tip of a stem."],
+		"answer": "Rosebud",
+		"answer_annotation": "Spoken by the character Charles Foster Kane, played by Orson Welles, from the movie, Citizen Kane",
+		"type": "Movie Quotes",
+		"difficulty": "2"
 	},
 	"theres_no_place_like_home": {
-        "accent": "Russian",
-        "hints": ["Quote from the movie, Wizard of OZ", "Close your eyes, tap your ruby heels together three times, and say..."],
-        "answer": "There's no place like home",
-        "type": "Movie Quotes",
-        "difficulty": "1"
+		"accent": "Russian",
+		"hints": ["Quote from the movie, The Wizard of Oz", "Close your eyes, tap your ruby heels together three times, and say..."],
+		"answer": "There's no place like home",
+		"answer_annotation": "Spoken by the character Dorothy Gale, played by Judy Garland, from the movie, The Wizard of Oz",
+		"type": "Movie Quotes",
+		"difficulty": "1"
 	},
 	"say_hello_to_my_little_friend": {
-        "accent": "Arabic",
-        "hints": ["Quote from the movie, Scarface", "When your friend is a M16 machine gun."],
-        "answer": "Say hello to my little friend",
-        "type": "Movie Quotes",
-        "difficulty": "2"
+		"accent": "Arabic",
+		"hints": ["Quote from the movie, Scarface", "When your friend is a M16 machine gun."],
+		"answer": "Say hello to my little friend",
+		"answer_annotation": "Spoken by the character Tony Montana, played by Al Pacino, from the movie, Scarface",
+		"type": "Movie Quotes",
+		"difficulty": "2"
 	},
 	"a_martini_shaken_not_stirred": {
-        "accent": "Japanese",
-        "hints": ["007", "A spy's favorite drink"],
-        "answer": "A martini. Shaken, not stirred",
-        "type": "Movie Quotes",
-        "difficulty": "8"
+		"accent": "Japanese",
+		"hints": ["007", "A spy's favorite drink"],
+		"answer": "A martini. Shaken, not stirred",
+		"answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
+		"type": "Movie Quotes",
+		"difficulty": "8"
 	},
 	"mama_always_said_life_was_like_a_box_of_chocolates_you_never_know_what_youre_gonna_get": {
-        "accent": "Korean",
-        "hints": ["Quote from the movie Forrest Gump"],
-        "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
-        "type": "Movie Quotes",
-        "difficulty": "5"
+		"accent": "Korean",
+		"hints": ["Quote from the movie, Forrest Gump"],
+		"answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+		"answer_annotation": "Spoken by the character Forrest Gump, played by Tom Hanks, from the movie, Forrest Gump",
+		"type": "Movie Quotes",
+		"difficulty": "5"
 	}
 
 }
