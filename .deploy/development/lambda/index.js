@@ -981,25 +981,27 @@ litexa.dbTypes = {
 var jsonSourceFiles = {}; 
 jsonSourceFiles['database.json'] = {
   "ill_be_back": {
-    "accent": "Polish",
+    "accent": "Japanese",
     "hints": [
       "Terminator.",
       "Arnold Schwarzenegger"
     ],
     "answer": "I'll be back",
+    "answer_annotation": "Spoken by Arnold Schwarzenegger in the movie Terminator",
     "type": "Movie Quotes",
-    "difficulty": "10"
+    "difficulty": "4"
   },
-  "i_am_your_father": {
+  "luke_i_am_your_father": {
     "accent": "Norwegian",
     "hints": [
       "Star Wars",
       "Darth Vader",
       "Luke Skywalker"
     ],
-    "answer": "I am your father",
+    "answer": "Luke, I am your father",
+    "answer_annotation": "Spoken by Darth Vader in the movie Star Wars",
     "type": "Movie Quotes",
-    "difficulty": "7"
+    "difficulty": "2"
   },
   "im_going_to_make_him_an_offer_he_cant_refuse": {
     "accent": "Korean",
@@ -1007,6 +1009,7 @@ jsonSourceFiles['database.json'] = {
       "Godfather"
     ],
     "answer": "I'm going to make him an offer he can't refuse",
+    "answer_annotation": "Spoken by Don Vito Corleone in the movie The Godfather",
     "type": "Movie Quotes",
     "difficulty": "6"
   },
@@ -1017,6 +1020,7 @@ jsonSourceFiles['database.json'] = {
       "Fourth of May"
     ],
     "answer": "May the force be with you",
+    "answer_annotation": "Spoken by various characters in the series Star Wars",
     "type": "Movie Quotes",
     "difficulty": "7"
   },
@@ -1178,6 +1182,162 @@ jsonSourceFiles['database.json'] = {
     "answer": "Just keep swimming",
     "type": "Movie Quotes",
     "difficulty": "6"
+  },
+  "i_volunteer_as_tribute": {
+    "accent": "Dutch",
+    "hints": [
+      "Quote from the Hunger Games series"
+    ],
+    "answer": "I volunteer as tribute",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "with_great_power_comes_great_responsibility": {
+    "accent": "Dutch",
+    "hints": [
+      "Quote from Spider-man"
+    ],
+    "answer": "With great power, comes great responsibility",
+    "type": "Movie Quotes",
+    "difficulty": "4"
+  },
+  "you_will_ride_eternal_shiny_and_chrome": {
+    "accent": "Dutch",
+    "hints": [
+      "Quote from the movie, Mad Max: Fury Road"
+    ],
+    "answer": "You will ride eternal, shiny, and chrome",
+    "type": "Movie Quotes",
+    "difficulty": "6"
+  },
+  "honey_where_is_my_super_suit": {
+    "accent": "Arabic",
+    "hints": [
+      "Quote from the movie, The Incredibles",
+      "Spoken by Frozone"
+    ],
+    "answer": "Honey, Where is my super suit",
+    "type": "Movie Quotes",
+    "difficulty": "2"
+  },
+  "why_so_serious": {
+    "accent": "Italian",
+    "hints": [
+      "Quote from the movie The Dark Knight",
+      "Spoken by the Joker"
+    ],
+    "answer": "Why so serious",
+    "type": "Movie Quotes",
+    "difficulty": "1"
+  },
+  "you_shall_not_pass": {
+    "accent": "Icelandic",
+    "hints": [
+      "Quote from The Lord of the Rings",
+      "Spoken by Gandalf"
+    ],
+    "answer": "You shall not pass",
+    "type": "Movie Quotes",
+    "difficulty": "2"
+  },
+  "are_you_not_entertained": {
+    "accent": "Korean",
+    "hints": [
+      "Quote from the movie, Gladiator",
+      "Spoken by Maximus Decimus Meridius, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And he will have his vengeance, in this life or the next."
+    ],
+    "answer": "Are you not entertained",
+    "type": "Movie Quotes",
+    "difficulty": "2"
+  },
+  "you_sit_on_a_throne_of_lies": {
+    "accent": "French",
+    "hints": [
+      "Quote from the movie, Elf.",
+      "Spoken by Buddy, an elf."
+    ],
+    "answer": "You sit on a throne of lies",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "i_live_my_life_a_quarter_mile_at_a_time": {
+    "accent": "Portuguese",
+    "hints": [
+      "Quote from the movie, The Fast and the Furious.",
+      "Spoken by Dominic Toretto."
+    ],
+    "answer": "I live my life a quarter mile at a time",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "i_can_do_this_all_day": {
+    "accent": "British",
+    "hints": [
+      "Quote from the Avengers movie series.",
+      "Spoken by Captain America."
+    ],
+    "answer": "I can do this all day",
+    "type": "Movie Quotes",
+    "difficulty": "1"
+  },
+  "e_t_phone_home": {
+    "accent": "Chinese",
+    "hints": [
+      "Quote from the movie, E.T. the Extra-Terrestrial.",
+      "Spoken by E.T."
+    ],
+    "answer": "E.T. Phone home",
+    "type": "Movie Quotes",
+    "difficulty": "1"
+  },
+  "rosebud": {
+    "accent": "Italian",
+    "hints": [
+      "Quote from the movie, Citizen Kane",
+      "An undeveloped or embryonic shoot that normally occurs in the axil of a leaf or at the tip of a stem."
+    ],
+    "answer": "Rosebud",
+    "type": "Movie Quotes",
+    "difficulty": "2"
+  },
+  "theres_no_place_like_home": {
+    "accent": "Russian",
+    "hints": [
+      "Quote from the movie, Wizard of OZ",
+      "Close your eyes, tap your ruby heels together three times, and say..."
+    ],
+    "answer": "There's no place like home",
+    "type": "Movie Quotes",
+    "difficulty": "1"
+  },
+  "say_hello_to_my_little_friend": {
+    "accent": "Arabic",
+    "hints": [
+      "Quote from the movie, Scarface",
+      "When your friend is a M16 machine gun."
+    ],
+    "answer": "Say hello to my little friend",
+    "type": "Movie Quotes",
+    "difficulty": "2"
+  },
+  "a_martini_shaken_not_stirred": {
+    "accent": "Japanese",
+    "hints": [
+      "007",
+      "A spy's favorite drink"
+    ],
+    "answer": "A martini. Shaken, not stirred",
+    "type": "Movie Quotes",
+    "difficulty": "8"
+  },
+  "mama_always_said_life_was_like_a_box_of_chocolates_you_never_know_what_youre_gonna_get": {
+    "accent": "Korean",
+    "hints": [
+      "Quote from the movie Forrest Gump"
+    ],
+    "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+    "type": "Movie Quotes",
+    "difficulty": "5"
   }
 };
 
@@ -1991,7 +2151,23 @@ exports.getPotentialAnswers = function() {
 			"I want to play a game",
 			"This is Sparta",
 			"You're a wizard, Harry",
-			"Just keep swimming"
+			"Just keep swimming",
+			"I volunteer as tribute",
+			"With great power, comes great responsibility",
+			"You will ride eternal, shiny, and chrome",
+			"Honey, Where is my super suit",
+			"Why so serious",
+			"You shall not pass",
+			"Are you not entertained",
+			"You sit on a throne of lies",
+			"I live my life a quarter mile at a time",
+			"I can do this all day",
+			"E.T. Phone home",
+			"Rosebud",
+			"There's no place like home",
+			"Say hello to my little friend",
+			"A martini. Shaken, not stirred",
+			"Mama always said life was like a box of chocolates. You never know what you're gonna get"
 		]
 	};
 }
@@ -2004,19 +2180,13 @@ __language.dbTypes = {
 };
 enterState.launch = async function(context) {
   context.say.push( "Welcome to Translation Lost, a game where you try and understand me through my different accents." );
-  context.say.push( "I'm going to say a phrase, and you have to guess what I say." );
-  context.say.push( "For example, if I say" );
-  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes.mp3'/>"  );
-  context.say.push( "You would translate to," );
-  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes2.mp3'/>"  );
-  context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
-  context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
-  context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
-  context.say.push( "You can relist all of these options during the game by saying, Alexa, options." );
-  context.say.push( "The current topic right now is, Movie Quotes." );
-  context.say.push( "Ready?" );
-  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/starto.mp3'/>"  );
-  context.nextState = 'generateRandomSpeech';
+  if (context.db.read('tutorialHeard') === true) {
+    context.say.push( "Do you want to hear the tutorial again?" );
+    context.nextState = 'askForTutorial';
+  }
+  else {
+    context.nextState = 'playTutorial';
+  }
 };
 processIntents.launch = async function(context, runOtherwise) {
   switch( context.intent ) {
@@ -2057,6 +2227,81 @@ processIntents.global = async function(context, runOtherwise) {
 exitState.global = async function(context) {
 };
 
+enterState.playTutorial = async function(context) {
+  context.say.push( "I'm going to say a phrase, and you have to guess what I say." );
+  context.say.push( "For example, if I say" );
+  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes.mp3'/>"  );
+  context.say.push( "You would translate to," );
+  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes2.mp3'/>"  );
+  context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
+  context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
+  context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
+  context.say.push( "You can relist all of these options during the game by saying, Alexa, options." );
+  context.db.write('tutorialHeard', true);
+  context.nextState = 'getTopic';
+};
+processIntents.playTutorial = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, true) ) { return true; }
+      break;
+    }
+  }
+  return true;
+};
+exitState.playTutorial = async function(context) {
+};
+
+enterState.askForTutorial = async function(context) {
+};
+processIntents.askForTutorial = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, false) ) { return true; }
+      context.say.push( "Do you want to hear the tutorial again?" );
+      context.nextState = 'waitForAnswer';
+      break;
+    }
+    case 'AMAZON.YesIntent': {
+      context.nextState = 'playTutorial';
+      break;
+    }
+    case 'AMAZON.NoIntent': {
+      context.say.push( "Alright, let's get into it." );
+      context.nextState = 'getTopic';
+      break;
+    }
+  }
+  return true;
+};
+exitState.askForTutorial = async function(context) {
+};
+
+enterState.getTopic = async function(context) {
+  context.say.push( "The current topic right now is, Movie Quotes." );
+  context.say.push( "Ready?" );
+  switch(pickSayString(context, 1, 2)) {
+    case 0:
+      context.say.push(  "<audio src='" + litexa.assetsRoot + "default/starto.mp3'/>"  );
+      break;
+    default:
+      context.say.push( "<say-as interpret-as='interjection'>batter up</say-as>" );
+      break;
+  }
+  context.nextState = 'generateRandomSpeech';
+};
+processIntents.getTopic = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, true) ) { return true; }
+      break;
+    }
+  }
+  return true;
+};
+exitState.getTopic = async function(context) {
+};
+
 enterState.generateRandomSpeech = async function(context) {
   if (await context.db.read('master').speechAvailable() === false) {
     context.say.push( "No more translations available," );
@@ -2087,7 +2332,7 @@ exitState.generateRandomSpeech = async function(context) {
 
 enterState.askForAnswer = async function(context) {
   context.say.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
-  switch(pickSayString(context, 1, 2)) {
+  switch(pickSayString(context, 2, 2)) {
     case 0:
       context.say.push( "What do you think I said?" );
       break;
@@ -2163,14 +2408,14 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
   switch( context.intent ) {
     default: {
       if ( await processIntents.global(context, false) ) { return true; }
-      context.say.push( "Sorry, I didn't understand. If you want a hint, say, Alexa, help, otherwise say, Alexa, then the answer" );
-      context.shouldEndSession = false;
-      context.shouldDropSession = true;
+      context.say.push( "Sorry, I didn't understand. If you want a hint, say, Alexa, help, otherwise say, Alexa, then the answer." );
+      context.say.push( "If you want to hear all the options, say, Alexa, options." );
+      context.nextState = 'waitForAnswer';
       break;
     }
     case 'ITS_ANSWER': {
       if (context.slots.answer && (context.slots.answer === await context.db.read('master').getAnswer(context.db.read('speechKey')))) {
-        switch(pickSayString(context, 2, 6)) {
+        switch(pickSayString(context, 3, 10)) {
           case 0:
             context.say.push( "Correcto!" );
             break;
@@ -2186,12 +2431,24 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
           case 4:
             context.say.push( "<say-as interpret-as='interjection'>bada bing bada boom.</say-as>" );
             break;
-          default:
+          case 5:
             context.say.push( "<say-as interpret-as='interjection'>bingo.</say-as>" );
+            break;
+          case 6:
+            context.say.push( "<say-as interpret-as='interjection'>bazinga.</say-as>" );
+            break;
+          case 7:
+            context.say.push( "<say-as interpret-as='interjection'>well done.</say-as>" );
+            break;
+          case 8:
+            context.say.push( "<say-as interpret-as='interjection'>wowza.</say-as>" );
+            break;
+          default:
+            context.say.push( "<say-as interpret-as='interjection'>wowzer.</say-as>" );
             break;
         }
         context.say.push( "The answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
-        switch(pickSayString(context, 3, 2)) {
+        switch(pickSayString(context, 4, 2)) {
           case 0:
             context.say.push( "Let's go again." );
             break;
@@ -2202,7 +2459,27 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
         context.nextState = 'generateRandomSpeech';
       }
       else {
-        context.say.push( "Wrong! Here it is again." );
+        switch(pickSayString(context, 5, 6)) {
+          case 0:
+            context.say.push( "<say-as interpret-as='interjection'>aw man.</say-as>" );
+            break;
+          case 1:
+            context.say.push( "Wrong!" );
+            break;
+          case 2:
+            context.say.push( "<say-as interpret-as='interjection'>aww applesauce.</say-as>" + " That wasn't it." );
+            break;
+          case 3:
+            context.say.push( "<say-as interpret-as='interjection'>blast.</say-as>" );
+            break;
+          case 4:
+            context.say.push( "Correct! ... " + "<say-as interpret-as='interjection'>just kidding.</say-as>" );
+            break;
+          default:
+            context.say.push( "<say-as interpret-as='interjection'>nuh uh.</say-as>" );
+            break;
+        }
+        context.say.push( "Here it is again." );
         context.nextState = 'askForRepeat';
       }
       break;
@@ -2220,7 +2497,14 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
     }
     case 'I_GIVE_UP': {
       context.say.push( "the answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
-      context.say.push( "Let's go again." );
+      switch(pickSayString(context, 6, 2)) {
+        case 0:
+          context.say.push( "Let's go again." );
+          break;
+        default:
+          context.say.push( "One more time." );
+          break;
+      }
       context.nextState = 'generateRandomSpeech';
       break;
     }
@@ -2239,8 +2523,8 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
         context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
         context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
         context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
-        context.say.push( "You can relist all of these options during the game by saying, Alexa, options." );
       }
+      context.nextState = 'askForAnswer';
       break;
     }
     case 'AMAZON.RepeatIntent': {

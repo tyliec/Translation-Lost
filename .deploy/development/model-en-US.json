@@ -131,6 +131,118 @@
                 "value": "Just keep swimming",
                 "synonyms": []
               }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "I volunteer as tribute",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "With great power, comes great responsibility",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "You will ride eternal, shiny, and chrome",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Honey, Where is my super suit",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Why so serious",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "You shall not pass",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Are you not entertained",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "You sit on a throne of lies",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "I live my life a quarter mile at a time",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "I can do this all day",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "E.T. Phone home",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Rosebud",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "There's no place like home",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Say hello to my little friend",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "A martini. Shaken, not stirred",
+                "synonyms": []
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "value": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+                "synonyms": []
+              }
             }
           ]
         },
@@ -152,7 +264,7 @@
             {
               "id": null,
               "name": {
-                "value": "hint",
+                "value": "hints",
                 "synonyms": []
               }
             }
@@ -185,6 +297,14 @@
           "samples": []
         },
         {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
           "name": "ITS_ANSWER",
           "samples": [
             "it's {answer}",
@@ -214,7 +334,8 @@
           "name": "I_GIVE_UP",
           "samples": [
             "i give up",
-            "i have no idea"
+            "i have no idea",
+            "skip this one"
           ]
         },
         {
@@ -232,7 +353,8 @@
         {
           "name": "LIST_THE_BLANKFOUR",
           "samples": [
-            "list the {blankfour}"
+            "list the {blankfour}",
+            "{blankfour}"
           ],
           "slots": [
             {
@@ -243,11 +365,15 @@
         },
         {
           "name": "AMAZON.RepeatIntent",
-          "samples": []
+          "samples": [
+            "one more time"
+          ]
         },
         {
           "name": "AMAZON.HelpIntent",
-          "samples": []
+          "samples": [
+            "can i get a hint"
+          ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent"

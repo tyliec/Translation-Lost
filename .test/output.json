@@ -1,8 +1,8 @@
 {
   "log": [
-    "✘ 1 tests run, 1 failed (10ms)\n",
+    "✘ 1 tests run, 1 failed (13ms)\n",
     "Testing in region en-US, language default out of [\"default\"]",
-    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to lost in translation, a game where you try and understand people's accents. I'm going to say a phrase, and you have to guess what I say, ready? <starto.mp3> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3' /> What do you think I said?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
+    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <starto.mp3> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3' /> What did I say?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n     ! speechAvailable\n     ! {}\n     ! seenBefore\n     ! {}\n     ! seen\n     ! {}\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
   ],
   "cards": [],
   "directives": [],
@@ -40,7 +40,7 @@
         },
         "request": {
           "type": "LaunchRequest",
-          "requestId": "litexaRequestId.203ffca4-95d7-44d7-be50-fe6a154cfcec",
+          "requestId": "litexaRequestId.32d2a5ef-7f5c-461c-bbe6-8c4e3e4b389f",
           "timestamp": "2017-10-02T01:01:05.000Z",
           "locale": "default"
         },
@@ -54,13 +54,13 @@
           "shouldEndSession": false,
           "outputSpeech": {
             "type": "SSML",
-            "ssml": "<speak>Welcome to lost in translation, a game where you try and understand people's accents. I'm going to say a phrase, and you have to guess what I say, ready? <audio src='test://default/starto.mp3'/> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3' /> What do you think I said?</speak>",
+            "ssml": "<speak>Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <audio src='test://default/bag_of_potatoes.mp3'/> You would translate to, <audio src='test://default/bag_of_potatoes2.mp3'/> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <audio src='test://default/starto.mp3'/> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3' /> What did I say?</speak>",
             "playBehavior": "REPLACE_ALL"
           },
           "reprompt": {
             "outputSpeech": {
               "type": "SSML",
-              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3' /></speak>"
+              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3' /></speak>"
             }
           }
         }
@@ -73,42 +73,375 @@
         "master": {
           "database": {
             "ill_be_back": {
-              "accent": "Polish",
+              "accent": "Japanese",
               "hints": [
-                "Quote from the movie Terminator.",
+                "Terminator.",
                 "Arnold Schwarzenegger"
               ],
-              "answers": [
-                "I'll be back"
-              ],
-              "answer": "I'll be back"
+              "answer": "I'll be back",
+              "type": "Movie Quotes",
+              "difficulty": "4"
             },
-            "i_am_your_father": {
+            "luke_i_am_your_father": {
               "accent": "Norwegian",
               "hints": [
                 "Star Wars",
-                "Darth Vader"
+                "Darth Vader",
+                "Luke Skywalker"
               ],
-              "answers": [
-                "I am your father"
-              ],
-              "answer": "I am your father"
+              "answer": "Luke, I am your father",
+              "type": "Movie Quotes",
+              "difficulty": "2"
             },
             "im_going_to_make_him_an_offer_he_cant_refuse": {
               "accent": "Korean",
               "hints": [
                 "Godfather"
               ],
-              "answers": [
-                "I'm going to make him an offer he can't refuse"
+              "answer": "I'm going to make him an offer he can't refuse",
+              "type": "Movie Quotes",
+              "difficulty": "6"
+            },
+            "may_the_force_be_with_you": {
+              "accent": "Icelandic",
+              "hints": [
+                "Star Wars",
+                "Fourth of May"
               ],
-              "answer": "I'm going to make him an offer he can't refuse"
+              "answer": "May the force be with you",
+              "type": "Movie Quotes",
+              "difficulty": "7"
+            },
+            "you_talking_to_me": {
+              "accent": "Romanian",
+              "hints": [
+                "Robert DeNiro",
+                "Taxi Driver"
+              ],
+              "answer": "You talking to me",
+              "type": "Movie Quotes",
+              "difficulty": "10"
+            },
+            "frankly_my_dear_i_dont_give_a_damn": {
+              "accent": "Australian",
+              "hints": [
+                "Gone with the Wind",
+                "Clark Gable"
+              ],
+              "answer": "Frankly my dear, I don't give a damn",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "go_ahead_make_my_day": {
+              "accent": "French",
+              "hints": [
+                "Clint Eastwood",
+                "Sudden Impact"
+              ],
+              "answer": "Go ahead make my day",
+              "type": "Movie Quotes",
+              "difficulty": "4"
+            },
+            "bond_james_bond": {
+              "accent": "Turkish",
+              "hints": [
+                "zero zero seven",
+                "famous spy movie series"
+              ],
+              "answer": "Bond, James Bond",
+              "type": "Movie Quotes",
+              "difficulty": "4"
+            },
+            "show_me_the_money": {
+              "accent": "Chinese",
+              "hints": [
+                "Jerry Maguire",
+                "Tom Cruise",
+                "Cuba Gooding Jr",
+                "Something a bank robber might say"
+              ],
+              "answer": "Show me the money",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "you_cant_handle_the_truth": {
+              "accent": "Portugese",
+              "hints": [
+                "A Few Good Men",
+                "Jack Nicholson",
+                "What can you handle?"
+              ],
+              "answer": "You can't handle the truth",
+              "type": "Movie Quotes",
+              "difficulty": "6"
+            },
+            "houston_we_have_a_problem": {
+              "accent": "German",
+              "hints": [
+                "Apollo 13",
+                "NASA",
+                "When you're in trouble"
+              ],
+              "answer": "Houston, we have a problem",
+              "type": "Movie Quotes",
+              "difficulty": "4"
+            },
+            "elementary_my_dear_watson": {
+              "accent": "Japanese",
+              "hints": [
+                "first through sixth grade",
+                "Sherlock Holmes"
+              ],
+              "answer": "Elementary my dear Watson",
+              "type": "Movie Quotes",
+              "difficulty": "5"
+            },
+            "hasta_la_vista_baby": {
+              "accent": "Japanese",
+              "hints": [
+                "Goodbye in Spanish",
+                "Arnold Schwarzenegger",
+                "Terminator"
+              ],
+              "answer": "Hasta la vista baby",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "my_precious": {
+              "accent": "Korean",
+              "hints": [
+                "A ring to rule them all",
+                "Smeagol",
+                "Lord of the Rings"
+              ],
+              "answer": "My precious",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "i_am_groot": {
+              "accent": "Spanish Castilian",
+              "hints": [
+                "Language of a sentient plant",
+                "Green Tree Dude",
+                "Guardians of the galaxy"
+              ],
+              "answer": "I am Groot",
+              "type": "Movie Quotes",
+              "difficulty": "5"
+            },
+            "i_want_to_play_a_game": {
+              "accent": "Portugese Brazilian",
+              "hints": [
+                "Do you like games?",
+                "Serial killer character",
+                "Quote from the movie Saw"
+              ],
+              "answer": "I want to play a game",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "this_is_sparta": {
+              "accent": "German",
+              "hints": [
+                "An famous ancient Greek city",
+                "Quote from 300"
+              ],
+              "answer": "This is Sparta",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "youre_a_wizard_harry": {
+              "accent": "french",
+              "hints": [
+                "Witchcraft and Wizardry",
+                "Quote from Harry Potter"
+              ],
+              "answer": "You're a wizard, Harry",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "just_keep_swimming": {
+              "accent": "German",
+              "hints": [
+                "Don't give up",
+                "Pixar",
+                "Quote from Finding Nemo"
+              ],
+              "answer": "Just keep swimming",
+              "type": "Movie Quotes",
+              "difficulty": "6"
+            },
+            "i_volunteer_as_tribute": {
+              "accent": "Dutch",
+              "hints": [
+                "Quote from the Hunger Games series"
+              ],
+              "answer": "I volunteer as tribute",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "with_great_power_comes_great_responsibility": {
+              "accent": "Dutch",
+              "hints": [
+                "Quote from Spider-man"
+              ],
+              "answer": "With great power, comes great responsibility",
+              "type": "Movie Quotes",
+              "difficulty": "4"
+            },
+            "you_will_ride_eternal_shiny_and_chrome": {
+              "accent": "Dutch",
+              "hints": [
+                "Quote from the movie, Mad Max: Fury Road"
+              ],
+              "answer": "You will ride eternal, shiny, and chrome",
+              "type": "Movie Quotes",
+              "difficulty": "6"
+            },
+            "honey_where_is_my_super_suit": {
+              "accent": "Arabic",
+              "hints": [
+                "Quote from the movie, The Incredibles",
+                "Spoken by Frozone"
+              ],
+              "answer": "Honey, Where is my super suit",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "why_so_serious": {
+              "accent": "Italian",
+              "hints": [
+                "Quote from the movie The Dark Knight",
+                "Spoken by the Joker"
+              ],
+              "answer": "Why so serious",
+              "type": "Movie Quotes",
+              "difficulty": "1"
+            },
+            "you_shall_not_pass": {
+              "accent": "Icelandic",
+              "hints": [
+                "Quote from The Lord of the Rings",
+                "Spoken by Gandalf"
+              ],
+              "answer": "You shall not pass",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "are_you_not_entertained": {
+              "accent": "Korean",
+              "hints": [
+                "Quote from the movie, Gladiator",
+                "Spoken by Maximus Decimus Meridius, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And he will have his vengeance, in this life or the next."
+              ],
+              "answer": "Are you not entertained",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "you_sit_on_a_throne_of_lies": {
+              "accent": "French",
+              "hints": [
+                "Quote from the movie, Elf.",
+                "Spoken by Buddy, an elf."
+              ],
+              "answer": "You sit on a throne of lies",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "i_live_my_life_a_quarter_mile_at_a_time": {
+              "accent": "Portuguese",
+              "hints": [
+                "Quote from the movie, The Fast and the Furious.",
+                "Spoken by Dominic Toretto."
+              ],
+              "answer": "I live my life a quarter mile at a time",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "i_can_do_this_all_day": {
+              "accent": "British",
+              "hints": [
+                "Quote from the Avengers movie series.",
+                "Spoken by Captain America."
+              ],
+              "answer": "I can do this all day",
+              "type": "Movie Quotes",
+              "difficulty": "1"
+            },
+            "e_t_phone_home": {
+              "accent": "Chinese",
+              "hints": [
+                "Quote from the movie, E.T. the Extra-Terrestrial.",
+                "Spoken by E.T."
+              ],
+              "answer": "E.T. Phone home",
+              "type": "Movie Quotes",
+              "difficulty": "1"
+            },
+            "rosebud": {
+              "accent": "Italian",
+              "hints": [
+                "Quote from the movie, Citizen Kane",
+                "An undeveloped or embryonic shoot that normally occurs in the axil of a leaf or at the tip of a stem."
+              ],
+              "answer": "Rosebud",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "theres_no_place_like_home": {
+              "accent": "Russian",
+              "hints": [
+                "Quote from the movie, Wizard of OZ",
+                "Close your eyes, tap your ruby heels together three times, and say..."
+              ],
+              "answer": "There's no place like home",
+              "type": "Movie Quotes",
+              "difficulty": "1"
+            },
+            "say_hello_to_my_little_friend": {
+              "accent": "Arabic",
+              "hints": [
+                "Quote from the movie, Scarface",
+                "When your friend is a M16 machine gun."
+              ],
+              "answer": "Say hello to my little friend",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "a_martini_shaken_not_stirred": {
+              "accent": "Japanese",
+              "hints": [
+                "007",
+                "A spy's favorite drink"
+              ],
+              "answer": "A martini. Shaken, not stirred",
+              "type": "Movie Quotes",
+              "difficulty": "8"
+            },
+            "mama_always_said_life_was_like_a_box_of_chocolates_you_never_know_what_youre_gonna_get": {
+              "accent": "Korean",
+              "hints": [
+                "Quote from the movie Forrest Gump"
+              ],
+              "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+              "type": "Movie Quotes",
+              "difficulty": "5"
             }
           },
-          "speechKey": "ill_be_back"
+          "seenSpeechBefore": {
+            "you_shall_not_pass": true
+          },
+          "seenHintsBefore": {},
+          "speechKey": "you_shall_not_pass"
         },
-        "speechKey": "ill_be_back.mp3",
-        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/ill_be_back.mp3",
+        "speechKey": "you_shall_not_pass",
+        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3",
+        "__sayHistory": [
+          null,
+          [
+            1
+          ]
+        ],
         "__currentState": "waitForAnswer",
         "__settings": {
           "resetOnLaunch": true
@@ -122,7 +455,7 @@
       ]
     }
   ],
-  "summary": "✘ 1 tests run, 1 failed (10ms)\n",
+  "summary": "✘ 1 tests run, 1 failed (13ms)\n",
   "tallies": {
     "successes": 0,
     "fails": 1

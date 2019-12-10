@@ -25,6 +25,259 @@
               "value": "I'm going to make him an offer he can't refuse",
               "synonyms": []
             }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "May the force be with you",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "You talking to me",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Frankly my dear, I don't give a damn",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Go ahead make my day",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Bond, James Bond",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Show me the money",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "You can't handle the truth",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Houston, we have a problem",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Elementary my dear Watson",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Hasta la vista baby",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "I am Groot",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "I want to play a game",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "This is Sparta",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "You're a wizard, Harry",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Just keep swimming",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "I volunteer as tribute",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "With great power, comes great responsibility",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "You will ride eternal, shiny, and chrome",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Honey, Where is my super suit",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Why so serious",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "You shall not pass",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Are you not entertained",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "You sit on a throne of lies",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "I live my life a quarter mile at a time",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "I can do this all day",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "E.T. Phone home",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Rosebud",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "There's no place like home",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Say hello to my little friend",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "A martini. Shaken, not stirred",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+              "synonyms": []
+            }
+          }
+        ]
+      },
+      {
+        "name": "blankType",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "accent",
+              "synonyms": []
+            }
+          }
+        ]
+      },
+      {
+        "name": "blankthreeType",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "hint",
+              "synonyms": []
+            }
+          }
+        ]
+      },
+      {
+        "name": "blankfourType",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "options",
+              "synonyms": []
+            }
           }
         ]
       }
@@ -43,9 +296,9 @@
         "samples": []
       },
       {
-        "name": "THE_ANSWER",
+        "name": "ITS_ANSWER",
         "samples": [
-          "the {answer}",
+          "it's {answer}",
           "{answer}"
         ],
         "slots": [
@@ -56,16 +309,58 @@
         ]
       },
       {
-        "name": "I_WANT_A_HINT",
+        "name": "WHAT_BLANK_IS_THIS",
         "samples": [
-          "i want a hint",
-          "hint please",
-          "hint"
+          "what {blank} is this",
+          "{blank}"
+        ],
+        "slots": [
+          {
+            "name": "blank",
+            "type": "blankType"
+          }
         ]
       },
       {
-        "name": "AMAZON.HelpIntent",
+        "name": "I_GIVE_UP",
+        "samples": [
+          "i give up",
+          "i have no idea"
+        ]
+      },
+      {
+        "name": "REPEAT_THE_BLANKTHREE",
+        "samples": [
+          "repeat the {blankthree}"
+        ],
+        "slots": [
+          {
+            "name": "blankthree",
+            "type": "blankthreeType"
+          }
+        ]
+      },
+      {
+        "name": "LIST_THE_BLANKFOUR",
+        "samples": [
+          "list the {blankfour}"
+        ],
+        "slots": [
+          {
+            "name": "blankfour",
+            "type": "blankfourType"
+          }
+        ]
+      },
+      {
+        "name": "AMAZON.RepeatIntent",
         "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": [
+          "can i get hint"
+        ]
       },
       {
         "name": "AMAZON.NavigateHomeIntent"
