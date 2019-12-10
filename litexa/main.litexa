@@ -2,6 +2,13 @@ define @master as Master
 
 launch
   say "Welcome to Translation Lost, a game where you try and understand me through my different accents."
+  if @tutorialHeard == true
+    say "Do you want to hear the tutorial again?"
+    -> askForTutorial
+  else
+    -> playTutorial
+  
+playTutorial 
   say "I'm going to say a phrase, and you have to guess what I say."
   say "For example, if I say"
   soundEffect "bag_of_potatoes.mp3"
@@ -12,15 +19,27 @@ launch
   say "If you want to know the accent, ask me, Alexa, what accent is this."
   say "You can give up on a phrase by saying, Alexa, I give up."
   say "You can relist all of these options during the game by saying, Alexa, options."
+  @tutorialHeard = true
+  -> getTopic
 
+askForTutorial
+  when AMAZON.YesIntent
+    -> playTutorial
+  when AMAZON.NoIntent
+    say "Alright, let's get into it."
+    -> getTopic
+  otherwise
+    say "Do you want to hear the tutorial again?"
+    -> waitForAnswer
+
+getTopic
   say "The current topic right now is, Movie Quotes."
   say "Ready?"
   say "<sfx starto.mp3>"
     or "<!batter up>"
-  
-
   -> generateRandomSpeech
-  # ->  randomTheme?
+
+
  
 generateRandomSpeech
   
@@ -110,8 +129,10 @@ waitForAnswer
 
   when "i give up"
     or "i have no idea"
+    or "skip this one"
     say "the answer was, @master.getAnswer(@speechKey)."
     say "Let's go again."
+      or "One more time."
     -> generateRandomSpeech
 
   when "repeat the $blankthree"
@@ -143,8 +164,9 @@ waitForAnswer
     -> goodbye
 
   otherwise
-    say "Sorry, I didn't understand. If you want a hint, say, Alexa, help, otherwise say, Alexa, then the answer"
-    LISTEN
+    say "Sorry, I didn't understand. If you want a hint, say, Alexa, help, otherwise say, Alexa, then the answer."
+    say "If you want to hear all the options, say, Alexa, options."
+    -> waitForAnswer
 
 goodbye
   END
