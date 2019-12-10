@@ -125,6 +125,10 @@ class Master {
 		return jsonFiles['database.json'][speechKey]['answer'];
 	}
 
+	getAnnotation(speechKey) {
+		return jsonFiles['database.json'][speechKey]['answer_annotation'];
+	}
+
 	getHint(speechKey) {  // String
 		var hints = jsonFiles['database.json'][speechKey]['hints'];
 		var randomHint = hints[Math.floor(Math.random() * Math.floor(hints.length))];

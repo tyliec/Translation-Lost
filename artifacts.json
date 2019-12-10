@@ -4,7 +4,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/10/2019, 12:00:32 AM",
+            "date": "12/10/2019, 3:01:32 AM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -12,26 +12,12 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "38850fac7e9fd656330121433d7ec8b20a5eada8",
+              "currentCommitHash": "409b2c34ec8acd20a50864a08d901aa9dc20d363",
               "currentCommitComment": [
-                "Started answer_annotation"
+                "Merge branch 'master' of github.com:Viltaria/Translation-Lost"
               ],
               "uncommittedChanges": [
-                "[modified] .deploy/development/assets.log",
-                "[modified] .deploy/development/lambda.log",
-                "[modified] .deploy/development/lambda.zip",
-                "[modified] .deploy/development/lambda/index.js",
-                "[modified] .deploy/development/local-cache.json",
-                "[modified] .deploy/development/manifest.log",
-                "[modified] .deploy/development/model-en-US.json",
-                "[modified] .test/lambda.js",
-                "[modified] .test/model.json",
-                "[modified] .test/output.json",
-                "[modified] .test/output.log",
-                "[modified] .test/project-config.json",
-                "[modified] .test/referenceTester.js",
-                "[modified] .test/test.js",
-                "[modified] artifacts.json",
+                "[modified] litexa/Master.js",
                 "[modified] litexa/main.litexa"
               ]
             },
@@ -54,7 +40,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "b04d1a16dd2fd17e92960aa670e6b8e6",
+          "skill-model-etag-en-US": "f86221cc0ff2b2d571b443523f5d714e",
           "skill-manifest-assets-md5": "661e635ca0aabc8f51aa39af9edf69cc300d90c2d2294ee39f4dce26c5618ad1"
         }
       ]

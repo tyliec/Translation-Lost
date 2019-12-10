@@ -1,9 +1,12 @@
-[assets] +273ms all asset conversion complete
+[assets] +284ms all asset conversion complete
 [assets] +0ms deploying assets
-[assets] +1ms loaded AWS profile default
-[assets] +588ms found S3 bucket lost-in-translation
+[assets] +0ms loaded AWS profile default
+[assets] +640ms found S3 bucket lost-in-translation
 [assets] +0ms scanning assets, preparing hashes
-[assets] +4ms scanned 41 assets in project
+[assets] +5ms scanned 41 assets in project
 [assets] +0ms fetching S3 object metadata [0-1000]
-[assets] +545ms 0 assets need uploading
-[assets] +0ms asset deployment complete in 1137ms
+[assets] +624ms 1 assets need uploading
+[assets] +0ms uploading you_will_ride_eternal_shiny_and_chrome.mp3 -> lost-in-translation/development/default/you_will_ride_eternal_shiny_and_chrome.mp3 [ba12babc]
+[assets] +1ms 0 assets remaining in queue
+[assets] +1213ms segment uploaded in 1213ms
+[assets] +0ms asset deployment complete in 2483ms

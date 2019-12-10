@@ -104,6 +104,7 @@ waitForAnswer
         or "<!wowza>."
         or "<!wowzer>."
       say "The answer was, @master.getAnswer(@speechKey)."
+      say "@master.getAnnotation(@speechKey)."
       say "Let's go again."
         or "One more time!"
       -> generateRandomSpeech
@@ -131,6 +132,7 @@ waitForAnswer
     or "i have no idea"
     or "skip this one"
     say "the answer was, @master.getAnswer(@speechKey)."
+    say "@master.getAnnotation(@speechKey)."
     say "Let's go again."
       or "One more time."
     -> generateRandomSpeech
