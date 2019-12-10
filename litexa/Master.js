@@ -159,7 +159,23 @@ exports.getPotentialAnswers = function() {
 			"I want to play a game",
 			"This is Sparta",
 			"You're a wizard, Harry",
-			"Just keep swimming"
+			"Just keep swimming",
+			"I volunteer as tribute",
+			"With great power, comes great responsibility",
+			"You will ride eternal, shiny, and chrome",
+			"Honey, Where is my super suit",
+			"Why so serious",
+			"You shall not pass",
+			"Are you not entertained",
+			"You sit on a throne of lies",
+			"I live my life a quarter mile at a time",
+			"I can do this all day",
+			"E.T. Phone home",
+			"Rosebud",
+			"There's no place like home",
+			"Say hello to my little friend",
+			"A martini. Shaken, not stirred",
+			"Mama always said life was like a box of chocolates. You never know what you're gonna get"
 		]
 	};
 }

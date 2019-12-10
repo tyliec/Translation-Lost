@@ -15,7 +15,9 @@ launch
 
   say "The current topic right now is, Movie Quotes."
   say "Ready?"
-  soundEffect "starto.mp3"
+  say "<sfx starto.mp3>"
+    or "<!batter up>"
+  
 
   -> generateRandomSpeech
   # ->  randomTheme?
@@ -78,12 +80,22 @@ waitForAnswer
         or "<!aww yeah>."
         or "<!bada bing bada boom>."
         or "<!bingo>."
+        or "<!bazinga>."
+        or "<!well done>."
+        or "<!wowza>."
+        or "<!wowzer>."
       say "The answer was, @master.getAnswer(@speechKey)."
       say "Let's go again."
         or "One more time!"
       -> generateRandomSpeech
     else
-      say "Wrong! Here it is again."
+      say "<!aw man>."
+        or "Wrong!"
+        or "<!aww applesauce>. That wasn't it."
+        or "<!blast>."
+        or "Correct! ... <!just kidding>."
+        or  "<!nuh uh>."
+      say "Here it is again."
       -> askForRepeat
 
   when "what $blank is this"
@@ -103,7 +115,7 @@ waitForAnswer
     -> generateRandomSpeech
 
   when "repeat the $blankthree"
-    with $blankthree = "hint"
+    with $blankthree = "hints"
     if $blankthree
       say "@currentHint."
     else
@@ -111,6 +123,7 @@ waitForAnswer
       -> askForRepeat
   
   when "list the $blankfour"
+    or "$blankfour"
     with $blankfour = "options"
     if $blankfour
       say "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat."
@@ -119,9 +132,11 @@ waitForAnswer
     -> askForAnswer
 
   when AMAZON.RepeatIntent
+    or "one more time"
     -> askForRepeat
 
   when AMAZON.HelpIntent
+    or "can i get a hint"
     -> giveHint
 
   when AMAZON.StopIntent

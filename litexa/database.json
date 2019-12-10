@@ -3,6 +3,7 @@
 		"accent": "Japanese",
 		"hints": ["Terminator.", "Arnold Schwarzenegger"],
 		"answer": "I'll be back",
+		"answer_annotation": "Spoken by Arnold Schwarzenegger in the movie Terminator",
 		"type": "Movie Quotes",
 		"difficulty": "4"
 	},
@@ -10,6 +11,7 @@
 		"accent": "Norwegian",
 		"hints": ["Star Wars", "Darth Vader", "Luke Skywalker"],
 		"answer": "Luke, I am your father",
+		"answer_annotation": "Spoken by Darth Vader in the movie Star Wars",
 		"type": "Movie Quotes",
 		"difficulty": "2"
 	},
@@ -17,6 +19,7 @@
 		"accent": "Korean",
 		"hints":  ["Godfather"],
 		"answer": "I'm going to make him an offer he can't refuse",
+		"answer_annotation": "Spoken by Don Vito Corleone in the movie The Godfather",
 		"type": "Movie Quotes",
 		"difficulty": "9"
 	},
@@ -24,6 +27,7 @@
 		"accent": "Icelandic",
 		"hints": ["Star Wars", "Fourth of May"],
 		"answer": "May the force be with you",
+		"answer_annotation": "Spoken by various characters in the series Star Wars",
 		"type": "Movie Quotes",
 		"difficulty": "7"
 	},
@@ -146,101 +150,101 @@
         "type": "Movie Quotes",
         "difficulty": "4"
 	},
-	"you_will_ride_eternal_shiny_chrome": {
+	"you_will_ride_eternal_shiny_and_chrome": {
         "accent": "Dutch",
         "hints": ["Quote from the movie, Mad Max: Fury Road"],
-        "answer": "You will ride eternal, shiny, and chrome.",
+        "answer": "You will ride eternal, shiny, and chrome",
         "type": "Movie Quotes",
         "difficulty": "6"
 	},
 	"honey_where_is_my_super_suit": {
         "accent": "Arabic",
         "hints": ["Quote from the movie, The Incredibles", "Spoken by Frozone"],
-        "answer": "Honey? Where is my super suit?",
+        "answer": "Honey, Where is my super suit",
         "type": "Movie Quotes",
         "difficulty": "2"
 	},
 	"why_so_serious": {
         "accent": "Italian",
-        "hints": ["Quote from the movie, The Dark Knight", "Spoken by the Joker"],
-        "answer": "Why so serious?",
+        "hints": ["Quote from the movie The Dark Knight", "Spoken by the Joker"],
+        "answer": "Why so serious",
         "type": "Movie Quotes",
         "difficulty": "1"
 	},
 	"you_shall_not_pass": {
         "accent": "Icelandic",
         "hints": ["Quote from The Lord of the Rings", "Spoken by Gandalf"],
-        "answer": "You shall not pass!",
+        "answer": "You shall not pass",
         "type": "Movie Quotes",
         "difficulty": "2"
 	},
 	"are_you_not_entertained": {
         "accent": "Korean",
         "hints": ["Quote from the movie, Gladiator", "Spoken by Maximus Decimus Meridius, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And he will have his vengeance, in this life or the next."],
-        "answer": "You shall not pass!",
+        "answer": "Are you not entertained",
         "type": "Movie Quotes",
         "difficulty": "2"
 	},
 	"you_sit_on_a_throne_of_lies": {
         "accent": "French",
         "hints": ["Quote from the movie, Elf.", "Spoken by Buddy, an elf."],
-        "answer": "You sit on a throne of lies!",
+        "answer": "You sit on a throne of lies",
         "type": "Movie Quotes",
         "difficulty": "3"
 	},
 	"i_live_my_life_a_quarter_mile_at_a_time": {
         "accent": "Portuguese",
         "hints": ["Quote from the movie, The Fast and the Furious.", "Spoken by Dominic Toretto."],
-        "answer": "I live my life a quarter mile at a time.",
+        "answer": "I live my life a quarter mile at a time",
         "type": "Movie Quotes",
         "difficulty": "3"
 	},
 	"i_can_do_this_all_day": {
         "accent": "British",
         "hints": ["Quote from the Avengers movie series.", "Spoken by Captain America."],
-        "answer": "I can do this all day.",
+        "answer": "I can do this all day",
         "type": "Movie Quotes",
         "difficulty": "1"
 	},
 	"e_t_phone_home": {
         "accent": "Chinese",
         "hints": ["Quote from the movie, E.T. the Extra-Terrestrial.", "Spoken by E.T."],
-        "answer": "E.T. Phone home.",
+        "answer": "E.T. Phone home",
         "type": "Movie Quotes",
         "difficulty": "1"
 	},
 	"rosebud": {
         "accent": "Italian",
         "hints": ["Quote from the movie, Citizen Kane", "An undeveloped or embryonic shoot that normally occurs in the axil of a leaf or at the tip of a stem."],
-        "answer": "Rosebud.",
+        "answer": "Rosebud",
         "type": "Movie Quotes",
         "difficulty": "2"
 	},
 	"theres_no_place_like_home": {
         "accent": "Russian",
         "hints": ["Quote from the movie, Wizard of OZ", "Close your eyes, tap your ruby heels together three times, and say..."],
-        "answer": "There's no place like home.",
+        "answer": "There's no place like home",
         "type": "Movie Quotes",
         "difficulty": "1"
 	},
 	"say_hello_to_my_little_friend": {
         "accent": "Arabic",
         "hints": ["Quote from the movie, Scarface", "When your friend is a M16 machine gun."],
-        "answer": "Say 'hello' to my little friend",
+        "answer": "Say hello to my little friend",
         "type": "Movie Quotes",
         "difficulty": "2"
 	},
 	"a_martini_shaken_not_stirred": {
         "accent": "Japanese",
         "hints": ["007", "A spy's favorite drink"],
-        "answer": "A martini. Shaken, not stirred.",
+        "answer": "A martini. Shaken, not stirred",
         "type": "Movie Quotes",
         "difficulty": "8"
 	},
 	"mama_always_said_life_was_like_a_box_of_chocolates_you_never_know_what_youre_gonna_get": {
         "accent": "Korean",
         "hints": ["Quote from the movie Forrest Gump"],
-        "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get.",
+        "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
         "type": "Movie Quotes",
         "difficulty": "5"
 	}
