@@ -2451,6 +2451,10 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
     }
     case 'ITS_ANSWER': {
       if (context.slots.answer && (context.slots.answer === await context.db.read('master').getAnswer(context.db.read('speechKey')))) {
+        context.card = {
+          title: escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ),
+          content: escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ),
+        };
         switch(pickSayString(context, 3, 10)) {
           case 0:
             context.say.push( "Correcto!" );
@@ -2484,6 +2488,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
             break;
         }
         context.say.push( "The answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
+        context.say.push( escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ) + "." );
         switch(pickSayString(context, 4, 2)) {
           case 0:
             context.say.push( "Let's go again." );
@@ -2532,6 +2537,10 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       break;
     }
     case 'I_GIVE_UP': {
+      context.card = {
+        title: escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ),
+        content: escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ),
+      };
       context.say.push( "the answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
       context.say.push( escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ) + "." );
       switch(pickSayString(context, 6, 2)) {

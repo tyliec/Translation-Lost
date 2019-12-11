@@ -4,7 +4,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/10/2019, 3:01:32 AM",
+            "date": "12/10/2019, 3:06:50 AM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -12,12 +12,24 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "409b2c34ec8acd20a50864a08d901aa9dc20d363",
+              "currentCommitHash": "eb7cf255ffc64c9a617f13c7a472dbf330c020ab",
               "currentCommitComment": [
-                "Merge branch 'master' of github.com:Viltaria/Translation-Lost"
+                "Added Answer Annotations"
               ],
               "uncommittedChanges": [
-                "[modified] litexa/Master.js",
+                "[modified] .deploy/development/assets.log",
+                "[modified] .deploy/development/lambda.log",
+                "[modified] .deploy/development/lambda.zip",
+                "[modified] .deploy/development/lambda/index.js",
+                "[modified] .deploy/development/local-cache.json",
+                "[modified] .deploy/development/manifest.log",
+                "[modified] .test/lambda.js",
+                "[modified] .test/model.json",
+                "[modified] .test/output.json",
+                "[modified] .test/output.log",
+                "[modified] .test/project-config.json",
+                "[modified] .test/test.js",
+                "[modified] artifacts.json",
                 "[modified] litexa/main.litexa"
               ]
             },
@@ -40,7 +52,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "f86221cc0ff2b2d571b443523f5d714e",
+          "skill-model-etag-en-US": "5d53652019383336b1e27c334383ad97",
           "skill-manifest-assets-md5": "661e635ca0aabc8f51aa39af9edf69cc300d90c2d2294ee39f4dce26c5618ad1"
         }
       ]

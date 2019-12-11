@@ -15,7 +15,7 @@
           {
             "id": null,
             "name": {
-              "value": "I am your father",
+              "value": "Luke, I am your father",
               "synonyms": []
             }
           },
@@ -50,7 +50,7 @@
           {
             "id": null,
             "name": {
-              "value": "Go ahead make my day",
+              "value": "Go ahead, make my day",
               "synonyms": []
             }
           },
@@ -263,7 +263,7 @@
           {
             "id": null,
             "name": {
-              "value": "hint",
+              "value": "hints",
               "synonyms": []
             }
           }
@@ -296,6 +296,14 @@
         "samples": []
       },
       {
+        "name": "AMAZON.YesIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.NoIntent",
+        "samples": []
+      },
+      {
         "name": "ITS_ANSWER",
         "samples": [
           "it's {answer}",
@@ -325,7 +333,8 @@
         "name": "I_GIVE_UP",
         "samples": [
           "i give up",
-          "i have no idea"
+          "i have no idea",
+          "skip this one"
         ]
       },
       {
@@ -343,7 +352,8 @@
       {
         "name": "LIST_THE_BLANKFOUR",
         "samples": [
-          "list the {blankfour}"
+          "list the {blankfour}",
+          "{blankfour}"
         ],
         "slots": [
           {
@@ -354,12 +364,14 @@
       },
       {
         "name": "AMAZON.RepeatIntent",
-        "samples": []
+        "samples": [
+          "one more time"
+        ]
       },
       {
         "name": "AMAZON.HelpIntent",
         "samples": [
-          "can i get hint"
+          "can i get a hint"
         ]
       },
       {

@@ -93,6 +93,8 @@ waitForAnswer
     or "$answer"
     with $answer = Master.js:getPotentialAnswers
     if $answer and $answer == @master.getAnswer(@speechKey)
+      card "@master.getAnswer(@speechKey)"
+        content: "@master.getAnnotation(@speechKey)"
       say "Correcto!"
         or "Nice job."
         or "<!awesome>."
@@ -131,6 +133,8 @@ waitForAnswer
   when "i give up"
     or "i have no idea"
     or "skip this one"
+    card "@master.getAnswer(@speechKey)"
+      content: "@master.getAnnotation(@speechKey)"
     say "the answer was, @master.getAnswer(@speechKey)."
     say "@master.getAnnotation(@speechKey)."
     say "Let's go again."

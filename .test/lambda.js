@@ -983,12 +983,13 @@ jsonSourceFiles['database.json'] = {
   "ill_be_back": {
     "accent": "Japanese",
     "hints": [
-      "Terminator.",
+      "Quote from the movie, Terminator",
       "Arnold Schwarzenegger"
     ],
     "answer": "I'll be back",
+    "answer_annotation": "Spoken by the character Terminator, played by Arnold Schwarzenegger, from the movie, Terminator",
     "type": "Movie Quotes",
-    "difficulty": "4"
+    "difficulty": "6"
   },
   "luke_i_am_your_father": {
     "accent": "Norwegian",
@@ -998,25 +999,29 @@ jsonSourceFiles['database.json'] = {
       "Luke Skywalker"
     ],
     "answer": "Luke, I am your father",
+    "answer_annotation": "Spoken by the character Darth Vader, voiced by James Earl Jones, from the Star Wars movie series",
     "type": "Movie Quotes",
-    "difficulty": "2"
+    "difficulty": "3"
   },
   "im_going_to_make_him_an_offer_he_cant_refuse": {
     "accent": "Korean",
     "hints": [
-      "Godfather"
+      "Quote from the movie, Godfather",
+      "Marlon Brando"
     ],
     "answer": "I'm going to make him an offer he can't refuse",
+    "answer_annotation": "Spoken by the character Don Vito Corleone, played by Marlon Brando, from the movie, The Godfather",
     "type": "Movie Quotes",
-    "difficulty": "6"
+    "difficulty": "9"
   },
   "may_the_force_be_with_you": {
     "accent": "Icelandic",
     "hints": [
-      "Star Wars",
+      "Quote from the Star Wars movie series",
       "Fourth of May"
     ],
     "answer": "May the force be with you",
+    "answer_annotation": "Spoken by various characters in the series Star Wars",
     "type": "Movie Quotes",
     "difficulty": "7"
   },
@@ -1024,19 +1029,22 @@ jsonSourceFiles['database.json'] = {
     "accent": "Romanian",
     "hints": [
       "Robert DeNiro",
-      "Taxi Driver"
+      "Quote from the movie, Taxi Driver",
+      "Who am I talking to?"
     ],
     "answer": "You talking to me",
+    "answer_annotation": "Spoken by Travis Bickle, played by Robert DeNiro, from the movie, Taxi Driver",
     "type": "Movie Quotes",
-    "difficulty": "10"
+    "difficulty": "8"
   },
   "frankly_my_dear_i_dont_give_a_damn": {
     "accent": "Australian",
     "hints": [
-      "Gone with the Wind",
+      "Quote from the movie, Gone with the Wind",
       "Clark Gable"
     ],
     "answer": "Frankly my dear, I don't give a damn",
+    "answer_annotation": "Spoken by the character Rhett Butler, played by Clark Gable, from the movie, Gone with the Wind",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
@@ -1044,9 +1052,10 @@ jsonSourceFiles['database.json'] = {
     "accent": "French",
     "hints": [
       "Clint Eastwood",
-      "Sudden Impact"
+      "Quote from the movie, Sudden Impact"
     ],
-    "answer": "Go ahead make my day",
+    "answer": "Go ahead, make my day",
+    "answer_annotation": "Spoken by the character Harry Callahan, played by Clint Eastwood, from the movie, Sudden Impact",
     "type": "Movie Quotes",
     "difficulty": "4"
   },
@@ -1057,29 +1066,31 @@ jsonSourceFiles['database.json'] = {
       "famous spy movie series"
     ],
     "answer": "Bond, James Bond",
+    "answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
     "type": "Movie Quotes",
     "difficulty": "4"
   },
   "show_me_the_money": {
     "accent": "Chinese",
     "hints": [
-      "Jerry Maguire",
+      "Quote from the movie, Jerry Maguire",
       "Tom Cruise",
       "Cuba Gooding Jr",
       "Something a bank robber might say"
     ],
     "answer": "Show me the money",
+    "answer_annotation": "Spoken by the character Rodney Tidwell, played by Cuba Gooding Jr., from the movie, Jerry Maguire",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
   "you_cant_handle_the_truth": {
     "accent": "Portugese",
     "hints": [
-      "A Few Good Men",
-      "Jack Nicholson",
-      "What can you handle?"
+      "Quote from the movie, A Few Good Men",
+      "Jack Nicholson"
     ],
     "answer": "You can't handle the truth",
+    "answer_annotation": "Spoken by the character Colonel Nathan R. Jessup, played by Jack Nicholson, from the movie, A Few Good Men",
     "type": "Movie Quotes",
     "difficulty": "6"
   },
@@ -1087,20 +1098,21 @@ jsonSourceFiles['database.json'] = {
     "accent": "German",
     "hints": [
       "Apollo 13",
-      "NASA",
-      "When you're in trouble"
+      "NASA"
     ],
     "answer": "Houston, we have a problem",
+    "answer_annotation": "Spoken by the character Jim Lovell, played by Tom Hanks, from the movie, Apollo 13",
     "type": "Movie Quotes",
     "difficulty": "4"
   },
   "elementary_my_dear_watson": {
     "accent": "Japanese",
     "hints": [
-      "first through sixth grade",
-      "Sherlock Holmes"
+      "first through fifth or sixth grade",
+      "Quote from Sherlock Holmes"
     ],
     "answer": "Elementary my dear Watson",
+    "answer_annotation": "Spoken by the character Sherlock Holmes from the Sherlock Holmes movie series",
     "type": "Movie Quotes",
     "difficulty": "5"
   },
@@ -1109,9 +1121,10 @@ jsonSourceFiles['database.json'] = {
     "hints": [
       "Goodbye in Spanish",
       "Arnold Schwarzenegger",
-      "Terminator"
+      "Quote from the movie, Terminator"
     ],
     "answer": "Hasta la vista baby",
+    "answer_annotation": "Spoken by the character Terminator, played by Arnold Schwarzenegger, from the movie, Terminator",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
@@ -1120,9 +1133,10 @@ jsonSourceFiles['database.json'] = {
     "hints": [
       "A ring to rule them all",
       "Smeagol",
-      "Lord of the Rings"
+      "Quote from Lord of the Rings"
     ],
     "answer": "My precious",
+    "answer_annotation": "Spoken by the character Smeagol/Golumn from the Lord of the Rings",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
@@ -1131,9 +1145,10 @@ jsonSourceFiles['database.json'] = {
     "hints": [
       "Language of a sentient plant",
       "Green Tree Dude",
-      "Guardians of the galaxy"
+      "Quote from Guardians of the galaxy"
     ],
     "answer": "I am Groot",
+    "answer_annotation": "Spoken by the character Groot from the Guardians of the Galaxy movie series",
     "type": "Movie Quotes",
     "difficulty": "5"
   },
@@ -1142,9 +1157,10 @@ jsonSourceFiles['database.json'] = {
     "hints": [
       "Do you like games?",
       "Serial killer character",
-      "Quote from the movie Saw"
+      "Quote from the movie, Saw"
     ],
     "answer": "I want to play a game",
+    "answer_annotation": "Spoken by the character Jigsaw from the Saw movie series",
     "type": "Movie Quotes",
     "difficulty": "3"
   },
@@ -1152,9 +1168,10 @@ jsonSourceFiles['database.json'] = {
     "accent": "German",
     "hints": [
       "An famous ancient Greek city",
-      "Quote from 300"
+      "Quote from the movie, 300"
     ],
     "answer": "This is Sparta",
+    "answer_annotation": "Spoken by the character Leonidas, played by Gerald Butler, from the movie, 300",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
@@ -1165,6 +1182,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from Harry Potter"
     ],
     "answer": "You're a wizard, Harry",
+    "answer_annotation": "Spoken by the character Rubeus Hagrid, played by Robbie Coltrane, from the Harry Potter movie series",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
@@ -1173,9 +1191,10 @@ jsonSourceFiles['database.json'] = {
     "hints": [
       "Don't give up",
       "Pixar",
-      "Quote from Finding Nemo"
+      "Quote from the movie, Finding Nemo"
     ],
     "answer": "Just keep swimming",
+    "answer_annotation": "Spoken by the character Dory, voiced by Ellen DeGeneres, from the movie, Finding Nemo",
     "type": "Movie Quotes",
     "difficulty": "6"
   },
@@ -1185,17 +1204,19 @@ jsonSourceFiles['database.json'] = {
       "Quote from the Hunger Games series"
     ],
     "answer": "I volunteer as tribute",
+    "answer_annotation": "Spoken by the character Katniss Everdeen, played by Jennifer Lawrence, from the movie, Hunger Games",
     "type": "Movie Quotes",
-    "difficulty": "3"
+    "difficulty": "5"
   },
   "with_great_power_comes_great_responsibility": {
     "accent": "Dutch",
     "hints": [
-      "Quote from Spider-man"
+      "Quote from Spider-man series"
     ],
     "answer": "With great power, comes great responsibility",
+    "answer_annotation": "Spoken by the character Uncle Ben from the Spider-man series",
     "type": "Movie Quotes",
-    "difficulty": "4"
+    "difficulty": "5"
   },
   "you_will_ride_eternal_shiny_and_chrome": {
     "accent": "Dutch",
@@ -1203,8 +1224,9 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Mad Max: Fury Road"
     ],
     "answer": "You will ride eternal, shiny, and chrome",
+    "answer_annotation": "Spoken by the character Immortan Joe, played by Keays-Byrne, from the movie, Mad Max: Fury Road",
     "type": "Movie Quotes",
-    "difficulty": "6"
+    "difficulty": "3"
   },
   "honey_where_is_my_super_suit": {
     "accent": "Arabic",
@@ -1213,26 +1235,29 @@ jsonSourceFiles['database.json'] = {
       "Spoken by Frozone"
     ],
     "answer": "Honey, Where is my super suit",
+    "answer_annotation": "Spoken by the character Frozone, voiced by Samuel L. Jackson, from the movie, The Incredibles",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
   "why_so_serious": {
     "accent": "Italian",
     "hints": [
-      "Quote from the movie The Dark Knight",
+      "Quote from the movie, The Dark Knight",
       "Spoken by the Joker"
     ],
     "answer": "Why so serious",
+    "answer_annotation": "Spoken by the character Joker, played by Heath Ledger, from the movie, The Dark Knight",
     "type": "Movie Quotes",
     "difficulty": "1"
   },
   "you_shall_not_pass": {
     "accent": "Icelandic",
     "hints": [
-      "Quote from The Lord of the Rings",
+      "Quote from The Lord of the Rings series",
       "Spoken by Gandalf"
     ],
     "answer": "You shall not pass",
+    "answer_annotation": "Spoken by the character Gandalf, played by Ian McKellen, from the Lord of the Rings series",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
@@ -1243,28 +1268,32 @@ jsonSourceFiles['database.json'] = {
       "Spoken by Maximus Decimus Meridius, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And he will have his vengeance, in this life or the next."
     ],
     "answer": "Are you not entertained",
+    "answer_annotation": "Spoken by the character Maximus Decimus Meridius, played by Russell Crowe, from the movie, Gladiator",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
   "you_sit_on_a_throne_of_lies": {
     "accent": "French",
     "hints": [
-      "Quote from the movie, Elf.",
-      "Spoken by Buddy, an elf."
+      "Quote from the movie, Elf",
+      "Spoken by Buddy, an elf"
     ],
     "answer": "You sit on a throne of lies",
+    "answer_annotation": "Spoken by the character Buddy the elf, played by Will Ferrell, from the movie, Elf",
     "type": "Movie Quotes",
     "difficulty": "3"
   },
   "i_live_my_life_a_quarter_mile_at_a_time": {
     "accent": "Portuguese",
     "hints": [
-      "Quote from the movie, The Fast and the Furious.",
-      "Spoken by Dominic Toretto."
+      "Quote from the movie, The Fast and the Furious",
+      "Spoken by the character Dominic Toretto, played by Vin Diesel",
+      "25 cents"
     ],
     "answer": "I live my life a quarter mile at a time",
+    "answer_annotation": "Spoken by the character Dominic Toretto, played by Vin Diesel, from the movie, The Fast and the Furious",
     "type": "Movie Quotes",
-    "difficulty": "3"
+    "difficulty": "9"
   },
   "i_can_do_this_all_day": {
     "accent": "British",
@@ -1273,16 +1302,18 @@ jsonSourceFiles['database.json'] = {
       "Spoken by Captain America."
     ],
     "answer": "I can do this all day",
+    "answer_annotation": "Spoken by the character Captain America, played by Chris Evans, from the Avengers movie series",
     "type": "Movie Quotes",
     "difficulty": "1"
   },
   "e_t_phone_home": {
     "accent": "Chinese",
     "hints": [
-      "Quote from the movie, E.T. the Extra-Terrestrial.",
+      "Quote from the movie, E.T. the Extra-Terrestrial",
       "Spoken by E.T."
     ],
     "answer": "E.T. Phone home",
+    "answer_annotation": "Spoken by E.T. from the movie, E.T. the Extra-Terrestrial",
     "type": "Movie Quotes",
     "difficulty": "1"
   },
@@ -1293,16 +1324,18 @@ jsonSourceFiles['database.json'] = {
       "An undeveloped or embryonic shoot that normally occurs in the axil of a leaf or at the tip of a stem."
     ],
     "answer": "Rosebud",
+    "answer_annotation": "Spoken by the character Charles Foster Kane, played by Orson Welles, from the movie, Citizen Kane",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
   "theres_no_place_like_home": {
     "accent": "Russian",
     "hints": [
-      "Quote from the movie, Wizard of OZ",
+      "Quote from the movie, The Wizard of Oz",
       "Close your eyes, tap your ruby heels together three times, and say..."
     ],
     "answer": "There's no place like home",
+    "answer_annotation": "Spoken by the character Dorothy Gale, played by Judy Garland, from the movie, The Wizard of Oz",
     "type": "Movie Quotes",
     "difficulty": "1"
   },
@@ -1313,6 +1346,7 @@ jsonSourceFiles['database.json'] = {
       "When your friend is a M16 machine gun."
     ],
     "answer": "Say hello to my little friend",
+    "answer_annotation": "Spoken by the character Tony Montana, played by Al Pacino, from the movie, Scarface",
     "type": "Movie Quotes",
     "difficulty": "2"
   },
@@ -1323,15 +1357,17 @@ jsonSourceFiles['database.json'] = {
       "A spy's favorite drink"
     ],
     "answer": "A martini. Shaken, not stirred",
+    "answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
     "type": "Movie Quotes",
     "difficulty": "8"
   },
   "mama_always_said_life_was_like_a_box_of_chocolates_you_never_know_what_youre_gonna_get": {
     "accent": "Korean",
     "hints": [
-      "Quote from the movie Forrest Gump"
+      "Quote from the movie, Forrest Gump"
     ],
     "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+    "answer_annotation": "Spoken by the character Forrest Gump, played by Tom Hanks, from the movie, Forrest Gump",
     "type": "Movie Quotes",
     "difficulty": "5"
   }
@@ -2113,6 +2149,10 @@ class Master {
 		return jsonFiles['database.json'][speechKey]['answer'];
 	}
 
+	getAnnotation(speechKey) {
+		return jsonFiles['database.json'][speechKey]['answer_annotation'];
+	}
+
 	getHint(speechKey) {  // String
 		var hints = jsonFiles['database.json'][speechKey]['hints'];
 		var randomHint = hints[Math.floor(Math.random() * Math.floor(hints.length))];
@@ -2131,12 +2171,12 @@ exports.getPotentialAnswers = function() {
 		name: 'ANSWER_LIST',
 		values: [
 			"I'll be back",
-			"I am your father",
+			"Luke, I am your father",
 			"I'm going to make him an offer he can't refuse",
 			"May the force be with you",
 			"You talking to me",
 			"Frankly my dear, I don't give a damn",
-			"Go ahead make my day",
+			"Go ahead, make my day",
 			"Bond, James Bond",
 			"Show me the money",
 			"You can't handle the truth",
@@ -2176,19 +2216,13 @@ __language.dbTypes = {
 };
 enterState.launch = async function(context) {
   context.say.push( "Welcome to Translation Lost, a game where you try and understand me through my different accents." );
-  context.say.push( "I'm going to say a phrase, and you have to guess what I say." );
-  context.say.push( "For example, if I say" );
-  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes.mp3'/>"  );
-  context.say.push( "You would translate to," );
-  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes2.mp3'/>"  );
-  context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
-  context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
-  context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
-  context.say.push( "You can relist all of these options during the game by saying, Alexa, options." );
-  context.say.push( "The current topic right now is, Movie Quotes." );
-  context.say.push( "Ready?" );
-  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/starto.mp3'/>"  );
-  context.nextState = 'generateRandomSpeech';
+  if (context.db.read('tutorialHeard') === true) {
+    context.say.push( "Do you want to hear the tutorial again?" );
+    context.nextState = 'askForTutorial';
+  }
+  else {
+    context.nextState = 'playTutorial';
+  }
 };
 processIntents.launch = async function(context, runOtherwise) {
   switch( context.intent ) {
@@ -2229,6 +2263,81 @@ processIntents.global = async function(context, runOtherwise) {
 exitState.global = async function(context) {
 };
 
+enterState.playTutorial = async function(context) {
+  context.say.push( "I'm going to say a phrase, and you have to guess what I say." );
+  context.say.push( "For example, if I say" );
+  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes.mp3'/>"  );
+  context.say.push( "You would translate to," );
+  context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes2.mp3'/>"  );
+  context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
+  context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
+  context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
+  context.say.push( "You can relist all of these options during the game by saying, Alexa, options." );
+  context.db.write('tutorialHeard', true);
+  context.nextState = 'getTopic';
+};
+processIntents.playTutorial = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, true) ) { return true; }
+      break;
+    }
+  }
+  return true;
+};
+exitState.playTutorial = async function(context) {
+};
+
+enterState.askForTutorial = async function(context) {
+};
+processIntents.askForTutorial = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, false) ) { return true; }
+      context.say.push( "Do you want to hear the tutorial again?" );
+      context.nextState = 'waitForAnswer';
+      break;
+    }
+    case 'AMAZON.YesIntent': {
+      context.nextState = 'playTutorial';
+      break;
+    }
+    case 'AMAZON.NoIntent': {
+      context.say.push( "Alright, let's get into it." );
+      context.nextState = 'getTopic';
+      break;
+    }
+  }
+  return true;
+};
+exitState.askForTutorial = async function(context) {
+};
+
+enterState.getTopic = async function(context) {
+  context.say.push( "The current topic right now is, Movie Quotes." );
+  context.say.push( "Ready?" );
+  switch(pickSayString(context, 1, 2)) {
+    case 0:
+      context.say.push(  "<audio src='" + litexa.assetsRoot + "default/starto.mp3'/>"  );
+      break;
+    default:
+      context.say.push( "<say-as interpret-as='interjection'>batter up</say-as>" );
+      break;
+  }
+  context.nextState = 'generateRandomSpeech';
+};
+processIntents.getTopic = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, true) ) { return true; }
+      break;
+    }
+  }
+  return true;
+};
+exitState.getTopic = async function(context) {
+};
+
 enterState.generateRandomSpeech = async function(context) {
   if (await context.db.read('master').speechAvailable() === false) {
     context.say.push( "No more translations available," );
@@ -2259,7 +2368,7 @@ exitState.generateRandomSpeech = async function(context) {
 
 enterState.askForAnswer = async function(context) {
   context.say.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
-  switch(pickSayString(context, 1, 2)) {
+  switch(pickSayString(context, 2, 2)) {
     case 0:
       context.say.push( "What do you think I said?" );
       break;
@@ -2335,14 +2444,18 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
   switch( context.intent ) {
     default: {
       if ( await processIntents.global(context, false) ) { return true; }
-      context.say.push( "Sorry, I didn't understand. If you want a hint, say, Alexa, help, otherwise say, Alexa, then the answer" );
-      context.shouldEndSession = false;
-      context.shouldDropSession = true;
+      context.say.push( "Sorry, I didn't understand. If you want a hint, say, Alexa, help, otherwise say, Alexa, then the answer." );
+      context.say.push( "If you want to hear all the options, say, Alexa, options." );
+      context.nextState = 'waitForAnswer';
       break;
     }
     case 'ITS_ANSWER': {
       if (context.slots.answer && (context.slots.answer === await context.db.read('master').getAnswer(context.db.read('speechKey')))) {
-        switch(pickSayString(context, 2, 6)) {
+        context.card = {
+          title: escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ),
+          content: escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ),
+        };
+        switch(pickSayString(context, 3, 10)) {
           case 0:
             context.say.push( "Correcto!" );
             break;
@@ -2358,12 +2471,25 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
           case 4:
             context.say.push( "<say-as interpret-as='interjection'>bada bing bada boom.</say-as>" );
             break;
-          default:
+          case 5:
             context.say.push( "<say-as interpret-as='interjection'>bingo.</say-as>" );
+            break;
+          case 6:
+            context.say.push( "<say-as interpret-as='interjection'>bazinga.</say-as>" );
+            break;
+          case 7:
+            context.say.push( "<say-as interpret-as='interjection'>well done.</say-as>" );
+            break;
+          case 8:
+            context.say.push( "<say-as interpret-as='interjection'>wowza.</say-as>" );
+            break;
+          default:
+            context.say.push( "<say-as interpret-as='interjection'>wowzer.</say-as>" );
             break;
         }
         context.say.push( "The answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
-        switch(pickSayString(context, 3, 2)) {
+        context.say.push( escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ) + "." );
+        switch(pickSayString(context, 4, 2)) {
           case 0:
             context.say.push( "Let's go again." );
             break;
@@ -2374,7 +2500,27 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
         context.nextState = 'generateRandomSpeech';
       }
       else {
-        context.say.push( "Wrong! Here it is again." );
+        switch(pickSayString(context, 5, 6)) {
+          case 0:
+            context.say.push( "<say-as interpret-as='interjection'>aw man.</say-as>" );
+            break;
+          case 1:
+            context.say.push( "Wrong!" );
+            break;
+          case 2:
+            context.say.push( "<say-as interpret-as='interjection'>aww applesauce.</say-as>" + " That wasn't it." );
+            break;
+          case 3:
+            context.say.push( "<say-as interpret-as='interjection'>blast.</say-as>" );
+            break;
+          case 4:
+            context.say.push( "Correct! ... " + "<say-as interpret-as='interjection'>just kidding.</say-as>" );
+            break;
+          default:
+            context.say.push( "<say-as interpret-as='interjection'>nuh uh.</say-as>" );
+            break;
+        }
+        context.say.push( "Here it is again." );
         context.nextState = 'askForRepeat';
       }
       break;
@@ -2391,8 +2537,20 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       break;
     }
     case 'I_GIVE_UP': {
+      context.card = {
+        title: escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ),
+        content: escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ),
+      };
       context.say.push( "the answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
-      context.say.push( "Let's go again." );
+      context.say.push( escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ) + "." );
+      switch(pickSayString(context, 6, 2)) {
+        case 0:
+          context.say.push( "Let's go again." );
+          break;
+        default:
+          context.say.push( "One more time." );
+          break;
+      }
       context.nextState = 'generateRandomSpeech';
       break;
     }

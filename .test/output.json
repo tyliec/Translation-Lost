@@ -1,8 +1,8 @@
 {
   "log": [
-    "✘ 1 tests run, 1 failed (13ms)\n",
+    "✘ 1 tests run, 1 failed (11ms)\n",
     "Testing in region en-US, language default out of [\"default\"]",
-    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <starto.mp3> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3' /> What did I say?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n     ! speechAvailable\n     ! {}\n     ! seenBefore\n     ! {}\n     ! seen\n     ! {}\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
+    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <starto.mp3> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' /> What did I say?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n     ! speechAvailable\n     ! {}\n     ! seenBefore\n     ! {}\n     ! seen\n     ! {}\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
   ],
   "cards": [],
   "directives": [],
@@ -40,7 +40,7 @@
         },
         "request": {
           "type": "LaunchRequest",
-          "requestId": "litexaRequestId.32d2a5ef-7f5c-461c-bbe6-8c4e3e4b389f",
+          "requestId": "litexaRequestId.701607fe-eb05-4211-b8ae-df27d03ee0e7",
           "timestamp": "2017-10-02T01:01:05.000Z",
           "locale": "default"
         },
@@ -54,13 +54,13 @@
           "shouldEndSession": false,
           "outputSpeech": {
             "type": "SSML",
-            "ssml": "<speak>Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <audio src='test://default/bag_of_potatoes.mp3'/> You would translate to, <audio src='test://default/bag_of_potatoes2.mp3'/> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <audio src='test://default/starto.mp3'/> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3' /> What did I say?</speak>",
+            "ssml": "<speak>Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <audio src='test://default/bag_of_potatoes.mp3'/> You would translate to, <audio src='test://default/bag_of_potatoes2.mp3'/> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <audio src='test://default/starto.mp3'/> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' /> What did I say?</speak>",
             "playBehavior": "REPLACE_ALL"
           },
           "reprompt": {
             "outputSpeech": {
               "type": "SSML",
-              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3' /></speak>"
+              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' /></speak>"
             }
           }
         }
@@ -70,17 +70,28 @@
           "fetchEntitlements": true,
           "inSkillProducts": []
         },
+        "tutorialHeard": true,
+        "__sayHistory": [
+          null,
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
         "master": {
           "database": {
             "ill_be_back": {
               "accent": "Japanese",
               "hints": [
-                "Terminator.",
+                "Quote from the movie, Terminator",
                 "Arnold Schwarzenegger"
               ],
               "answer": "I'll be back",
+              "answer_annotation": "Spoken by the character Terminator, played by Arnold Schwarzenegger, from the movie, Terminator",
               "type": "Movie Quotes",
-              "difficulty": "4"
+              "difficulty": "6"
             },
             "luke_i_am_your_father": {
               "accent": "Norwegian",
@@ -90,25 +101,29 @@
                 "Luke Skywalker"
               ],
               "answer": "Luke, I am your father",
+              "answer_annotation": "Spoken by the character Darth Vader, voiced by James Earl Jones, from the Star Wars movie series",
               "type": "Movie Quotes",
-              "difficulty": "2"
+              "difficulty": "3"
             },
             "im_going_to_make_him_an_offer_he_cant_refuse": {
               "accent": "Korean",
               "hints": [
-                "Godfather"
+                "Quote from the movie, Godfather",
+                "Marlon Brando"
               ],
               "answer": "I'm going to make him an offer he can't refuse",
+              "answer_annotation": "Spoken by the character Don Vito Corleone, played by Marlon Brando, from the movie, The Godfather",
               "type": "Movie Quotes",
-              "difficulty": "6"
+              "difficulty": "9"
             },
             "may_the_force_be_with_you": {
               "accent": "Icelandic",
               "hints": [
-                "Star Wars",
+                "Quote from the Star Wars movie series",
                 "Fourth of May"
               ],
               "answer": "May the force be with you",
+              "answer_annotation": "Spoken by various characters in the series Star Wars",
               "type": "Movie Quotes",
               "difficulty": "7"
             },
@@ -116,19 +131,22 @@
               "accent": "Romanian",
               "hints": [
                 "Robert DeNiro",
-                "Taxi Driver"
+                "Quote from the movie, Taxi Driver",
+                "Who am I talking to?"
               ],
               "answer": "You talking to me",
+              "answer_annotation": "Spoken by Travis Bickle, played by Robert DeNiro, from the movie, Taxi Driver",
               "type": "Movie Quotes",
-              "difficulty": "10"
+              "difficulty": "8"
             },
             "frankly_my_dear_i_dont_give_a_damn": {
               "accent": "Australian",
               "hints": [
-                "Gone with the Wind",
+                "Quote from the movie, Gone with the Wind",
                 "Clark Gable"
               ],
               "answer": "Frankly my dear, I don't give a damn",
+              "answer_annotation": "Spoken by the character Rhett Butler, played by Clark Gable, from the movie, Gone with the Wind",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
@@ -136,9 +154,10 @@
               "accent": "French",
               "hints": [
                 "Clint Eastwood",
-                "Sudden Impact"
+                "Quote from the movie, Sudden Impact"
               ],
-              "answer": "Go ahead make my day",
+              "answer": "Go ahead, make my day",
+              "answer_annotation": "Spoken by the character Harry Callahan, played by Clint Eastwood, from the movie, Sudden Impact",
               "type": "Movie Quotes",
               "difficulty": "4"
             },
@@ -149,29 +168,31 @@
                 "famous spy movie series"
               ],
               "answer": "Bond, James Bond",
+              "answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
               "type": "Movie Quotes",
               "difficulty": "4"
             },
             "show_me_the_money": {
               "accent": "Chinese",
               "hints": [
-                "Jerry Maguire",
+                "Quote from the movie, Jerry Maguire",
                 "Tom Cruise",
                 "Cuba Gooding Jr",
                 "Something a bank robber might say"
               ],
               "answer": "Show me the money",
+              "answer_annotation": "Spoken by the character Rodney Tidwell, played by Cuba Gooding Jr., from the movie, Jerry Maguire",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
             "you_cant_handle_the_truth": {
               "accent": "Portugese",
               "hints": [
-                "A Few Good Men",
-                "Jack Nicholson",
-                "What can you handle?"
+                "Quote from the movie, A Few Good Men",
+                "Jack Nicholson"
               ],
               "answer": "You can't handle the truth",
+              "answer_annotation": "Spoken by the character Colonel Nathan R. Jessup, played by Jack Nicholson, from the movie, A Few Good Men",
               "type": "Movie Quotes",
               "difficulty": "6"
             },
@@ -179,20 +200,21 @@
               "accent": "German",
               "hints": [
                 "Apollo 13",
-                "NASA",
-                "When you're in trouble"
+                "NASA"
               ],
               "answer": "Houston, we have a problem",
+              "answer_annotation": "Spoken by the character Jim Lovell, played by Tom Hanks, from the movie, Apollo 13",
               "type": "Movie Quotes",
               "difficulty": "4"
             },
             "elementary_my_dear_watson": {
               "accent": "Japanese",
               "hints": [
-                "first through sixth grade",
-                "Sherlock Holmes"
+                "first through fifth or sixth grade",
+                "Quote from Sherlock Holmes"
               ],
               "answer": "Elementary my dear Watson",
+              "answer_annotation": "Spoken by the character Sherlock Holmes from the Sherlock Holmes movie series",
               "type": "Movie Quotes",
               "difficulty": "5"
             },
@@ -201,9 +223,10 @@
               "hints": [
                 "Goodbye in Spanish",
                 "Arnold Schwarzenegger",
-                "Terminator"
+                "Quote from the movie, Terminator"
               ],
               "answer": "Hasta la vista baby",
+              "answer_annotation": "Spoken by the character Terminator, played by Arnold Schwarzenegger, from the movie, Terminator",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
@@ -212,9 +235,10 @@
               "hints": [
                 "A ring to rule them all",
                 "Smeagol",
-                "Lord of the Rings"
+                "Quote from Lord of the Rings"
               ],
               "answer": "My precious",
+              "answer_annotation": "Spoken by the character Smeagol/Golumn from the Lord of the Rings",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
@@ -223,9 +247,10 @@
               "hints": [
                 "Language of a sentient plant",
                 "Green Tree Dude",
-                "Guardians of the galaxy"
+                "Quote from Guardians of the galaxy"
               ],
               "answer": "I am Groot",
+              "answer_annotation": "Spoken by the character Groot from the Guardians of the Galaxy movie series",
               "type": "Movie Quotes",
               "difficulty": "5"
             },
@@ -234,9 +259,10 @@
               "hints": [
                 "Do you like games?",
                 "Serial killer character",
-                "Quote from the movie Saw"
+                "Quote from the movie, Saw"
               ],
               "answer": "I want to play a game",
+              "answer_annotation": "Spoken by the character Jigsaw from the Saw movie series",
               "type": "Movie Quotes",
               "difficulty": "3"
             },
@@ -244,9 +270,10 @@
               "accent": "German",
               "hints": [
                 "An famous ancient Greek city",
-                "Quote from 300"
+                "Quote from the movie, 300"
               ],
               "answer": "This is Sparta",
+              "answer_annotation": "Spoken by the character Leonidas, played by Gerald Butler, from the movie, 300",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
@@ -257,6 +284,7 @@
                 "Quote from Harry Potter"
               ],
               "answer": "You're a wizard, Harry",
+              "answer_annotation": "Spoken by the character Rubeus Hagrid, played by Robbie Coltrane, from the Harry Potter movie series",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
@@ -265,9 +293,10 @@
               "hints": [
                 "Don't give up",
                 "Pixar",
-                "Quote from Finding Nemo"
+                "Quote from the movie, Finding Nemo"
               ],
               "answer": "Just keep swimming",
+              "answer_annotation": "Spoken by the character Dory, voiced by Ellen DeGeneres, from the movie, Finding Nemo",
               "type": "Movie Quotes",
               "difficulty": "6"
             },
@@ -277,17 +306,19 @@
                 "Quote from the Hunger Games series"
               ],
               "answer": "I volunteer as tribute",
+              "answer_annotation": "Spoken by the character Katniss Everdeen, played by Jennifer Lawrence, from the movie, Hunger Games",
               "type": "Movie Quotes",
-              "difficulty": "3"
+              "difficulty": "5"
             },
             "with_great_power_comes_great_responsibility": {
               "accent": "Dutch",
               "hints": [
-                "Quote from Spider-man"
+                "Quote from Spider-man series"
               ],
               "answer": "With great power, comes great responsibility",
+              "answer_annotation": "Spoken by the character Uncle Ben from the Spider-man series",
               "type": "Movie Quotes",
-              "difficulty": "4"
+              "difficulty": "5"
             },
             "you_will_ride_eternal_shiny_and_chrome": {
               "accent": "Dutch",
@@ -295,8 +326,9 @@
                 "Quote from the movie, Mad Max: Fury Road"
               ],
               "answer": "You will ride eternal, shiny, and chrome",
+              "answer_annotation": "Spoken by the character Immortan Joe, played by Keays-Byrne, from the movie, Mad Max: Fury Road",
               "type": "Movie Quotes",
-              "difficulty": "6"
+              "difficulty": "3"
             },
             "honey_where_is_my_super_suit": {
               "accent": "Arabic",
@@ -305,26 +337,29 @@
                 "Spoken by Frozone"
               ],
               "answer": "Honey, Where is my super suit",
+              "answer_annotation": "Spoken by the character Frozone, voiced by Samuel L. Jackson, from the movie, The Incredibles",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
             "why_so_serious": {
               "accent": "Italian",
               "hints": [
-                "Quote from the movie The Dark Knight",
+                "Quote from the movie, The Dark Knight",
                 "Spoken by the Joker"
               ],
               "answer": "Why so serious",
+              "answer_annotation": "Spoken by the character Joker, played by Heath Ledger, from the movie, The Dark Knight",
               "type": "Movie Quotes",
               "difficulty": "1"
             },
             "you_shall_not_pass": {
               "accent": "Icelandic",
               "hints": [
-                "Quote from The Lord of the Rings",
+                "Quote from The Lord of the Rings series",
                 "Spoken by Gandalf"
               ],
               "answer": "You shall not pass",
+              "answer_annotation": "Spoken by the character Gandalf, played by Ian McKellen, from the Lord of the Rings series",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
@@ -335,28 +370,32 @@
                 "Spoken by Maximus Decimus Meridius, Commander of the Armies of the North, General of the Felix Legions, loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son, husband to a murdered wife. And he will have his vengeance, in this life or the next."
               ],
               "answer": "Are you not entertained",
+              "answer_annotation": "Spoken by the character Maximus Decimus Meridius, played by Russell Crowe, from the movie, Gladiator",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
             "you_sit_on_a_throne_of_lies": {
               "accent": "French",
               "hints": [
-                "Quote from the movie, Elf.",
-                "Spoken by Buddy, an elf."
+                "Quote from the movie, Elf",
+                "Spoken by Buddy, an elf"
               ],
               "answer": "You sit on a throne of lies",
+              "answer_annotation": "Spoken by the character Buddy the elf, played by Will Ferrell, from the movie, Elf",
               "type": "Movie Quotes",
               "difficulty": "3"
             },
             "i_live_my_life_a_quarter_mile_at_a_time": {
               "accent": "Portuguese",
               "hints": [
-                "Quote from the movie, The Fast and the Furious.",
-                "Spoken by Dominic Toretto."
+                "Quote from the movie, The Fast and the Furious",
+                "Spoken by the character Dominic Toretto, played by Vin Diesel",
+                "25 cents"
               ],
               "answer": "I live my life a quarter mile at a time",
+              "answer_annotation": "Spoken by the character Dominic Toretto, played by Vin Diesel, from the movie, The Fast and the Furious",
               "type": "Movie Quotes",
-              "difficulty": "3"
+              "difficulty": "9"
             },
             "i_can_do_this_all_day": {
               "accent": "British",
@@ -365,16 +404,18 @@
                 "Spoken by Captain America."
               ],
               "answer": "I can do this all day",
+              "answer_annotation": "Spoken by the character Captain America, played by Chris Evans, from the Avengers movie series",
               "type": "Movie Quotes",
               "difficulty": "1"
             },
             "e_t_phone_home": {
               "accent": "Chinese",
               "hints": [
-                "Quote from the movie, E.T. the Extra-Terrestrial.",
+                "Quote from the movie, E.T. the Extra-Terrestrial",
                 "Spoken by E.T."
               ],
               "answer": "E.T. Phone home",
+              "answer_annotation": "Spoken by E.T. from the movie, E.T. the Extra-Terrestrial",
               "type": "Movie Quotes",
               "difficulty": "1"
             },
@@ -385,16 +426,18 @@
                 "An undeveloped or embryonic shoot that normally occurs in the axil of a leaf or at the tip of a stem."
               ],
               "answer": "Rosebud",
+              "answer_annotation": "Spoken by the character Charles Foster Kane, played by Orson Welles, from the movie, Citizen Kane",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
             "theres_no_place_like_home": {
               "accent": "Russian",
               "hints": [
-                "Quote from the movie, Wizard of OZ",
+                "Quote from the movie, The Wizard of Oz",
                 "Close your eyes, tap your ruby heels together three times, and say..."
               ],
               "answer": "There's no place like home",
+              "answer_annotation": "Spoken by the character Dorothy Gale, played by Judy Garland, from the movie, The Wizard of Oz",
               "type": "Movie Quotes",
               "difficulty": "1"
             },
@@ -405,6 +448,7 @@
                 "When your friend is a M16 machine gun."
               ],
               "answer": "Say hello to my little friend",
+              "answer_annotation": "Spoken by the character Tony Montana, played by Al Pacino, from the movie, Scarface",
               "type": "Movie Quotes",
               "difficulty": "2"
             },
@@ -415,33 +459,29 @@
                 "A spy's favorite drink"
               ],
               "answer": "A martini. Shaken, not stirred",
+              "answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
               "type": "Movie Quotes",
               "difficulty": "8"
             },
             "mama_always_said_life_was_like_a_box_of_chocolates_you_never_know_what_youre_gonna_get": {
               "accent": "Korean",
               "hints": [
-                "Quote from the movie Forrest Gump"
+                "Quote from the movie, Forrest Gump"
               ],
               "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+              "answer_annotation": "Spoken by the character Forrest Gump, played by Tom Hanks, from the movie, Forrest Gump",
               "type": "Movie Quotes",
               "difficulty": "5"
             }
           },
           "seenSpeechBefore": {
-            "you_shall_not_pass": true
+            "i_am_groot": true
           },
           "seenHintsBefore": {},
-          "speechKey": "you_shall_not_pass"
+          "speechKey": "i_am_groot"
         },
-        "speechKey": "you_shall_not_pass",
-        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_shall_not_pass.mp3",
-        "__sayHistory": [
-          null,
-          [
-            1
-          ]
-        ],
+        "speechKey": "i_am_groot",
+        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3",
         "__currentState": "waitForAnswer",
         "__settings": {
           "resetOnLaunch": true
@@ -449,13 +489,15 @@
       },
       "trace": [
         "launch",
+        "playTutorial",
+        "getTopic",
         "generateRandomSpeech",
         "askForAnswer",
         "waitForAnswer"
       ]
     }
   ],
-  "summary": "✘ 1 tests run, 1 failed (13ms)\n",
+  "summary": "✘ 1 tests run, 1 failed (11ms)\n",
   "tallies": {
     "successes": 0,
     "fails": 1
