@@ -1587,7 +1587,7 @@ jsonSourceFiles['database.json'] = {
       "Spoken by the character Tony Stark, voiced by Robert Downey Jr."
     ],
     "answer": "You're embarrassing me in front of the wizards",
-    "answer_annotation": "Spoken by the characte rTony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
+    "answer_annotation": "Spoken by the character Tony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
     "type": "Movie Quotes",
     "difficulty": "5"
   },
@@ -2436,6 +2436,7 @@ exports.getPotentialAnswers = function() {
 			"Houston, we have a problem",
 			"Elementary my dear Watson",
 			"Hasta la vista baby",
+			"My precious",
 			"I am Groot",
 			"I want to play a game",
 			"This is Sparta",
@@ -2464,7 +2465,7 @@ exports.getPotentialAnswers = function() {
 			"Wax on, wax off",
 			"Alright alright alright",
 			"The Dude abides",
-			"That is so fetch",
+			"That is so fetch!",
 			"Stop trying to make 'fetch' happen. It's not going to happen",
 			"On Wednesdays, we wear pink",
 			"Get in loser, we're going shopping",
@@ -2545,6 +2546,7 @@ enterState.playTutorial = async function(context) {
   context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes.mp3'/>"  );
   context.say.push( "You would translate to," );
   context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes2.mp3'/>"  );
+  context.say.push( "You'll have five minutes to score as many points as you can." );
   context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
   context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
   context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
@@ -2600,6 +2602,8 @@ enterState.getTopic = async function(context) {
       context.say.push( "<say-as interpret-as='interjection'>batter up</say-as>" );
       break;
   }
+  context.db.write('gameStartedTime', context.now);
+  context.db.write('score', 0);
   context.nextState = 'generateRandomSpeech';
 };
 processIntents.getTopic = async function(context, runOtherwise) {
@@ -2643,6 +2647,12 @@ exitState.generateRandomSpeech = async function(context) {
 };
 
 enterState.askForAnswer = async function(context) {
+  if (await minutesBetween(context.now, context.db.read('gameStartedTime')) >= 5) {
+    context.say.push( "Times up!" );
+    context.say.push( "You scored " + escapeSpeech( context.db.read('score') ) + " points." );
+    context.say.push( "Goodbye." );
+    context.nextState = 'goodbye';
+  }
   context.say.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
   switch(pickSayString(context, 2, 2)) {
     case 0:
@@ -2773,10 +2783,11 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
             context.say.push( "One more time!" );
             break;
         }
+        context.db.write('score', context.db.read('score') + 1);
         context.nextState = 'generateRandomSpeech';
       }
       else {
-        switch(pickSayString(context, 5, 6)) {
+        switch(pickSayString(context, 5, 7)) {
           case 0:
             context.say.push( "<say-as interpret-as='interjection'>aw man.</say-as>" );
             break;
@@ -2792,11 +2803,21 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
           case 4:
             context.say.push( "Correct! ... " + "<say-as interpret-as='interjection'>just kidding.</say-as>" );
             break;
-          default:
+          case 5:
             context.say.push( "<say-as interpret-as='interjection'>nuh uh.</say-as>" );
             break;
+          default:
+            context.say.push( "Nice Try!" );
+            break;
         }
-        context.say.push( "Here it is again." );
+        switch(pickSayString(context, 6, 2)) {
+          case 0:
+            context.say.push( "Here it is again." );
+            break;
+          default:
+            context.say.push( "Try again!" );
+            break;
+        }
         context.nextState = 'askForRepeat';
       }
       break;
@@ -2819,7 +2840,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       };
       context.say.push( "the answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
       context.say.push( escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ) + "." );
-      switch(pickSayString(context, 6, 2)) {
+      switch(pickSayString(context, 7, 2)) {
         case 0:
           context.say.push( "Let's go again." );
           break;

@@ -15,6 +15,8 @@ playTutorial
   say "You would translate to,"
   soundEffect "bag_of_potatoes2.mp3"
 
+  say "You'll have five minutes to score as many points as you can."
+
   say "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat."
   say "If you want to know the accent, ask me, Alexa, what accent is this."
   say "You can give up on a phrase by saying, Alexa, I give up."
@@ -37,6 +39,8 @@ getTopic
   say "Ready?"
   say "<sfx starto.mp3>"
     or "<!batter up>"
+  @gameStartedTime = context.now
+  @score = 0
   -> generateRandomSpeech
 
 
@@ -47,22 +51,30 @@ generateRandomSpeech
     say "No more translations available,"
     say "Goodbye."
     -> goodbye  
-
-  @speechKey = @master.getRandomSpeech()
-
-  if @master.seenBefore(@speechKey)
-    -> generateRandomSpeech
   else
-    @master.seen(@speechKey)
-    @temp = "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/" + @speechKey +  '.mp3'
-    -> askForAnswer
+    @speechKey = @master.getRandomSpeech()
+
+    if @master.seenBefore(@speechKey)
+      -> generateRandomSpeech
+    else
+      @master.seen(@speechKey)
+      @temp = "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/" + @speechKey +  '.mp3'
+      -> askForAnswer
 
 askForAnswer
   # soundEffect "{@master.getRandomSpeech()}"
+  if minutesBetween(context.now, @gameStartedTime) >= 5
+    say "Times up!"
+    say "You scored @score points."
+    say "Goodbye."
+    -> goodbye
+
+    
   say "\<audio src='@temp' />"
 
   say "What do you think I said?"
     or "What did I say?"
+
   # add an automatic re-prompt, in case the user says nothing
   reprompt "\<audio src='@temp' />"
   -> waitForAnswer
@@ -109,6 +121,7 @@ waitForAnswer
       say "@master.getAnnotation(@speechKey)."
       say "Let's go again."
         or "One more time!"
+      @score = @score + 1
       -> generateRandomSpeech
     else
       say "<!aw man>."
@@ -117,7 +130,9 @@ waitForAnswer
         or "<!blast>."
         or "Correct! ... <!just kidding>."
         or  "<!nuh uh>."
+        or "Nice Try!"
       say "Here it is again."
+        or "Try again!"
       -> askForRepeat
 
   when "what $blank is this"

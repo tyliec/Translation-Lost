@@ -99,6 +99,13 @@
           {
             "id": null,
             "name": {
+              "value": "My precious",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
               "value": "I am Groot",
               "synonyms": []
             }
@@ -295,7 +302,7 @@
           {
             "id": null,
             "name": {
-              "value": "That is so fetch",
+              "value": "That is so fetch!",
               "synonyms": []
             }
           },

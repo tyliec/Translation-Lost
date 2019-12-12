@@ -1,8 +1,8 @@
 {
   "log": [
-    "✘ 1 tests run, 1 failed (13ms)\n",
+    "✘ 1 tests run, 1 failed (11ms)\n",
     "Testing in region en-US, language default out of [\"default\"]",
-    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <!batter up> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' /> What do you think I said?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n     ! speechAvailable\n     ! {}\n     ! seenBefore\n     ! {}\n     ! seen\n     ! {}\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
+    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <starto.mp3> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_cant_handle_the_truth.mp3' /> What did I say?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_cant_handle_the_truth.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n     ! speechAvailable\n     ! {}\n     ! seenBefore\n     ! {}\n     ! seen\n     ! {}\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
   ],
   "cards": [],
   "directives": [],
@@ -40,7 +40,7 @@
         },
         "request": {
           "type": "LaunchRequest",
-          "requestId": "litexaRequestId.a2bd9334-b561-470e-932e-1ff6ceab54d1",
+          "requestId": "litexaRequestId.7709fec1-45bc-4637-bbe7-3d5ebc548d3c",
           "timestamp": "2017-10-02T01:01:05.000Z",
           "locale": "default"
         },
@@ -54,13 +54,13 @@
           "shouldEndSession": false,
           "outputSpeech": {
             "type": "SSML",
-            "ssml": "<speak>Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <audio src='test://default/bag_of_potatoes.mp3'/> You would translate to, <audio src='test://default/bag_of_potatoes2.mp3'/> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <say-as interpret-as='interjection'>batter up</say-as> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' /> What do you think I said?</speak>",
+            "ssml": "<speak>Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <audio src='test://default/bag_of_potatoes.mp3'/> You would translate to, <audio src='test://default/bag_of_potatoes2.mp3'/> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <audio src='test://default/starto.mp3'/> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_cant_handle_the_truth.mp3' /> What did I say?</speak>",
             "playBehavior": "REPLACE_ALL"
           },
           "reprompt": {
             "outputSpeech": {
               "type": "SSML",
-              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' /></speak>"
+              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_cant_handle_the_truth.mp3' /></speak>"
             }
           }
         }
@@ -74,12 +74,14 @@
         "__sayHistory": [
           null,
           [
-            1
+            0
           ],
           [
-            0
+            1
           ]
         ],
+        "gameStartedTime": 1506906065000,
+        "score": 0,
         "master": {
           "database": {
             "ill_be_back": {
@@ -689,7 +691,7 @@
                 "Spoken by the character Tony Stark, voiced by Robert Downey Jr."
               ],
               "answer": "You're embarrassing me in front of the wizards",
-              "answer_annotation": "Spoken by the characte rTony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
+              "answer_annotation": "Spoken by the character Tony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
               "type": "Movie Quotes",
               "difficulty": "5"
             },
@@ -728,13 +730,13 @@
             }
           },
           "seenSpeechBefore": {
-            "this_is_sparta": true
+            "you_cant_handle_the_truth": true
           },
           "seenHintsBefore": {},
-          "speechKey": "this_is_sparta"
+          "speechKey": "you_cant_handle_the_truth"
         },
-        "speechKey": "this_is_sparta",
-        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3",
+        "speechKey": "you_cant_handle_the_truth",
+        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/you_cant_handle_the_truth.mp3",
         "__currentState": "waitForAnswer",
         "__settings": {
           "resetOnLaunch": true
@@ -750,7 +752,7 @@
       ]
     }
   ],
-  "summary": "✘ 1 tests run, 1 failed (13ms)\n",
+  "summary": "✘ 1 tests run, 1 failed (11ms)\n",
   "tallies": {
     "successes": 0,
     "fails": 1

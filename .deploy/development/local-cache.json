@@ -4,9 +4,9 @@
     "ensureIAMRole-litexa_handler_lambda": 1576135176376,
     "lambdaPermissionsChecked-release-0": 1575639670102,
     "ensuredCloudwatchLogGroup": 1575639670742,
-    "lambdaUpdated": 1576135178544
+    "lambdaUpdated": 1576140738268
   },
   "hashes": {
-    "lambdaSHA256": "AEzssCE+s4Qphm6GOjYnN7FdPv+Ozoex3RVnaenECHQ="
+    "lambdaSHA256": "mnN1uCNjUClSZMHjaJkrk2TbimwhLwM8Tbm3R0ZXSb8="
   }
 }

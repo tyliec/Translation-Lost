@@ -4,7 +4,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/11/2019, 9:19:34 PM",
+            "date": "12/11/2019, 10:52:15 PM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -12,18 +12,29 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "f0018af22ce14230996822163cdca142b12c4bb2",
+              "currentCommitHash": "b60e86878cce01306a0485ecbcb6e61534182a46",
               "currentCommitComment": [
-                "added 21 quotes"
+                "Added My Precious, Fixed missing !"
               ],
               "uncommittedChanges": [
+                "[modified] .deploy/development/assets.log",
+                "[modified] .deploy/development/lambda.log",
+                "[modified] .deploy/development/lambda.zip",
+                "[modified] .deploy/development/lambda/index.js",
+                "[modified] .deploy/development/local-cache.json",
+                "[modified] .deploy/development/manifest.log",
+                "[modified] .deploy/development/model-en-US.json",
                 "[modified] .test/lambda.js",
                 "[modified] .test/model.json",
                 "[modified] .test/output.json",
                 "[modified] .test/output.log",
                 "[modified] .test/project-config.json",
                 "[modified] .test/referenceTester.js",
-                "[modified] .test/test.js"
+                "[modified] .test/test.js",
+                "[modified] artifacts.json",
+                "[modified] litexa/assets/icon-108.png",
+                "[modified] litexa/assets/icon-512.png",
+                "[modified] litexa/main.litexa"
               ]
             },
             "coreVersion": "0.3.1"
@@ -33,11 +44,11 @@
             "default": {
               "icon-108.png": {
                 "url": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/default/icon-108.png",
-                "md5": "661e635ca0aabc8f51aa39af9edf69cc"
+                "md5": "2676372abe8cfa19109240d40c122152"
               },
               "icon-512.png": {
                 "url": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/default/icon-512.png",
-                "md5": "300d90c2d2294ee39f4dce26c5618ad1"
+                "md5": "c477ac11d4a412aebd26b8cd676f124a"
               }
             }
           },
@@ -45,8 +56,8 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "e2edc1010caa5b31c282deae7692e839",
-          "skill-manifest-assets-md5": "661e635ca0aabc8f51aa39af9edf69cc300d90c2d2294ee39f4dce26c5618ad1"
+          "skill-model-etag-en-US": "da291cd8e25f7f5abb7595bf854de491",
+          "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
         }
       ]
     }
