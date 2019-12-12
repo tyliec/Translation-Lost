@@ -179,7 +179,30 @@ exports.getPotentialAnswers = function() {
 			"There's no place like home",
 			"Say hello to my little friend",
 			"A martini. Shaken, not stirred",
-			"Mama always said life was like a box of chocolates. You never know what you're gonna get"
+			"Mama always said life was like a box of chocolates. You never know what you're gonna get",
+			"Love means never having to say you're sorry",
+			"They may take our lives, but they'll never take our freedom!",
+			"Oh my god, I am totally buggin'!",
+			"Magic Mirror on the wall, who is the fairest one of all?",
+			"Wax on, wax off",
+			"Alright alright alright",
+			"The Dude abides",
+			"That is so fetch",
+			"Stop trying to make 'fetch' happen. It's not going to happen",
+			"On Wednesdays, we wear pink",
+			"Get in loser, we're going shopping",
+			"Why don't you make like a tree and get outta here",
+			"Roads? Where we're going we don't need roads",
+			"Fasten your seatbelts. It's going to be a bumpy night",
+			"To infinity and beyond!",
+			"No capes!",
+			"Not everyone can become a great artist, but a great artist can come from anywhere",
+			"Fish are our friends, not food",
+			"You're gonna need a bigger boat",
+			"You're embarrassing me in front of the wizards",
+			"I'm batman",
+			"It’s not who I am underneath, but what I do that defines me",
+			"Some men just want to watch the world burn"
 		]
 	};
 }
