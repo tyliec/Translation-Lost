@@ -1,8 +1,8 @@
 {
   "log": [
-    "✘ 1 tests run, 1 failed (11ms)\n",
+    "✘ 1 tests run, 1 failed (13ms)\n",
     "Testing in region en-US, language default out of [\"default\"]",
-    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <starto.mp3> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' /> What did I say?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n     ! speechAvailable\n     ! {}\n     ! seenBefore\n     ! {}\n     ! seen\n     ! {}\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
+    "✘ test: happy path\n2.  ❢      LaunchRequest        @ 3:01:05 PM\n   ✘ ◖----------------------◗ \"Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <!batter up> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' /> What do you think I said?\" ... \"<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' />\"\n     ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`\n     ! speechAvailable\n     ! {}\n     ! seenBefore\n     ! {}\n     ! seen\n     ! {}\n4.  ❢ Voice intent error: Error: couldn't match `I am your father` to any intents"
   ],
   "cards": [],
   "directives": [],
@@ -40,7 +40,7 @@
         },
         "request": {
           "type": "LaunchRequest",
-          "requestId": "litexaRequestId.701607fe-eb05-4211-b8ae-df27d03ee0e7",
+          "requestId": "litexaRequestId.a2bd9334-b561-470e-932e-1ff6ceab54d1",
           "timestamp": "2017-10-02T01:01:05.000Z",
           "locale": "default"
         },
@@ -54,13 +54,13 @@
           "shouldEndSession": false,
           "outputSpeech": {
             "type": "SSML",
-            "ssml": "<speak>Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <audio src='test://default/bag_of_potatoes.mp3'/> You would translate to, <audio src='test://default/bag_of_potatoes2.mp3'/> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <audio src='test://default/starto.mp3'/> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' /> What did I say?</speak>",
+            "ssml": "<speak>Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <audio src='test://default/bag_of_potatoes.mp3'/> You would translate to, <audio src='test://default/bag_of_potatoes2.mp3'/> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <say-as interpret-as='interjection'>batter up</say-as> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' /> What do you think I said?</speak>",
             "playBehavior": "REPLACE_ALL"
           },
           "reprompt": {
             "outputSpeech": {
               "type": "SSML",
-              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' /></speak>"
+              "ssml": "<speak><audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' /></speak>"
             }
           }
         }
@@ -74,10 +74,10 @@
         "__sayHistory": [
           null,
           [
-            0
+            1
           ],
           [
-            1
+            0
           ]
         ],
         "master": {
@@ -243,7 +243,7 @@
               "difficulty": "2"
             },
             "i_am_groot": {
-              "accent": "Spanish Castilian",
+              "accent": "Castilian Spanish",
               "hints": [
                 "Language of a sentient plant",
                 "Green Tree Dude",
@@ -472,16 +472,269 @@
               "answer_annotation": "Spoken by the character Forrest Gump, played by Tom Hanks, from the movie, Forrest Gump",
               "type": "Movie Quotes",
               "difficulty": "5"
+            },
+            "love_means_never_having_to_say_youre_sorry": {
+              "accent": "German",
+              "hints": [
+                "Quote from the movie, Love Story"
+              ],
+              "answer": "Love means never having to say you're sorry",
+              "answer_annotation": "Spoken by the various characters from the movie, Love Story",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "they_may_take_our_lives_but_theyll_never_take_our_freedom": {
+              "accent": "German",
+              "hints": [
+                "Quote from the movie, Braveheart",
+                "Spoken by the character William Wallace, played by Mel Gibson"
+              ],
+              "answer": "They may take our lives, but they'll never take our freedom!",
+              "answer_annotation": "Spoken by the character William Wallace, played by Mel Gibson, from the movie, Braveheart",
+              "type": "Movie Quotes",
+              "difficulty": "4"
+            },
+            "oh_my_god_i_am_totally_buggin": {
+              "accent": "Chinese",
+              "hints": [
+                "Quote from the movie, Clueless",
+                "Spoken by the character Cher, played by Alicia Silverstone"
+              ],
+              "answer": "Oh my god, I am totally buggin'!",
+              "answer_annotation": "Spoken by the character Cher, played by Alicia Silverstone, from the movie, Clueless",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "magic_mirror_on_the_wall_who_is_the_fairest_one_of_all": {
+              "accent": "Portuguese",
+              "hints": [
+                "Quote from the movie, Snow White and the Seven Dwarves",
+                "Spoken by the character Evil Queen, voiced by Lucille La Verne"
+              ],
+              "answer": "Magic Mirror on the wall, who is the fairest one of all?",
+              "answer_annotation": "Spoken by the character Evil Queen, voiced by Lucille La Verne, from the movie, Snow White and the Seven Dwarves",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "wax_on_wax_off": {
+              "accent": "Polish",
+              "hints": [
+                "Quote from the movie, The Karate Kid",
+                "Spoken by the character Mr. Miyagi, played by Noriyuki Morita"
+              ],
+              "answer": "Wax on, wax off",
+              "answer_annotation": "Spoken by the character Mr. Miyagi, played by Noriyuki Morita, from the movie, The Karate Kid",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "alright_alright_alright": {
+              "accent": "Korean",
+              "hints": [
+                "Quote from the movie, Dazed and Confused",
+                "Spoken by the character David Wooderson, played by Matthew McConaughey"
+              ],
+              "answer": "Alright alright alright",
+              "answer_annotation": "Spoken by the character David Wooderson, played by Matthew McConaughey, from the movie, Dazed and Confused",
+              "type": "Movie Quotes",
+              "difficulty": "7"
+            },
+            "the_dude_abides": {
+              "accent": "Icelandic",
+              "hints": [
+                "Quote from the movie, The Big Lebowski",
+                "Spoken by the character The Dude, played by Jeff Bridges"
+              ],
+              "answer": "The Dude abides",
+              "answer_annotation": "Spoken by the character The Dude, played by Jeff Bridges, from the movie, The Big Lebowski",
+              "type": "Movie Quotes",
+              "difficulty": "8"
+            },
+            "that_is_so_fetch": {
+              "accent": "Icelandic",
+              "hints": [
+                "Quote from the movie, Mean Girls",
+                "Spoken by the character Gretchen Wieners, played by Lacey Chabert"
+              ],
+              "answer": "That is so fetch!",
+              "answer_annotation": "Spoken by the character Gretchen Wieners, played by Lacey Chabert, from the movie, Mean Girls",
+              "type": "Movie Quotes",
+              "difficulty": "4"
+            },
+            "stop_trying_to_make_fetch_happen_its_not_going_to_happen": {
+              "accent": "Turkish",
+              "hints": [
+                "Quote from the movie, Mean Girls",
+                "Spoken by the character Regina George, played by Rachel McAdams"
+              ],
+              "answer": "Stop trying to make 'fetch' happen. It's not going to happen",
+              "answer_annotation": "Spoken by the character Regina George, played by Rachel McAdams, from the movie, Mean Girls",
+              "type": "Movie Quotes",
+              "difficulty": "6"
+            },
+            "on_wednesdays_we_wear_pink": {
+              "accent": "Italian",
+              "hints": [
+                "Quote from the movie, Mean Girls",
+                "Spoken by the character Karen Smith, played by Amanda Seyfried"
+              ],
+              "answer": "On Wednesdays, we wear pink",
+              "answer_annotation": "Spoken by the character Karen Smith, played by Amanda Seyfried, from the movie, Mean Girls",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "get_in_loser_were_going_shopping": {
+              "accent": "Russian",
+              "hints": [
+                "Quote from the movie, Mean Girls",
+                "Spoken by the character Regina George, played by Rachel McAdams"
+              ],
+              "answer": "Get in loser, we're going shopping",
+              "answer_annotation": "Spoken by the character Regina George, played by Rachel McAdams, from the movie, Mean Girls",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "why_dont_you_make_like_a_tree_and_get_outta_here": {
+              "accent": "Russian",
+              "hints": [
+                "Quote from the movie, Back to the Future",
+                "Spoken by the character Biff Tannen, played by Thomas F. Wilson"
+              ],
+              "answer": "Why don't you make like a tree and get outta here",
+              "answer_annotation": "Spoken by the character Biff Tannen, played by Thomas F. Wilson, from the movie, Back to the Future",
+              "type": "Movie Quotes",
+              "difficulty": "4"
+            },
+            "roads_where_were_going_we_dont_need_roads": {
+              "accent": "Castilian Spanish",
+              "hints": [
+                "Quote from the movie, Back to the Future",
+                "Spoken by the character Dr. Emmett Brown, played by Christopher Lloyd"
+              ],
+              "answer": "Roads? Where we're going we don't need roads",
+              "answer_annotation": "Spoken by the character Dr. Emmett Brown, played by Christopher Lloyd, from the movie, Back to the Future",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "fasten_your_seatbelts_its_going_to_be_a_bumpy_night": {
+              "accent": "Japanese",
+              "hints": [
+                "Quote from the movie, All about Eve",
+                "Spoken by the character Margo Channing, played by Bette Davis",
+                "the last word, 'night', is often misquoted as 'ride'"
+              ],
+              "answer": "Fasten your seatbelts. It's going to be a bumpy night",
+              "answer_annotation": "Spoken by the character Margo Channing, played by Bette Davis, from the movie, All about Eve",
+              "type": "Movie Quotes",
+              "difficulty": "7"
+            },
+            "to_infinity_and_beyond": {
+              "accent": "Korean",
+              "hints": [
+                "Quote from the movie, Toy Story",
+                "Spoken by the character Buzz Lightyear, voiced by Tim Allen"
+              ],
+              "answer": "To infinity and beyond!",
+              "answer_annotation": "Spoken by the character Buzz Lightyear, voiced by Tim Allen, from the movie, Toy Story",
+              "type": "Movie Quotes",
+              "difficulty": "8"
+            },
+            "no_capes": {
+              "accent": "Japanese",
+              "hints": [
+                "Quote from the movie, The Incredibles",
+                "Spoken by the character Edna Mode, voiced by Brad Bird"
+              ],
+              "answer": "No capes!",
+              "answer_annotation": "Spoken by the character Edna Mode, voiced by Brad Bird, from the movie, The Incredibles",
+              "type": "Movie Quotes",
+              "difficulty": "6"
+            },
+            "not_everyone_can_become_a_great_artist_but_a_great_artist_can_come_from_anywhere": {
+              "accent": "Chinese",
+              "hints": [
+                "Quote from the movie, Ratatouille",
+                "Spoken by the character Auguste Gusteau, voiced by Brad Garrett"
+              ],
+              "answer": "Not everyone can become a great artist, but a great artist can come from anywhere",
+              "answer_annotation": "Spoken by the character Auguste Gusteau, voiced by Brad Garrett, from the movie, Ratatouille",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "fish_are_our_friends_not_food": {
+              "accent": "Swedish",
+              "hints": [
+                "Quote from the movie, Finding Nemo",
+                "Spoken by the character Bruce, voiced by Barry Humphries"
+              ],
+              "answer": "Fish are our friends, not food",
+              "answer_annotation": "Spoken by the character Bruce, voiced by Barry Humphries, from the movie, Finding Nemo",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "youre_gonna_need_a_bigger_boat": {
+              "accent": "Turkish",
+              "hints": [
+                "Quote from the movie, Jaws",
+                "Spoken by the character Chief Martin Brody, voiced by Roy Scheider"
+              ],
+              "answer": "You're gonna need a bigger boat",
+              "answer_annotation": "Spoken by the character Chief Martin Brody, voiced by Roy Scheider, from the movie, Jaws",
+              "type": "Movie Quotes",
+              "difficulty": "3"
+            },
+            "youre_embarrassing_me_in_front_of_the_wizards": {
+              "accent": "Polish",
+              "hints": [
+                "Quote from the movie, Avengers: Infinity War",
+                "Spoken by the character Tony Stark, voiced by Robert Downey Jr."
+              ],
+              "answer": "You're embarrassing me in front of the wizards",
+              "answer_annotation": "Spoken by the characte rTony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
+              "type": "Movie Quotes",
+              "difficulty": "5"
+            },
+            "im_batman": {
+              "accent": "Icelandic",
+              "hints": [
+                "Quote from the Batman movie series",
+                "Spoken by the character Batman"
+              ],
+              "answer": "I'm batman",
+              "answer_annotation": "Spoken by the character Batman from the Batman movie series",
+              "type": "Movie Quotes",
+              "difficulty": "1"
+            },
+            "its_not_who_i_am_underneath_but_what_i_do_that_defines_me": {
+              "accent": "Italian",
+              "hints": [
+                "Quote from the movie, Batman Begins",
+                "Spoken by the character Batman, played by Christian Bale"
+              ],
+              "answer": "It’s not who I am underneath, but what I do that defines me",
+              "answer_annotation": "Spoken by the character Batman, played by Christian Bale, from the movie, Batman Begins",
+              "type": "Movie Quotes",
+              "difficulty": "2"
+            },
+            "some_men_just_want_to_watch_the_world_burn": {
+              "accent": "Australian",
+              "hints": [
+                "Quote from the movie, The Dark Knight",
+                "Spoken by the character Alfred Pennyworth, played by Michael Caine"
+              ],
+              "answer": "Some men just want to watch the world burn",
+              "answer_annotation": "Spoken by the character Alfred Pennyworth, played by Michael Caine, from the movie, The Dark Knight",
+              "type": "Movie Quotes",
+              "difficulty": "1"
             }
           },
           "seenSpeechBefore": {
-            "i_am_groot": true
+            "this_is_sparta": true
           },
           "seenHintsBefore": {},
-          "speechKey": "i_am_groot"
+          "speechKey": "this_is_sparta"
         },
-        "speechKey": "i_am_groot",
-        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3",
+        "speechKey": "this_is_sparta",
+        "temp": "https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3",
         "__currentState": "waitForAnswer",
         "__settings": {
           "resetOnLaunch": true
@@ -497,7 +750,7 @@
       ]
     }
   ],
-  "summary": "✘ 1 tests run, 1 failed (11ms)\n",
+  "summary": "✘ 1 tests run, 1 failed (13ms)\n",
   "tallies": {
     "successes": 0,
     "fails": 1

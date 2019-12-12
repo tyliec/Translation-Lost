@@ -1,10 +1,10 @@
-12/10/2019, 3:06:45 AM
-✘ 1 tests run, 1 failed (11ms)
+12/11/2019, 9:19:09 PM
+✘ 1 tests run, 1 failed (13ms)
 
 Testing in region en-US, language default out of ["default"]
 ✘ test: happy path
 2.  ❢      LaunchRequest        @ 3:01:05 PM
-   ✘ ◖----------------------◗ "Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <starto.mp3> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' /> What did I say?" ... "<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/i_am_groot.mp3' />"
+   ✘ ◖----------------------◗ "Welcome to Translation Lost, a game where you try and understand me through my different accents. I'm going to say a phrase, and you have to guess what I say. For example, if I say <bag_of_potatoes.mp3> You would translate to, <bag_of_potatoes2.mp3> You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat. If you want to know the accent, ask me, Alexa, what accent is this. You can give up on a phrase by saying, Alexa, I give up. You can relist all of these options during the game by saying, Alexa, options. The current topic right now is, Movie Quotes. Ready? <!batter up> <audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' /> What do you think I said?" ... "<audio src='https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/this_is_sparta.mp3' />"
      ✘ response was in state `waitForAnswer` instead of expected `askForAnswer`
      ! speechAvailable
      ! {}

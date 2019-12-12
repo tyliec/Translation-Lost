@@ -1,9 +1,43 @@
-[assets] +254ms all asset conversion complete
+[assets] +273ms all asset conversion complete
 [assets] +0ms deploying assets
 [assets] +0ms loaded AWS profile default
-[assets] +606ms found S3 bucket lost-in-translation
+[assets] +1248ms found S3 bucket lost-in-translation
 [assets] +0ms scanning assets, preparing hashes
-[assets] +5ms scanned 41 assets in project
+[assets] +23ms scanned 65 assets in project
 [assets] +0ms fetching S3 object metadata [0-1000]
-[assets] +560ms 0 assets need uploading
-[assets] +0ms asset deployment complete in 1171ms
+[assets] +720ms 24 assets need uploading
+[assets] +0ms uploading alright_alright_alright.mp3 -> lost-in-translation/development/default/alright_alright_alright.mp3 [1f768907]
+[assets] +1ms uploading fasten_your_seatbelts_its_going_to_be_a_bumpy_night.mp3 -> lost-in-translation/development/default/fasten_your_seatbelts_its_going_to_be_a_bumpy_night.mp3 [0df49cb9]
+[assets] +0ms uploading fish_are_our_friends_not_food.mp3 -> lost-in-translation/development/default/fish_are_our_friends_not_food.mp3 [fdcd2654]
+[assets] +1ms uploading get_in_loser_were_going_shopping.mp3 -> lost-in-translation/development/default/get_in_loser_were_going_shopping.mp3 [b7bde381]
+[assets] +0ms uploading im_batman.mp3 -> lost-in-translation/development/default/im_batman.mp3 [e350d6cb]
+[assets] +0ms 19 assets remaining in queue
+[assets] +1384ms segment uploaded in 1384ms
+[assets] +0ms uploading its_not_who_i_am_underneath_but_what_i_do_that_defines_me.mp3 -> lost-in-translation/development/default/its_not_who_i_am_underneath_but_what_i_do_that_defines_me.mp3 [55324c3e]
+[assets] +1ms uploading love_means_never_having_to_say_youre_sorry.mp3 -> lost-in-translation/development/default/love_means_never_having_to_say_youre_sorry.mp3 [3c5dcb51]
+[assets] +1ms uploading magic_mirror_on_the_wall_who_is_the_fairest_one_of_all.mp3 -> lost-in-translation/development/default/magic_mirror_on_the_wall_who_is_the_fairest_one_of_all.mp3 [74b52435]
+[assets] +0ms uploading no_capes.mp3 -> lost-in-translation/development/default/no_capes.mp3 [77d62625]
+[assets] +1ms uploading not_everyone_can_become_a_great_artist_but_a_great_artist_can_come_from_anywhere.mp3 -> lost-in-translation/development/default/not_everyone_can_become_a_great_artist_but_a_great_artist_can_come_from_anywhere.mp3 [120010bc]
+[assets] +0ms 14 assets remaining in queue
+[assets] +1540ms segment uploaded in 1540ms
+[assets] +0ms uploading oh_my_god_i_am_totally_buggin.mp3 -> lost-in-translation/development/default/oh_my_god_i_am_totally_buggin.mp3 [e7d36ef3]
+[assets] +1ms uploading on_wednesdays_we_wear_pink.mp3 -> lost-in-translation/development/default/on_wednesdays_we_wear_pink.mp3 [f1622e51]
+[assets] +0ms uploading roads_where_were_going_we_dont_need_roads.mp3 -> lost-in-translation/development/default/roads_where_were_going_we_dont_need_roads.mp3 [12cd619c]
+[assets] +1ms uploading some_men_just_want_to_watch_the_world_burn.mp3 -> lost-in-translation/development/default/some_men_just_want_to_watch_the_world_burn.mp3 [ea34ad65]
+[assets] +0ms uploading stop_trying_to_make_fetch_happen_its_not_going_to_happen.mp3 -> lost-in-translation/development/default/stop_trying_to_make_fetch_happen_its_not_going_to_happen.mp3 [d0725143]
+[assets] +1ms 9 assets remaining in queue
+[assets] +1252ms segment uploaded in 1252ms
+[assets] +0ms uploading that_is_so_fetch.mp3 -> lost-in-translation/development/default/that_is_so_fetch.mp3 [d94cd59a]
+[assets] +1ms uploading the_dude_abides.mp3 -> lost-in-translation/development/default/the_dude_abides.mp3 [6ecf5e53]
+[assets] +1ms uploading the_limit_does_not_exist.mp3 -> lost-in-translation/development/default/the_limit_does_not_exist.mp3 [275d4a1b]
+[assets] +0ms uploading they_may_take_our_lives_but_theyll_never_take_our_freedom.mp3 -> lost-in-translation/development/default/they_may_take_our_lives_but_theyll_never_take_our_freedom.mp3 [0ca0227a]
+[assets] +1ms uploading to_infinity_and_beyond.mp3 -> lost-in-translation/development/default/to_infinity_and_beyond.mp3 [92fb2d39]
+[assets] +0ms 4 assets remaining in queue
+[assets] +1224ms segment uploaded in 1224ms
+[assets] +0ms uploading wax_on_wax_off.mp3 -> lost-in-translation/development/default/wax_on_wax_off.mp3 [ef882875]
+[assets] +1ms uploading why_dont_you_make_like_a_tree_and_get_outta_here.mp3 -> lost-in-translation/development/default/why_dont_you_make_like_a_tree_and_get_outta_here.mp3 [d835892c]
+[assets] +0ms uploading youre_embarrassing_me_in_front_of_the_wizards.mp3 -> lost-in-translation/development/default/youre_embarrassing_me_in_front_of_the_wizards.mp3 [fdc237a5]
+[assets] +1ms uploading youre_gonna_need_a_bigger_boat.mp3 -> lost-in-translation/development/default/youre_gonna_need_a_bigger_boat.mp3 [04bb2090]
+[assets] +0ms 0 assets remaining in queue
+[assets] +1081ms segment uploaded in 1081ms
+[assets] +0ms asset deployment complete in 8485ms

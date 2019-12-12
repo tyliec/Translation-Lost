@@ -435,7 +435,7 @@
 		"accent": "Polish",
 		"hints": ["Quote from the movie, Avengers: Infinity War", "Spoken by the character Tony Stark, voiced by Robert Downey Jr."],
 		"answer": "You're embarrassing me in front of the wizards",
-		"answer_annotation": "Spoken by the characte rTony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
+		"answer_annotation": "Spoken by the character Tony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
 		"type": "Movie Quotes",
 		"difficulty": "5"
 	},
