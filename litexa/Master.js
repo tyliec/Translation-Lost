@@ -198,7 +198,7 @@ exports.getPotentialAnswers = function() {
 			"To infinity and beyond!",
 			"No capes!",
 			"Not everyone can become a great artist, but a great artist can come from anywhere",
-			"Fish are our friends, not food",
+			"Fish are friends, not food",
 			"You're gonna need a bigger boat",
 			"You're embarrassing me in front of the wizards",
 			"I'm batman",
