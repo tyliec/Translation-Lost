@@ -203,7 +203,8 @@ exports.getPotentialAnswers = function() {
 			"You're embarrassing me in front of the wizards",
 			"I'm batman",
 			"It’s not who I am underneath, but what I do that defines me",
-			"Some men just want to watch the world burn"
+			"Some men just want to watch the world burn",
+			"You musn't be afraid to dream a little bigger darling"
 		]
 	};
 }
