@@ -85,7 +85,7 @@
 		"answer": "Houston, we have a problem",
 		"answer_annotation": "Spoken by the character Jim Lovell, played by Tom Hanks, from the movie, Apollo 13",
 		"type": "Movie Quotes",
-		"difficulty": "4"
+		"difficulty": "2"
 	},
 	"elementary_my_dear_watson": {
 		"accent": "Japanese",
@@ -341,7 +341,7 @@
 		"answer": "That is so fetch!",
 		"answer_annotation": "Spoken by the character Gretchen Wieners, played by Lacey Chabert, from the movie, Mean Girls",
 		"type": "Movie Quotes",
-		"difficulty": "4"
+		"difficulty": "7"
 	},
 	"stop_trying_to_make_fetch_happen_its_not_going_to_happen": {
 		"accent": "Turkish",
@@ -349,7 +349,7 @@
 		"answer": "Stop trying to make 'fetch' happen. It's not going to happen",
 		"answer_annotation": "Spoken by the character Regina George, played by Rachel McAdams, from the movie, Mean Girls",
 		"type": "Movie Quotes",
-		"difficulty": "6"
+		"difficulty": "8"
 	},
 	"on_wednesdays_we_wear_pink": {
 		"accent": "Italian",
@@ -373,7 +373,7 @@
 		"answer": "Why don't you make like a tree and get outta here",
 		"answer_annotation": "Spoken by the character Biff Tannen, played by Thomas F. Wilson, from the movie, Back to the Future",
 		"type": "Movie Quotes",
-		"difficulty": "4"
+		"difficulty": "6"
 	},
 	"roads_where_were_going_we_dont_need_roads": {
 		"accent": "Castilian Spanish",
@@ -397,7 +397,7 @@
 		"answer": "To infinity and beyond!",
 		"answer_annotation": "Spoken by the character Buzz Lightyear, voiced by Tim Allen, from the movie, Toy Story",
 		"type": "Movie Quotes",
-		"difficulty": "8"
+		"difficulty": "2"
 	},
 	"no_capes": {
 		"accent": "Japanese",
@@ -415,10 +415,10 @@
 		"type": "Movie Quotes",
 		"difficulty": "2"
 	},
-	"fish_are_our_friends_not_food": {
+	"fish_are_friends_not_food": {
 		"accent": "Swedish",
 		"hints": ["Quote from the movie, Finding Nemo", "Spoken by the character Bruce, voiced by Barry Humphries"],
-		"answer": "Fish are our friends, not food",
+		"answer": "Fish are friends, not food",
 		"answer_annotation": "Spoken by the character Bruce, voiced by Barry Humphries, from the movie, Finding Nemo",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -429,7 +429,7 @@
 		"answer": "You're gonna need a bigger boat",
 		"answer_annotation": "Spoken by the character Chief Martin Brody, voiced by Roy Scheider, from the movie, Jaws",
 		"type": "Movie Quotes",
-		"difficulty": "3"
+		"difficulty": "8"
 	},
 	"youre_embarrassing_me_in_front_of_the_wizards": {
 		"accent": "Polish",
@@ -437,7 +437,7 @@
 		"answer": "You're embarrassing me in front of the wizards",
 		"answer_annotation": "Spoken by the character Tony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
 		"type": "Movie Quotes",
-		"difficulty": "5"
+		"difficulty": "6"
 	},
 	"im_batman": {
 		"accent": "Icelandic",
@@ -462,5 +462,13 @@
 		"answer_annotation": "Spoken by the character Alfred Pennyworth, played by Michael Caine, from the movie, The Dark Knight",
 		"type": "Movie Quotes",
 		"difficulty": "1"
+	},
+	"you_musnt_be_afraid_to_dream_a_little_bigger_darling": {
+		"accent": "Swedish",
+		"hints": ["Quote from the movie, Inception", "Dream big"],
+		"answer": "You musn't be afraid to dream a little bigger darling",
+		"answer_annotation": "Spoken by the various character from the movie, Inception",
+		"type": "Movie Quotes",
+		"difficulty": "5"
 	}
 }

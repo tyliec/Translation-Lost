@@ -198,12 +198,13 @@ exports.getPotentialAnswers = function() {
 			"To infinity and beyond!",
 			"No capes!",
 			"Not everyone can become a great artist, but a great artist can come from anywhere",
-			"Fish are our friends, not food",
+			"Fish are friends, not food",
 			"You're gonna need a bigger boat",
 			"You're embarrassing me in front of the wizards",
 			"I'm batman",
 			"It’s not who I am underneath, but what I do that defines me",
-			"Some men just want to watch the world burn"
+			"Some men just want to watch the world burn",
+			"You musn't be afraid to dream a little bigger darling"
 		]
 	};
 }
