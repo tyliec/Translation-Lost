@@ -1103,7 +1103,7 @@ jsonSourceFiles['database.json'] = {
     "answer": "Houston, we have a problem",
     "answer_annotation": "Spoken by the character Jim Lovell, played by Tom Hanks, from the movie, Apollo 13",
     "type": "Movie Quotes",
-    "difficulty": "4"
+    "difficulty": "2"
   },
   "elementary_my_dear_watson": {
     "accent": "Japanese",
@@ -1201,7 +1201,10 @@ jsonSourceFiles['database.json'] = {
   "i_volunteer_as_tribute": {
     "accent": "Dutch",
     "hints": [
-      "Quote from the Hunger Games series"
+      "Quote from the Hunger Games series",
+      "Katniss Everdeen",
+      "Jennifer Lawrence",
+      "District 12"
     ],
     "answer": "I volunteer as tribute",
     "answer_annotation": "Spoken by the character Katniss Everdeen, played by Jennifer Lawrence, from the movie, Hunger Games",
@@ -1211,7 +1214,8 @@ jsonSourceFiles['database.json'] = {
   "with_great_power_comes_great_responsibility": {
     "accent": "Dutch",
     "hints": [
-      "Quote from Spider-man series"
+      "Quote from Spider-man series",
+      "Uncle Ben"
     ],
     "answer": "With great power, comes great responsibility",
     "answer_annotation": "Spoken by the character Uncle Ben from the Spider-man series",
@@ -1456,7 +1460,7 @@ jsonSourceFiles['database.json'] = {
     "answer": "That is so fetch!",
     "answer_annotation": "Spoken by the character Gretchen Wieners, played by Lacey Chabert, from the movie, Mean Girls",
     "type": "Movie Quotes",
-    "difficulty": "4"
+    "difficulty": "7"
   },
   "stop_trying_to_make_fetch_happen_its_not_going_to_happen": {
     "accent": "Turkish",
@@ -1467,7 +1471,7 @@ jsonSourceFiles['database.json'] = {
     "answer": "Stop trying to make 'fetch' happen. It's not going to happen",
     "answer_annotation": "Spoken by the character Regina George, played by Rachel McAdams, from the movie, Mean Girls",
     "type": "Movie Quotes",
-    "difficulty": "6"
+    "difficulty": "8"
   },
   "on_wednesdays_we_wear_pink": {
     "accent": "Italian",
@@ -1500,7 +1504,7 @@ jsonSourceFiles['database.json'] = {
     "answer": "Why don't you make like a tree and get outta here",
     "answer_annotation": "Spoken by the character Biff Tannen, played by Thomas F. Wilson, from the movie, Back to the Future",
     "type": "Movie Quotes",
-    "difficulty": "4"
+    "difficulty": "6"
   },
   "roads_where_were_going_we_dont_need_roads": {
     "accent": "Castilian Spanish",
@@ -1534,7 +1538,7 @@ jsonSourceFiles['database.json'] = {
     "answer": "To infinity and beyond!",
     "answer_annotation": "Spoken by the character Buzz Lightyear, voiced by Tim Allen, from the movie, Toy Story",
     "type": "Movie Quotes",
-    "difficulty": "8"
+    "difficulty": "2"
   },
   "no_capes": {
     "accent": "Japanese",
@@ -1558,13 +1562,13 @@ jsonSourceFiles['database.json'] = {
     "type": "Movie Quotes",
     "difficulty": "2"
   },
-  "fish_are_our_friends_not_food": {
+  "fish_are_friends_not_food": {
     "accent": "Swedish",
     "hints": [
       "Quote from the movie, Finding Nemo",
       "Spoken by the character Bruce, voiced by Barry Humphries"
     ],
-    "answer": "Fish are our friends, not food",
+    "answer": "Fish are friends, not food",
     "answer_annotation": "Spoken by the character Bruce, voiced by Barry Humphries, from the movie, Finding Nemo",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1578,7 +1582,7 @@ jsonSourceFiles['database.json'] = {
     "answer": "You're gonna need a bigger boat",
     "answer_annotation": "Spoken by the character Chief Martin Brody, voiced by Roy Scheider, from the movie, Jaws",
     "type": "Movie Quotes",
-    "difficulty": "3"
+    "difficulty": "8"
   },
   "youre_embarrassing_me_in_front_of_the_wizards": {
     "accent": "Polish",
@@ -1589,7 +1593,7 @@ jsonSourceFiles['database.json'] = {
     "answer": "You're embarrassing me in front of the wizards",
     "answer_annotation": "Spoken by the character Tony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
     "type": "Movie Quotes",
-    "difficulty": "5"
+    "difficulty": "6"
   },
   "im_batman": {
     "accent": "Icelandic",
@@ -1623,6 +1627,17 @@ jsonSourceFiles['database.json'] = {
     "answer_annotation": "Spoken by the character Alfred Pennyworth, played by Michael Caine, from the movie, The Dark Knight",
     "type": "Movie Quotes",
     "difficulty": "1"
+  },
+  "you_musnt_be_afraid_to_dream_a_little_bigger_darling": {
+    "accent": "Swedish",
+    "hints": [
+      "Quote from the movie, Inception",
+      "Dream big"
+    ],
+    "answer": "You musn't be afraid to dream a little bigger darling",
+    "answer_annotation": "Spoken by the various character from the movie, Inception",
+    "type": "Movie Quotes",
+    "difficulty": "5"
   }
 };
 
@@ -2475,12 +2490,13 @@ exports.getPotentialAnswers = function() {
 			"To infinity and beyond!",
 			"No capes!",
 			"Not everyone can become a great artist, but a great artist can come from anywhere",
-			"Fish are our friends, not food",
+			"Fish are friends, not food",
 			"You're gonna need a bigger boat",
 			"You're embarrassing me in front of the wizards",
 			"I'm batman",
 			"It’s not who I am underneath, but what I do that defines me",
-			"Some men just want to watch the world burn"
+			"Some men just want to watch the world burn",
+			"You musn't be afraid to dream a little bigger darling"
 		]
 	};
 }
@@ -2492,7 +2508,7 @@ __language.dbTypes = {
   master: Master
 };
 enterState.launch = async function(context) {
-  context.say.push( "Welcome to Translation Lost, a game where you try and understand me through my different accents." );
+  context.say.push( "Welcome to Lost in Translation, a game where you try and understand me through my different accents." );
   if (context.db.read('tutorialHeard') === true) {
     context.say.push( "Do you want to hear the tutorial again?" );
     context.nextState = 'askForTutorial';
@@ -2592,6 +2608,7 @@ exitState.askForTutorial = async function(context) {
 
 enterState.getTopic = async function(context) {
   context.say.push( "The current topic right now is, Movie Quotes." );
+  context.say.push( "You'll have five minutes to score as many points as you can, with each translation correct being a point." );
   context.say.push( "Ready?" );
   switch(pickSayString(context, 1, 2)) {
     case 0:
@@ -2623,14 +2640,16 @@ enterState.generateRandomSpeech = async function(context) {
     context.say.push( "Goodbye." );
     context.nextState = 'goodbye';
   }
-  context.db.write('speechKey', await context.db.read('master').getRandomSpeech());
-  if (await context.db.read('master').seenBefore(context.db.read('speechKey'))) {
-    context.nextState = 'generateRandomSpeech';
-  }
   else {
-    await context.db.read('master').seen(context.db.read('speechKey'))
-    context.db.write('temp', ("https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/" + context.db.read('speechKey')) + '.mp3');
-    context.nextState = 'askForAnswer';
+    context.db.write('speechKey', await context.db.read('master').getRandomSpeech());
+    if (await context.db.read('master').seenBefore(context.db.read('speechKey'))) {
+      context.nextState = 'generateRandomSpeech';
+    }
+    else {
+      await context.db.read('master').seen(context.db.read('speechKey'))
+      context.db.write('temp', ("https://lost-in-translation.s3.amazonaws.com/lost-in-translation/development/default/" + context.db.read('speechKey')) + '.mp3');
+      context.nextState = 'askForAnswer';
+    }
   }
 };
 processIntents.generateRandomSpeech = async function(context, runOtherwise) {
@@ -2649,20 +2668,21 @@ enterState.askForAnswer = async function(context) {
   if (await minutesBetween(context.now, context.db.read('gameStartedTime')) >= 5) {
     context.say.push( "Times up!" );
     context.say.push( "You scored " + escapeSpeech( context.db.read('score') ) + " points." );
-    context.say.push( "Goodbye." );
-    context.nextState = 'goodbye';
+    context.nextState = 'askForPlayAgain';
   }
-  context.say.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
-  switch(pickSayString(context, 2, 2)) {
-    case 0:
-      context.say.push( "What do you think I said?" );
-      break;
-    default:
-      context.say.push( "What did I say?" );
-      break;
+  else {
+    context.say.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
+    switch(pickSayString(context, 2, 2)) {
+      case 0:
+        context.say.push( "What do you think I said?" );
+        break;
+      default:
+        context.say.push( "What did I say?" );
+        break;
+    }
+    context.reprompt.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
+    context.nextState = 'waitForAnswer';
   }
-  context.reprompt.push( "<" + "audio src='" + escapeSpeech( context.db.read('temp') ) + "' />" );
-  context.nextState = 'waitForAnswer';
 };
 processIntents.askForAnswer = async function(context, runOtherwise) {
   switch( context.intent ) {
@@ -2693,6 +2713,49 @@ processIntents.askForRepeat = async function(context, runOtherwise) {
 exitState.askForRepeat = async function(context) {
 };
 
+enterState.askForPlayAgain = async function(context) {
+  context.say.push( "Do you want to play again?" );
+  context.nextState = 'waitForPlayAgainAnswer';
+};
+processIntents.askForPlayAgain = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, true) ) { return true; }
+      break;
+    }
+  }
+  return true;
+};
+exitState.askForPlayAgain = async function(context) {
+};
+
+enterState.waitForPlayAgainAnswer = async function(context) {
+};
+processIntents.waitForPlayAgainAnswer = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, false) ) { return true; }
+      context.say.push( "Do you want to play again?" );
+      context.nextState = 'waitForPlayAgainAnswer';
+      break;
+    }
+    case 'AMAZON.YesIntent': {
+      context.say.push( "Alright. Let's go again." );
+      context.say.push( "Your last score was " + escapeSpeech( context.db.read('score') ) + " points." );
+      context.nextState = 'getTopic';
+      break;
+    }
+    case 'AMAZON.NoIntent': {
+      context.say.push( "Goodbye." );
+      context.nextState = 'goodbye';
+      break;
+    }
+  }
+  return true;
+};
+exitState.waitForPlayAgainAnswer = async function(context) {
+};
+
 enterState.giveHint = async function(context) {
   exports.Logging.log(JSON.stringify('giveHint'));
   if (await context.db.read('master').hintAvailable(context.db.read('speechKey')) === false) {
@@ -2701,7 +2764,7 @@ enterState.giveHint = async function(context) {
   }
   else {
     context.db.write('currentHint', await context.db.read('master').getHint(context.db.read('speechKey')));
-    if (await context.db.read('master').seenHintBefore(context.db.read('speechKey'), context.db.read('currenHint'))) {
+    if (await context.db.read('master').seenHintBefore(context.db.read('speechKey'), context.db.read('currentHint'))) {
       context.nextState = 'giveHint';
     }
     else {
@@ -2774,12 +2837,15 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
         }
         context.say.push( "The answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
         context.say.push( escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ) + "." );
-        switch(pickSayString(context, 4, 2)) {
+        switch(pickSayString(context, 4, 3)) {
           case 0:
             context.say.push( "Let's go again." );
             break;
-          default:
+          case 1:
             context.say.push( "One more time!" );
+            break;
+          default:
+            context.say.push( "Keep going!" );
             break;
         }
         context.db.write('score', context.db.read('score') + 1);
@@ -2853,6 +2919,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
     case 'REPEAT_THE_BLANKTHREE': {
       if (context.slots.blankthree) {
         context.say.push( escapeSpeech( context.db.read('currentHint') ) + "." );
+        context.nextState = 'waitForAnswer';
       }
       else {
         context.say.push( "Wrong! Here it is again." );

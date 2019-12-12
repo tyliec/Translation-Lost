@@ -153,7 +153,7 @@
 	},
 	"i_volunteer_as_tribute": {
 		"accent": "Dutch",
-		"hints": ["Quote from the Hunger Games series"],
+		"hints": ["Quote from the Hunger Games series", "Katniss Everdeen", "Jennifer Lawrence", "District 12"],
 		"answer": "I volunteer as tribute",
 		"answer_annotation": "Spoken by the character Katniss Everdeen, played by Jennifer Lawrence, from the movie, Hunger Games",
 		"type": "Movie Quotes",
@@ -161,7 +161,7 @@
 	},
 	"with_great_power_comes_great_responsibility": {
 		"accent": "Dutch",
-		"hints": ["Quote from Spider-man series"],
+		"hints": ["Quote from Spider-man series", "Uncle Ben"],
 		"answer": "With great power, comes great responsibility",
 		"answer_annotation": "Spoken by the character Uncle Ben from the Spider-man series",
 		"type": "Movie Quotes",

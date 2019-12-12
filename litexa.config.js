@@ -15,6 +15,12 @@ module.exports = {
             S3BucketName: 'lost-in-translation',
             askProfile: 'default',
             awsProfile: 'default'
+        },
+        production: {
+            module: '@litexa/deploy-aws',
+            S3BucketName: 'lost-in-translation',
+            askProfile: 'default',
+            awsProfile: 'default'
         }
     },
     extensionOptions: {}

@@ -14,23 +14,36 @@ module.exports = {
             distributionCountries: ['US'],
             distributionMode: 'PUBLIC',
             category: 'GAMES',
-            testingInstructions: 'replace with testing instructions',
+            testingInstructions: 'Play the game!',
             locales: {
                 'en-US': {
-                    name: 'Translation Lost',
+                    name: 'Lost in Translation',
                     invocation: 'Translation Lost',
-                    summary: "a game where you try and understand Alexa's accents",
-                    description: 'Longer description, goes to the skill store. Line breaks are supported.',
+                    summary: "A game where you try and understand Alexa's different accents",
+                    description: `Have you taken a class from a foreign professor? Tried to talk to a co-worker who you just couldn't understand? Train your comprehension with Lost in Translation!
+                    
+Lost in translation is a fun game where Alexa will say something in an accent, and it's up to you to decipher what she said!
+
+She'll speak in accents such as French, Korean, and much more!
+
+Some of the phrases are really hard, good luck!
+                    `,
                     examplePhrases: [
                         'Alexa, launch Translation lost',
-                        'Alexa, open Translation lost',
+                        'Alexa, start Translation lost',
                         'Alexa, play Translation lost',
                     ],
                     keywords: [
                         'game',
                         'fun',
                         'single player',
-                        'modify this list as appropriate'
+                        'lost in translation',
+                        'translate',
+                        'accent',
+                        'translation lost',
+                        'english',
+                        'language',
+                        'foreign'
                     ]
                 }
             }

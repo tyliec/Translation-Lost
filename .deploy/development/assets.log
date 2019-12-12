@@ -1,9 +1,9 @@
-[assets] +258ms all asset conversion complete
+[assets] +275ms all asset conversion complete
 [assets] +0ms deploying assets
 [assets] +0ms loaded AWS profile default
 [assets] +647ms found S3 bucket lost-in-translation
-[assets] +0ms scanning assets, preparing hashes
-[assets] +7ms scanned 65 assets in project
-[assets] +0ms fetching S3 object metadata [0-1000]
-[assets] +743ms 0 assets need uploading
-[assets] +0ms asset deployment complete in 1397ms
+[assets] +1ms scanning assets, preparing hashes
+[assets] +6ms scanned 66 assets in project
+[assets] +1ms fetching S3 object metadata [0-1000]
+[assets] +661ms 0 assets need uploading
+[assets] +0ms asset deployment complete in 1316ms

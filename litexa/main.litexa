@@ -1,7 +1,7 @@
 define @master as Master
 
 launch
-  say "Welcome to Translation Lost, a game where you try and understand me through my different accents."
+  say "Welcome to Lost in Translation, a game where you try and understand me through my different accents."
   if @tutorialHeard == true
     say "Do you want to hear the tutorial again?"
     -> askForTutorial
@@ -14,8 +14,6 @@ playTutorial
   soundEffect "bag_of_potatoes.mp3"
   say "You would translate to,"
   soundEffect "bag_of_potatoes2.mp3"
-
-  say "You'll have five minutes to score as many points as you can."
 
   say "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat."
   say "If you want to know the accent, ask me, Alexa, what accent is this."
@@ -36,17 +34,15 @@ askForTutorial
 
 getTopic
   say "The current topic right now is, Movie Quotes."
+  say "You'll have five minutes to score as many points as you can, with each translation correct being a point."
   say "Ready?"
   say "<sfx starto.mp3>"
     or "<!batter up>"
   @gameStartedTime = context.now
   @score = 0
   -> generateRandomSpeech
-
-
  
 generateRandomSpeech
-  
   if @master.speechAvailable() == false
     say "No more translations available,"
     say "Goodbye."
@@ -62,27 +58,39 @@ generateRandomSpeech
       -> askForAnswer
 
 askForAnswer
-  # soundEffect "{@master.getRandomSpeech()}"
   if minutesBetween(context.now, @gameStartedTime) >= 5
     say "Times up!"
     say "You scored @score points."
-    say "Goodbye."
-    -> goodbye
+    -> askForPlayAgain
+  else 
+    say "\<audio src='@temp' />"
 
-    
-  say "\<audio src='@temp' />"
+    say "What do you think I said?"
+      or "What did I say?"
 
-  say "What do you think I said?"
-    or "What did I say?"
-
-  # add an automatic re-prompt, in case the user says nothing
-  reprompt "\<audio src='@temp' />"
-  -> waitForAnswer
+    # add an automatic re-prompt, in case the user says nothing
+    reprompt "\<audio src='@temp' />"
+    -> waitForAnswer
 
 askForRepeat
   say "\<audio src='@temp' />"
   reprompt "\<audio src='@temp' />"
   -> waitForAnswer
+
+askForPlayAgain
+  say "Do you want to play again?"
+  -> waitForPlayAgainAnswer
+waitForPlayAgainAnswer
+  when AMAZON.YesIntent
+    say "Alright. Let's go again."
+    say "Your last score was @score points."
+    -> getTopic
+  when AMAZON.NoIntent
+    say "Goodbye."
+    -> goodbye
+  otherwise
+    say "Do you want to play again?"
+    -> waitForPlayAgainAnswer
 
 giveHint
   log 'giveHint'
@@ -92,7 +100,7 @@ giveHint
   else
     @currentHint = @master.getHint(@speechKey)
 
-    if @master.seenHintBefore(@speechKey, @currenHint)
+    if @master.seenHintBefore(@speechKey, @currentHint)
       -> giveHint
     else 
       @master.seenHint(@speechKey, @currentHint)
@@ -121,6 +129,7 @@ waitForAnswer
       say "@master.getAnnotation(@speechKey)."
       say "Let's go again."
         or "One more time!"
+        or "Keep going!"
       @score = @score + 1
       -> generateRandomSpeech
     else
@@ -160,6 +169,7 @@ waitForAnswer
     with $blankthree = "hints"
     if $blankthree
       say "@currentHint."
+      -> waitForAnswer
     else
       say "Wrong! Here it is again."
       -> askForRepeat
