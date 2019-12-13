@@ -204,7 +204,8 @@ exports.getPotentialAnswers = function() {
 			"I'm batman",
 			"It’s not who I am underneath, but what I do that defines me",
 			"Some men just want to watch the world burn",
-			"You musn't be afraid to dream a little bigger darling"
+			"You musn't be afraid to dream a little bigger darling",
+			"I wish I knew how to quit you"
 		]
 	};
 }
