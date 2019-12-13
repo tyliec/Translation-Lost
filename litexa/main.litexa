@@ -80,6 +80,7 @@ askForRepeat
 askForPlayAgain
   say "Do you want to play again?"
   -> waitForPlayAgainAnswer
+
 waitForPlayAgainAnswer
   when AMAZON.YesIntent
     say "Alright. Let's go again."
@@ -149,6 +150,7 @@ waitForAnswer
     with $blank = "accent"
     if $blank
       say "@master.getAccent(@speechKey)."
+      -> waitForAnswer
     else
       say "Wrong!"
       say "Here it is again."
@@ -185,10 +187,12 @@ waitForAnswer
 
   when AMAZON.RepeatIntent
     or "one more time"
+    or "say again"
     -> askForRepeat
 
   when AMAZON.HelpIntent
     or "can i get a hint"
+    or "hint please"
     -> giveHint
 
   when AMAZON.StopIntent

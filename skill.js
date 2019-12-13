@@ -20,7 +20,7 @@ module.exports = {
                     name: 'Lost in Translation',
                     invocation: 'Translation Lost',
                     summary: "A game where you try and understand Alexa's different accents",
-                    description: `Have you taken a class from a foreign professor? Tried to talk to a co-worker who you just couldn't understand? Train your comprehension with Lost in Translation!
+                    description: `Have you taken a class from a foreign professor? Tried to talk to a co-worker who you just couldn't understand? Relive the memories with Lost in Translation!
                     
 Lost in translation is a fun game where Alexa will say something in an accent, and it's up to you to decipher what she said!
 
