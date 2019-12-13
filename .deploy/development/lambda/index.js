@@ -1634,7 +1634,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Inception",
       "Dream big"
     ],
-    "answer": "You musn't be afraid to dream a little bigger darling",
+    "answer": "You mustn't be afraid to dream a little bigger darling",
     "answer_annotation": "Spoken by the various character from the movie, Inception",
     "type": "Movie Quotes",
     "difficulty": "5"
@@ -2496,7 +2496,7 @@ exports.getPotentialAnswers = function() {
 			"I'm batman",
 			"It’s not who I am underneath, but what I do that defines me",
 			"Some men just want to watch the world burn",
-			"You musn't be afraid to dream a little bigger darling"
+			"You mustn't be afraid to dream a little bigger darling"
 		]
 	};
 }
@@ -2890,6 +2890,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
     case 'WHAT_BLANK_IS_THIS': {
       if (context.slots.blank) {
         context.say.push( escapeSpeech( (await context.db.read('master').getAccent(context.db.read('speechKey'))) ) + "." );
+        context.nextState = 'waitForAnswer';
       }
       else {
         context.say.push( "Wrong!" );

@@ -4,7 +4,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/12/2019, 12:50:53 AM",
+            "date": "12/12/2019, 1:06:12 AM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -12,9 +12,9 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "b204e1f92a66fa62d8474e14d18e165ae48553fb",
+              "currentCommitHash": "66aa1c20c86c69d4c53a760e667af7d7530387b1",
               "currentCommitComment": [
-                "Merge branch 'master' of github.com:Viltaria/Translation-Lost"
+                "Fix @currentHint bug"
               ],
               "uncommittedChanges": [
                 "[modified] .deploy/development/assets.log",
@@ -24,21 +24,18 @@
                 "[modified] .deploy/development/local-cache.json",
                 "[modified] .deploy/development/manifest.log",
                 "[modified] .deploy/development/model-en-US.json",
-                "[modified] .deploy/development/skill.json",
-                "[modified] .deploy/litexaConfig.hash",
-                "[deleted] .test/lambda.js",
-                "[deleted] .test/libraryCode.js",
-                "[deleted] .test/model.json",
-                "[deleted] .test/output.json",
-                "[deleted] .test/output.log",
-                "[deleted] .test/project-config.json",
+                "[modified] .deploy/production/assets.log",
+                "[modified] .deploy/production/lambda.log",
+                "[modified] .deploy/production/lambda.zip",
+                "[modified] .deploy/production/lambda/index.js",
+                "[modified] .deploy/production/local-cache.json",
+                "[modified] .deploy/production/manifest.log",
+                "[modified] .deploy/production/model-en-US.json",
                 "[modified] .test/referenceTester.js",
-                "[deleted] .test/test.js",
                 "[modified] artifacts.json",
-                "[modified] litexa.config.js",
+                "[modified] litexa/Master.js",
                 "[modified] litexa/database.json",
-                "[modified] litexa/main.litexa",
-                "[modified] skill.js"
+                "[modified] litexa/main.litexa"
               ]
             },
             "coreVersion": "0.3.1"
@@ -60,7 +57,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "1a62fba97d0d67bbebe97b67c7f95157",
+          "skill-model-etag-en-US": "4bcae1e799e2e311556a627324b215d6",
           "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
         }
       ]
@@ -69,7 +66,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/12/2019, 12:48:33 AM",
+            "date": "12/12/2019, 1:06:58 AM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -77,9 +74,9 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "b204e1f92a66fa62d8474e14d18e165ae48553fb",
+              "currentCommitHash": "66aa1c20c86c69d4c53a760e667af7d7530387b1",
               "currentCommitComment": [
-                "Merge branch 'master' of github.com:Viltaria/Translation-Lost"
+                "Fix @currentHint bug"
               ],
               "uncommittedChanges": [
                 "[modified] .deploy/development/assets.log",
@@ -89,21 +86,18 @@
                 "[modified] .deploy/development/local-cache.json",
                 "[modified] .deploy/development/manifest.log",
                 "[modified] .deploy/development/model-en-US.json",
-                "[modified] .deploy/development/skill.json",
-                "[modified] .deploy/litexaConfig.hash",
-                "[deleted] .test/lambda.js",
-                "[deleted] .test/libraryCode.js",
-                "[deleted] .test/model.json",
-                "[deleted] .test/output.json",
-                "[deleted] .test/output.log",
-                "[deleted] .test/project-config.json",
+                "[modified] .deploy/production/assets.log",
+                "[modified] .deploy/production/lambda.log",
+                "[modified] .deploy/production/lambda.zip",
+                "[modified] .deploy/production/lambda/index.js",
+                "[modified] .deploy/production/local-cache.json",
+                "[modified] .deploy/production/manifest.log",
+                "[modified] .deploy/production/model-en-US.json",
                 "[modified] .test/referenceTester.js",
-                "[deleted] .test/test.js",
                 "[modified] artifacts.json",
-                "[modified] litexa.config.js",
+                "[modified] litexa/Master.js",
                 "[modified] litexa/database.json",
-                "[modified] litexa/main.litexa",
-                "[modified] skill.js"
+                "[modified] litexa/main.litexa"
               ]
             },
             "coreVersion": "0.3.1"
@@ -125,7 +119,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_production_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.2430bb84-e485-4e2c-a609-59c81e0c0b92",
-          "skill-model-etag-en-US": "18dddaa27c72cbaa362360cf00962af0",
+          "skill-model-etag-en-US": "2389c57d82c812144a536befc719ec99",
           "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
         }
       ]
