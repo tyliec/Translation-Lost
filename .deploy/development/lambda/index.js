@@ -1638,6 +1638,17 @@ jsonSourceFiles['database.json'] = {
     "answer_annotation": "Spoken by the various character from the movie, Inception",
     "type": "Movie Quotes",
     "difficulty": "5"
+  },
+  "i_wish_i_knew_how_to_quit_you": {
+    "accent": "Norwegian",
+    "hints": [
+      "Quote from the movie, Brokeback Mountain",
+      "Spoken by Jake Gyllenhaal as Jack Twist"
+    ],
+    "answer": "I wish I knew how to quit you",
+    "answer_annotation": "Spoken by Jake Gyllenhaal as Jack Twist in the movie Brokeback Mountain",
+    "type": "Movie Quotes",
+    "difficulty": "2"
   }
 };
 
@@ -2496,7 +2507,8 @@ exports.getPotentialAnswers = function() {
 			"I'm batman",
 			"It’s not who I am underneath, but what I do that defines me",
 			"Some men just want to watch the world burn",
-			"You mustn't be afraid to dream a little bigger darling"
+			"You mustn't be afraid to dream a little bigger darling",
+			"I wish I knew how to quit you"
 		]
 	};
 }
