@@ -205,7 +205,11 @@ exports.getPotentialAnswers = function() {
 			"It’s not who I am underneath, but what I do that defines me",
 			"Some men just want to watch the world burn",
 			"You mustn't be afraid to dream a little bigger darling",
-			"I wish I knew how to quit you"
+			"I wish I knew how to quit you",
+			"I am Iron Man",
+			"I'm a dude playin' a dude disguised as another dude!",
+			"Get busy livin', or get busy dyin'",
+			"How do you like them apples?"
 		]
 	};
 }

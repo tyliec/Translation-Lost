@@ -433,9 +433,9 @@
 	},
 	"youre_embarrassing_me_in_front_of_the_wizards": {
 		"accent": "Polish",
-		"hints": ["Quote from the movie, Avengers: Infinity War", "Spoken by the character Tony Stark, voiced by Robert Downey Jr."],
+		"hints": ["Quote from the movie, Avengers: Infinity War", "Spoken by Robert Downey Jr. as Tony Stark"],
 		"answer": "You're embarrassing me in front of the wizards",
-		"answer_annotation": "Spoken by the character Tony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
+		"answer_annotation": "Spoken by the Robert Downey Jr. as Tony Stark in the movie Avengers: Infinity War",
 		"type": "Movie Quotes",
 		"difficulty": "6"
 	},
@@ -478,5 +478,37 @@
 		"answer_annotation": "Spoken by Jake Gyllenhaal as Jack Twist in the movie Brokeback Mountain",
 		"type": "Movie Quotes",
 		"difficulty": "2"
+	},
+	"i_am_iron_man": {
+		"accent": "Danish",
+		"hints": ["Quote from the movie Iron Man", "Spoken by Robert Downey Jr. as Tony Stark"],
+		"answer": "I am Iron Man",
+		"answer_annotation": "Spoken by Robert Downey Jr. as Tony Stark in the movie Iron Man",
+		"type": "Movie Quotes",
+		"difficulty": "2"
+	},
+	"im_a_dude_playin_a_dude_disguised_as_another_dude": {
+		"accent": "Danish",
+		"hints": ["Quote from the movie Tropic Thunder", "Spoken by Robert Downey Jr. as Kirk Lazarus"],
+		"answer": "I'm a dude playin' a dude disguised as another dude!",
+		"answer_annotation": "Spoken by Robert Downey Jr. as Kirk Lazarus in the movie Tropic Thunder",
+		"type": "Movie Quotes",
+		"difficulty": "3"
+	},
+	"get_busy_livin_or_get_busy_dyin": {
+		"accent": "Romanian",
+		"hints": ["Quote from the movie Good Will Hunting"],
+		"answer": "Get busy livin', or get busy dyin'",
+		"answer_annotation": "Spoken by various characters from the movie The Shawshank Redemption",
+		"type": "Movie Quotes",
+		"difficulty": "2"
+	},
+	"how_do_you_like_them_apples": {
+		"accent": "Norwegian",
+		"hints": ["Quote from the movie Good Will Hunting", "Spoken by Matt Damon as Will Hunting"],
+		"answer": "How do you like them apples?",
+		"answer_annotation": "Spoken by Matt Damon as Will Hunting from the movie Good Will Hunting",
+		"type": "Movie Quotes",
+		"difficulty": "3"
 	}
 }
