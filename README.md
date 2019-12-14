@@ -1,58 +1,35 @@
-# lost-in-translation
+# Lost in Translation
 
-This README is a quick-start guide to help you create, run, and deploy a Litexa project.
+Alexa, launch Translation Lost.
 
-## Build
+## Description
 
-* `npm run clean`
-* `npm run compile`
+Have you taken a class from a foreign professor? Tried to talk to a co-worker who you just couldn't understand? Relive the memories with Lost in Translation!
+    
+Lost in translation is a fun game where Alexa will say something in an accent, and it's up to you to decipher what she said!
 
-These commands install the npm dependencies and compile your code. The compilation process will bundle your
-code into a single executable `main.min.js` and place it in the `litexa` folder. To facilitate this action, Litexa
-generates the utility functions `clean` and `compile` in your `package.json`.
+She'll speak in accents such as French, Korean, and much more! 
 
-*Tip*: `npm run compile:watch` compiles your code as you make edits and changes to it.
+You'll be often asking yourself, what the hell is Alexa saying?
 
-## Running / Development
+## Privacy Policy
+Lost in Translation operates as an Amazon Alexa Skill, interacting with the Alexa voice services, and AWS services such as Lambda, S3, and DynamoDB. It is our policy to respect your privacy regarding any information we may collect while operating.
 
-* `npm test`
+We collect no personal information. The only information we save is information dealing with your gameplay  in the skill.
 
-This command will run the spec files in your `test` folder.
+**Data Retention Policy**
 
-* `npm run test:watch`
+We will not retain any user provided data.
 
-This command will run the spec files in your `test` folder as you make edits and changes to your code.
+**Log Data**
 
-* `npm run test:litexa`
+To be able to investigate issues with the skill, Lost in Translation stores logs with Amazon CloudWatch. No personal information is logged, as none are used/requested.
 
-This command will compile, bundle, then run your Litexa project against your Litexa tests.
+**Privacy Policy Changes**
 
-* `npm run test:litexa:watch`
+Although most changes are likely to be minor, we may change this Privacy Policy from time to time, and in our sole discretion. We encourages visitors to frequently check this page for any changes to our Privacy Policy. Your continued use of this skill after any change in this Privacy Policy will constitute your acceptance of such change.
 
-This command will compile, bundle, then run your Litexa project against your Litexa tests
-as you make edits and changes to your code.
+**Contributors**
 
-## Building and Deploying
-
-* `npm install -g @litexa/deploy-aws`
-* `npm run deploy` -- compiles your code and calls `litexa deploy`
-
-To deploy your code you must specify the deployment module in your Litexa configuration. By default, Litexa
-configures your project to deploy with the `@litexa/deploy-aws` module for the `development` environment.
-
-## Command Reference
-
-* `litexa --help`
-* `litexa <command> --help`
-
-`--help` provides more information when used in conjunction with a command, e.g. `litexa generate --help`. When used
-on its own, it provides general information about the Litexa CLI.
-
-## Further Reading / Useful Links
-
-* [ASK](https://developer.amazon.com/alexa-skills-kit/)
-* [ASK Documentation](https://developer.amazon.com/docs/ask-overviews/build-skills-with-the-alexa-skills-kit.html)
-* Game Developer Resources
-  * [ASK-Gaming](https://developer.amazon.com/alexa-skills-kit/gaming)
-  * [GameOn](https://developer.amazon.com/docs/gameon/overview.html)
-
+Tyler Chong
+Matthew Kim

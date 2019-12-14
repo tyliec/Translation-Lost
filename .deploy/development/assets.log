@@ -1,9 +1,12 @@
-[assets] +267ms all asset conversion complete
+[assets] +301ms all asset conversion complete
 [assets] +0ms deploying assets
 [assets] +0ms loaded AWS profile default
-[assets] +650ms found S3 bucket lost-in-translation
+[assets] +688ms found S3 bucket lost-in-translation
 [assets] +0ms scanning assets, preparing hashes
-[assets] +7ms scanned 66 assets in project
+[assets] +27ms scanned 67 assets in project
 [assets] +0ms fetching S3 object metadata [0-1000]
-[assets] +767ms 0 assets need uploading
-[assets] +1ms asset deployment complete in 1425ms
+[assets] +820ms 1 assets need uploading
+[assets] +0ms uploading i_wish_i_knew_how_to_quit_you.mp3 -> lost-in-translation/development/default/i_wish_i_knew_how_to_quit_you.mp3 [7a878832]
+[assets] +1ms 0 assets remaining in queue
+[assets] +1005ms segment uploaded in 1005ms
+[assets] +0ms asset deployment complete in 2541ms
