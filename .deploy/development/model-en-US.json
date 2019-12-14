@@ -541,13 +541,15 @@
         {
           "name": "AMAZON.RepeatIntent",
           "samples": [
-            "one more time"
+            "one more time",
+            "say again"
           ]
         },
         {
           "name": "AMAZON.HelpIntent",
           "samples": [
-            "can i get a hint"
+            "can i get a hint",
+            "hint please"
           ]
         },
         {
