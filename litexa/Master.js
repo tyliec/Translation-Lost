@@ -209,7 +209,20 @@ exports.getPotentialAnswers = function() {
 			"I am Iron Man",
 			"I'm a dude playin' a dude disguised as another dude!",
 			"Get busy livin', or get busy dyin'",
-			"How do you like them apples?"
+			"How do you like them apples?",
+			"We all float down here",
+			"Terrified... mortified petrified, stupified by you",
+			"Do, or do not. There is no 'try'",
+			"I'm king of the world",
+			"I'll get you, my pretty, and your little dog, too!",
+			"I feel the need, the need for speed!",
+			"Here's Johnny!",
+			"I see dead people",
+			"Run, Forrest, Run!",
+			"It's only after we've lost everything that we're free to do anything",
+			"Mama says, 'Stupid is as stupid does",
+			"Be afraid. Be very afraid",
+			"Oh what a day. What a lovely day!"
 		]
 	};
 }
