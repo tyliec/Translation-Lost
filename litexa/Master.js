@@ -205,7 +205,32 @@ exports.getPotentialAnswers = function() {
 			"It’s not who I am underneath, but what I do that defines me",
 			"Some men just want to watch the world burn",
 			"You mustn't be afraid to dream a little bigger darling",
-			"I wish I knew how to quit you"
+			"I wish I knew how to quit you",
+			"I am Iron Man",
+			"I'm a dude playin' a dude disguised as another dude!",
+			"Get busy livin', or get busy dyin'",
+			"How do you like them apples?",
+			"We all float down here",
+			"Terrified... mortified petrified, stupified by you",
+			"Do, or do not. There is no 'try'",
+			"I'm king of the world",
+			"I'll get you, my pretty, and your little dog, too!",
+			"I feel the need, the need for speed!",
+			"Here's Johnny!",
+			"I see dead people",
+			"Run, Forrest, Run!",
+			"It's only after we've lost everything that we're free to do anything",
+			"Mama says, 'Stupid is as stupid does",
+			"Be afraid. Be very afraid",
+			"Oh what a day. What a lovely day!",
+			"I love the smell of napalm in the morning",
+			"I solemnly swear I am up to no good",
+			"Remember who you are",
+			"Do you wanna build a snowman?",
+			"Some people are worth melting for",
+			"Our fate lives within us. You only have to be brave enough to see it",
+			"I never look back, darling! It distracts me from the now",
+			"I don't want to survive.  I want to live"
 		]
 	};
 }
