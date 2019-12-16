@@ -614,5 +614,69 @@
 		"answer_annotation": "Spoken by Nicholas Hoult as Nux from the movie Mad Max: Fury Road",
 		"type": "Movie Quotes",
 		"difficulty": "3"
+	},
+	"i_love_the_smell_napalm_in_the_morning": {
+		"accent": "Welsh",
+		"hints": ["Quote from the movie Apocalypse Now", "Spoken by Robert Duvall as Lieutenant Colonel William 'Bill' Kilgore"],
+		"answer": "I love the smell of napalm in the morning",
+		"answer_annotation": "Spoken by Robert Duvall as Lieutenant Colonel William 'Bill' Kilgore from the movie Apocalypse Now",
+		"type": "Movie Quotes",
+		"difficulty": "4"
+	},
+	"i_solemnly_swear_i_am_up_to_no_good": {
+		"accent": "Castilian Spanish",
+		"hints": ["Quote from the movie Harry Potter and the Prisoner of Azkaban", "Phrase that allows a person to see what is on the Marauder's Map"],
+		"answer": "I solemnly swear I am up to no good",
+		"answer_annotation": "Spoken by various characters from the movie Harry Potter and the Prisoner of Azkaban",
+		"type": "Movie Quotes",
+		"difficulty": "4"
+	},
+	"remember_who_you_are": {
+		"accent": "Norwegian",
+		"hints": ["Quote from the movie The Lion King", "Spoken by James Earl Jones as Mufasa"],
+		"answer": "Remember who you are",
+		"answer_annotation": "Spoken by James Earl Jones as Mufasa from the movie The Lion King",
+		"type": "Movie Quotes",
+		"difficulty": "4"
+	},
+	"do_you_wanna_build_a_snowman": {
+		"accent": "Danish",
+		"hints": ["Quote from the movie Frozen", "Spoken by Kristen Bell as Anna"],
+		"answer": "Do you wanna build a snowman?",
+		"answer_annotation": "Spoken by Kristen Bell as Anna from the movie Frozen",
+		"type": "Movie Quotes",
+		"difficulty": "4"
+	},
+	"some_people_are_worth_melting_for": {
+		"accent": "Polish",
+		"hints": ["Quote from the movie Frozen", "Spoken by Josh Gad as Olaf"],
+		"answer": "Some people are worth melting for",
+		"answer_annotation": "Spoken by Josh Gad as Olaf from the movie Frozen",
+		"type": "Movie Quotes",
+		"difficulty": "5"
+	},
+	"our_fate_lives_within_us_you_only_have_to_be_brave_enough_to_see_it": {
+		"accent": "Castilian Spanish",
+		"hints": ["Quote from the movie Brave", "Spoken by Kelly Macdonald as Merida"],
+		"answer": "Our fate lives within us. You only have to be brave enough to see it",
+		"answer_annotation": "Spoken by Kelly Macdonald as Merida from the movie Brave",
+		"type": "Movie Quotes",
+		"difficulty": "6"
+	},
+	"i_never_look_back_darling_it_distracts_me_from_the_now": {
+		"accent": "Portuguese",
+		"hints": ["Quote from the movie The Incredibles", "Spoken by Brad Bird as Edna Mode"],
+		"answer": "I never look back, darling! It distracts me from the now",
+		"answer_annotation": "Spoken by Brad Bird as Edna Mode from the movie The Incredibles",
+		"type": "Movie Quotes",
+		"difficulty": "7"
+	},
+	"i_dont_want_to_survive_i_want_to_live": {
+		"accent": "Korean",
+		"hints": ["Quote from the movie Wall-E", "Quote from the movie Twelve Years A Slave", "Spoken by Jeff Garlin as Captain B. McCrea", "Spoken by Chiwetel Ejiofor as Solomon Northup"],
+		"answer": "I don't want to survive.  I want to live",
+		"answer_annotation": "Spoken by Jeff Garlin as Captain B. McCrea from the movie Wall-E and by Chiwetel Ejiofor as Solomon Northup from the movie Twelve Years A Slave",
+		"type": "Movie Quotes",
+		"difficulty": "7"
 	}
 }

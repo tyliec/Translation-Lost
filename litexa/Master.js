@@ -222,7 +222,15 @@ exports.getPotentialAnswers = function() {
 			"It's only after we've lost everything that we're free to do anything",
 			"Mama says, 'Stupid is as stupid does",
 			"Be afraid. Be very afraid",
-			"Oh what a day. What a lovely day!"
+			"Oh what a day. What a lovely day!",
+			"I love the smell of napalm in the morning",
+			"I solemnly swear I am up to no good",
+			"Remember who you are",
+			"Do you wanna build a snowman?",
+			"Some people are worth melting for",
+			"Our fate lives within us. You only have to be brave enough to see it",
+			"I never look back, darling! It distracts me from the now",
+			"I don't want to survive.  I want to live"
 		]
 	};
 }
