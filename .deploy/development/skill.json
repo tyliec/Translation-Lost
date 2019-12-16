@@ -12,8 +12,8 @@
       "locales": {
         "en-US": {
           "name": "Lost in Translation (development)",
-          "summary": "A game where you try and understand Alexa's different accents",
-          "description": "Have you taken a class from a foreign professor? Tried to talk to a co-worker who you just couldn't understand? Relive the memories with Lost in Translation!\n                    \nLost in translation is a fun game where Alexa will say something in an accent, and it's up to you to decipher what she said!\n\nShe'll speak in accents such as French, Korean, and much more!\n\nSome of the phrases are really hard, good luck!\n                    ",
+          "summary": "What the hell is Alexa saying?",
+          "description": "Have you taken a class from a foreign professor? Tried to talk to a co-worker who you just couldn't understand? Relive the memories with Lost in Translation!\n    \nLost in translation is a fun game where Alexa will say something in an accent, and it's up to you to decipher what she said!\n\nShe'll speak in accents such as French, Korean, and much more! \n\nYou'll be often asking yourself, what the hell is Alexa saying?\n                    ",
           "examplePhrases": [
             "Alexa, launch Translation lost",
             "Alexa, start Translation lost",
@@ -44,8 +44,8 @@
       "containsAds": false,
       "locales": {
         "en-US": {
-          "privacyPolicyUrl": "https://www.example.com/privacy.html",
-          "termsOfUseUrl": "https://www.example.com/terms.html"
+          "privacyPolicyUrl": "https://github.com/Viltaria/Translation-Lost/blob/master/README.md",
+          "termsOfUseUrl": "https://github.com/Viltaria/Translation-Lost/blob/master/README.md"
         }
       }
     },

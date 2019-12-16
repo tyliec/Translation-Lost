@@ -56,8 +56,8 @@ You'll be often asking yourself, what the hell is Alexa saying?
             containsAds: false,
             locales: {
                 'en-US': {
-                    privacyPolicyUrl: 'https://www.example.com/privacy.html',
-                    termsOfUseUrl: 'https://www.example.com/terms.html'
+                    privacyPolicyUrl: 'https://github.com/Viltaria/Translation-Lost/blob/master/README.md',
+                    termsOfUseUrl: 'https://github.com/Viltaria/Translation-Lost/blob/master/README.md'
                 }
             }
         }
