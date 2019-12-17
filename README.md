@@ -1,6 +1,6 @@
 # Lost in Translation
 
-Alexa, launch Translation Lost.
+Alexa, launch [Translation Lost](https://smile.amazon.com/dp/B082R3YQ3B/ref=sr_1_1).
 
 ## Description
 
@@ -11,6 +11,10 @@ Lost in translation is a fun game where Alexa will say something in an accent, a
 She'll speak in accents such as French, Korean, and much more! 
 
 You'll be often asking yourself, what the hell is Alexa saying?
+
+[Read more here](keygolem.com/lost-in-translation/)
+
+[Live on Amazon Skill Store](https://smile.amazon.com/dp/B082R3YQ3B/ref=sr_1_1)
 
 ## Privacy Policy
 Lost in Translation operates as an Amazon Alexa Skill, interacting with the Alexa voice services, and AWS services such as Lambda, S3, and DynamoDB. It is our policy to respect your privacy regarding any information we may collect while operating.
@@ -32,4 +36,5 @@ Although most changes are likely to be minor, we may change this Privacy Policy 
 **Contributors**
 
 Tyler Chong
+
 Matthew Kim
