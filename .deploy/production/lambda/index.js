@@ -1225,10 +1225,10 @@ jsonSourceFiles['database.json'] = {
   "you_will_ride_eternal_shiny_and_chrome": {
     "accent": "Dutch",
     "hints": [
-      "Quote from the movie, Mad Max: Fury Road"
+      "Quote from the movie Mad Max: Fury Road"
     ],
     "answer": "You will ride eternal, shiny, and chrome",
-    "answer_annotation": "Spoken by the character Immortan Joe, played by Keays-Byrne, from the movie, Mad Max: Fury Road",
+    "answer_annotation": "Spoken by Keays-Byrne as Immortan Joe from the movie Mad Max: Fury Road",
     "type": "Movie Quotes",
     "difficulty": "3"
   },
@@ -1368,12 +1368,13 @@ jsonSourceFiles['database.json'] = {
   "mama_always_said_life_was_like_a_box_of_chocolates_you_never_know_what_youre_gonna_get": {
     "accent": "Korean",
     "hints": [
-      "Quote from the movie, Forrest Gump"
+      "Quote from the movie, Forrest Gump",
+      "Spoken by Tom Hanks as Forrest Gump"
     ],
     "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
-    "answer_annotation": "Spoken by the character Forrest Gump, played by Tom Hanks, from the movie, Forrest Gump",
+    "answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
     "type": "Movie Quotes",
-    "difficulty": "5"
+    "difficulty": "10"
   },
   "love_means_never_having_to_say_youre_sorry": {
     "accent": "German",
@@ -1588,10 +1589,10 @@ jsonSourceFiles['database.json'] = {
     "accent": "Polish",
     "hints": [
       "Quote from the movie, Avengers: Infinity War",
-      "Spoken by the character Tony Stark, voiced by Robert Downey Jr."
+      "Spoken by Robert Downey Jr. as Tony Stark"
     ],
     "answer": "You're embarrassing me in front of the wizards",
-    "answer_annotation": "Spoken by the character Tony Stark, voiced by Robert Downey Jr., from the movie, Avengers: Infinity War",
+    "answer_annotation": "Spoken by the Robert Downey Jr. as Tony Stark in the movie Avengers: Infinity War",
     "type": "Movie Quotes",
     "difficulty": "6"
   },
@@ -1649,6 +1650,282 @@ jsonSourceFiles['database.json'] = {
     "answer_annotation": "Spoken by Jake Gyllenhaal as Jack Twist in the movie Brokeback Mountain",
     "type": "Movie Quotes",
     "difficulty": "2"
+  },
+  "i_am_iron_man": {
+    "accent": "Danish",
+    "hints": [
+      "Quote from the movie Iron Man",
+      "Spoken by Robert Downey Jr. as Tony Stark"
+    ],
+    "answer": "I am Iron Man",
+    "answer_annotation": "Spoken by Robert Downey Jr. as Tony Stark in the movie Iron Man",
+    "type": "Movie Quotes",
+    "difficulty": "2"
+  },
+  "im_a_dude_playin_a_dude_disguised_as_another_dude": {
+    "accent": "Danish",
+    "hints": [
+      "Quote from the movie Tropic Thunder",
+      "Spoken by Robert Downey Jr. as Kirk Lazarus"
+    ],
+    "answer": "I'm a dude playin' a dude disguised as another dude!",
+    "answer_annotation": "Spoken by Robert Downey Jr. as Kirk Lazarus in the movie Tropic Thunder",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "get_busy_livin_or_get_busy_dyin": {
+    "accent": "Romanian",
+    "hints": [
+      "Quote from the movie Good Will Hunting"
+    ],
+    "answer": "Get busy livin', or get busy dyin'",
+    "answer_annotation": "Spoken by various characters from the movie The Shawshank Redemption",
+    "type": "Movie Quotes",
+    "difficulty": "2"
+  },
+  "how_do_you_like_them_apples": {
+    "accent": "Norwegian",
+    "hints": [
+      "Quote from the movie Good Will Hunting",
+      "Spoken by Matt Damon as Will Hunting"
+    ],
+    "answer": "How do you like them apples?",
+    "answer_annotation": "Spoken by Matt Damon as Will Hunting from the movie Good Will Hunting",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "we_all_float_down_here": {
+    "accent": "Danish",
+    "hints": [
+      "Quote from the movie It",
+      "Spoken by Bill Skarsgård as Pennywise The Dancing Clown"
+    ],
+    "answer": "We all float down here",
+    "answer_annotation": "Spoken by Bill Skarsgård as Pennywise The Dancing Clown from the movie It",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "terrified_mortified_petrified_stupified_by_you": {
+    "accent": "Swedish",
+    "hints": [
+      "Quote from the movie A Beautiful Mind",
+      "Spoken by Russell Crowe as John Nash"
+    ],
+    "answer": "Terrified... mortified petrified, stupified by you",
+    "answer_annotation": "Spoken by Russell Crowe as John Nash from the movie A Beautiful Mind",
+    "type": "Movie Quotes",
+    "difficulty": "5"
+  },
+  "do_or_do_not_there_is_no_try": {
+    "accent": "Welsh",
+    "hints": [
+      "Quote from the movie Star Wars: the Empire Strikes Back",
+      "Spoken by Frank Oz as Yoda"
+    ],
+    "answer": "Do, or do not. There is no 'try'",
+    "answer_annotation": "Spoken by Frank Oz as Yoda from the movie Star Wars: the Empire Strikes Back",
+    "type": "Movie Quotes",
+    "difficulty": "2"
+  },
+  "im_king_of_the_world": {
+    "accent": "Japanese",
+    "hints": [
+      "Quote from the movie Titanic",
+      "Spoken by Leonardo DiCaprio as Jack Dawson"
+    ],
+    "answer": "I'm king of the world",
+    "answer_annotation": "Spoken by Leonardo DiCaprio as Jack Dawson from the movie Titanic",
+    "type": "Movie Quotes",
+    "difficulty": "6"
+  },
+  "ill_get_you_my_pretty_and_your_little_dog_too": {
+    "accent": "Norwegian",
+    "hints": [
+      "Quote from the movie The Wizard of Oz",
+      "Spoken by Margaret Hamilton as The Wicked Witch of the West"
+    ],
+    "answer": "I'll get you, my pretty, and your little dog, too!",
+    "answer_annotation": "Spoken by Margaret Hamilton as The Wicked Witch of the West from the movie The Wizard of Oz",
+    "type": "Movie Quotes",
+    "difficulty": "7"
+  },
+  "i_feel_the_need_the_need_for_speed": {
+    "accent": "Korean",
+    "hints": [
+      "Quote from the movie Top Gun",
+      "Spoken by Tom Cruise as Pete 'Maverick' Mitchell"
+    ],
+    "answer": "I feel the need, the need for speed!",
+    "answer_annotation": "Spoken by Tom Cruise as Pete 'Maverick' Mitchell from the movie Top Gun",
+    "type": "Movie Quotes",
+    "difficulty": "8"
+  },
+  "heres_johnny": {
+    "accent": "Dutch",
+    "hints": [
+      "Quote from the movie The Shining",
+      "Spoken by Jack Nicholson as Jack Torrance"
+    ],
+    "answer": "Here's Johnny!",
+    "answer_annotation": "Spoken by Jack Nicholson as Jack Torrance from the movie The Shining",
+    "type": "Movie Quotes",
+    "difficulty": "6"
+  },
+  "i_see_dead_people": {
+    "accent": "Japanese",
+    "hints": [
+      "Quote from the movie The Sixth Sense",
+      "Spoken by Haley Joel Osment as Cole Sear"
+    ],
+    "answer": "I see dead people",
+    "answer_annotation": "Spoken by Haley Joel Osment as Cole Sear from the movie The Sixth Sense",
+    "type": "Movie Quotes",
+    "difficulty": "5"
+  },
+  "run_forrest_run": {
+    "accent": "Russian",
+    "hints": [
+      "Quote from the movie Forrest Gump",
+      "Spoken by Tom Hanks as Forrest Gump"
+    ],
+    "answer": "Run, Forrest, Run!",
+    "answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "its_only_after_weve_lost_everything_that_were_free_to_do_anything": {
+    "accent": "Swedish",
+    "hints": [
+      "Quote from the movie Fight Club",
+      "Spoken by Brad Pitt as Tyler Durden"
+    ],
+    "answer": "It's only after we've lost everything that we're free to do anything",
+    "answer_annotation": "Spoken by Brad Pitt as Tyler Durden from the movie Fight Club",
+    "type": "Movie Quotes",
+    "difficulty": "6"
+  },
+  "mama_says_stupid_is_as_stupid_does": {
+    "accent": "Danish",
+    "hints": [
+      "Quote from the movie Forrest Gump",
+      "Spoken by Tom Hanks as Forrest Gump"
+    ],
+    "answer": "Mama says, 'Stupid is as stupid does",
+    "answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "be_afraid_be_very_afraid": {
+    "accent": "Japanese",
+    "hints": [
+      "Quote from the movie The Fly",
+      "Spoken by Geena Davis as Veronica 'Ronnie' Quaife"
+    ],
+    "answer": "Be afraid. Be very afraid",
+    "answer_annotation": "Spoken by Geena Davis as Veronica 'Ronnie' Quaife from the movie The Fly",
+    "type": "Movie Quotes",
+    "difficulty": "6"
+  },
+  "oh_what_a_day_what_a_lovely_day": {
+    "accent": "Russian",
+    "hints": [
+      "Quote from the movie Mad Max: Fury Road",
+      "Spoken by Nicholas Hoult as Nux"
+    ],
+    "answer": "Oh what a day. What a lovely day!",
+    "answer_annotation": "Spoken by Nicholas Hoult as Nux from the movie Mad Max: Fury Road",
+    "type": "Movie Quotes",
+    "difficulty": "3"
+  },
+  "i_love_the_smell_napalm_in_the_morning": {
+    "accent": "Welsh",
+    "hints": [
+      "Quote from the movie Apocalypse Now",
+      "Spoken by Robert Duvall as Lieutenant Colonel William 'Bill' Kilgore"
+    ],
+    "answer": "I love the smell of napalm in the morning",
+    "answer_annotation": "Spoken by Robert Duvall as Lieutenant Colonel William 'Bill' Kilgore from the movie Apocalypse Now",
+    "type": "Movie Quotes",
+    "difficulty": "4"
+  },
+  "i_solemnly_swear_i_am_up_to_no_good": {
+    "accent": "Castilian Spanish",
+    "hints": [
+      "Quote from the movie Harry Potter and the Prisoner of Azkaban",
+      "Phrase that allows a person to see what is on the Marauder's Map"
+    ],
+    "answer": "I solemnly swear I am up to no good",
+    "answer_annotation": "Spoken by various characters from the movie Harry Potter and the Prisoner of Azkaban",
+    "type": "Movie Quotes",
+    "difficulty": "4"
+  },
+  "remember_who_you_are": {
+    "accent": "Norwegian",
+    "hints": [
+      "Quote from the movie The Lion King",
+      "Spoken by James Earl Jones as Mufasa"
+    ],
+    "answer": "Remember who you are",
+    "answer_annotation": "Spoken by James Earl Jones as Mufasa from the movie The Lion King",
+    "type": "Movie Quotes",
+    "difficulty": "4"
+  },
+  "do_you_wanna_build_a_snowman": {
+    "accent": "Danish",
+    "hints": [
+      "Quote from the movie Frozen",
+      "Spoken by Kristen Bell as Anna"
+    ],
+    "answer": "Do you wanna build a snowman?",
+    "answer_annotation": "Spoken by Kristen Bell as Anna from the movie Frozen",
+    "type": "Movie Quotes",
+    "difficulty": "4"
+  },
+  "some_people_are_worth_melting_for": {
+    "accent": "Polish",
+    "hints": [
+      "Quote from the movie Frozen",
+      "Spoken by Josh Gad as Olaf"
+    ],
+    "answer": "Some people are worth melting for",
+    "answer_annotation": "Spoken by Josh Gad as Olaf from the movie Frozen",
+    "type": "Movie Quotes",
+    "difficulty": "5"
+  },
+  "our_fate_lives_within_us_you_only_have_to_be_brave_enough_to_see_it": {
+    "accent": "Castilian Spanish",
+    "hints": [
+      "Quote from the movie Brave",
+      "Spoken by Kelly Macdonald as Merida"
+    ],
+    "answer": "Our fate lives within us. You only have to be brave enough to see it",
+    "answer_annotation": "Spoken by Kelly Macdonald as Merida from the movie Brave",
+    "type": "Movie Quotes",
+    "difficulty": "6"
+  },
+  "i_never_look_back_darling_it_distracts_me_from_the_now": {
+    "accent": "Portuguese",
+    "hints": [
+      "Quote from the movie The Incredibles",
+      "Spoken by Brad Bird as Edna Mode"
+    ],
+    "answer": "I never look back, darling! It distracts me from the now",
+    "answer_annotation": "Spoken by Brad Bird as Edna Mode from the movie The Incredibles",
+    "type": "Movie Quotes",
+    "difficulty": "7"
+  },
+  "i_dont_want_to_survive_i_want_to_live": {
+    "accent": "Korean",
+    "hints": [
+      "Quote from the movie Wall-E",
+      "Quote from the movie Twelve Years A Slave",
+      "Spoken by Jeff Garlin as Captain B. McCrea",
+      "Spoken by Chiwetel Ejiofor as Solomon Northup"
+    ],
+    "answer": "I don't want to survive.  I want to live",
+    "answer_annotation": "Spoken by Jeff Garlin as Captain B. McCrea from the movie Wall-E and by Chiwetel Ejiofor as Solomon Northup from the movie Twelve Years A Slave",
+    "type": "Movie Quotes",
+    "difficulty": "7"
   }
 };
 
@@ -2508,7 +2785,32 @@ exports.getPotentialAnswers = function() {
 			"It’s not who I am underneath, but what I do that defines me",
 			"Some men just want to watch the world burn",
 			"You mustn't be afraid to dream a little bigger darling",
-			"I wish I knew how to quit you"
+			"I wish I knew how to quit you",
+			"I am Iron Man",
+			"I'm a dude playin' a dude disguised as another dude!",
+			"Get busy livin', or get busy dyin'",
+			"How do you like them apples?",
+			"We all float down here",
+			"Terrified... mortified petrified, stupified by you",
+			"Do, or do not. There is no 'try'",
+			"I'm king of the world",
+			"I'll get you, my pretty, and your little dog, too!",
+			"I feel the need, the need for speed!",
+			"Here's Johnny!",
+			"I see dead people",
+			"Run, Forrest, Run!",
+			"It's only after we've lost everything that we're free to do anything",
+			"Mama says, 'Stupid is as stupid does",
+			"Be afraid. Be very afraid",
+			"Oh what a day. What a lovely day!",
+			"I love the smell of napalm in the morning",
+			"I solemnly swear I am up to no good",
+			"Remember who you are",
+			"Do you wanna build a snowman?",
+			"Some people are worth melting for",
+			"Our fate lives within us. You only have to be brave enough to see it",
+			"I never look back, darling! It distracts me from the now",
+			"I don't want to survive.  I want to live"
 		]
 	};
 }

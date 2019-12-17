@@ -16,8 +16,7 @@ playTutorial
   soundEffect "bag_of_potatoes2.mp3"
 
   say "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat."
-  say "If you want to know the accent, ask me, Alexa, what accent is this."
-  say "You can give up on a phrase by saying, Alexa, I give up."
+  say "You can give up on a phrase by saying, Alexa, skip."
   say "You can relist all of these options during the game by saying, Alexa, options."
   @tutorialHeard = true
   -> getTopic
@@ -40,6 +39,7 @@ getTopic
     or "<!batter up>"
   @gameStartedTime = context.now
   @score = 0
+  @gameInProgress = true
   -> generateRandomSpeech
  
 generateRandomSpeech
@@ -126,7 +126,8 @@ waitForAnswer
         or "<!well done>."
         or "<!wowza>."
         or "<!wowzer>."
-      say "The answer was, @master.getAnswer(@speechKey)."
+        or "About time!"
+      say "@master.getAnswer(@speechKey)."
       say "@master.getAnnotation(@speechKey)."
       say "Let's go again."
         or "One more time!"
@@ -135,12 +136,18 @@ waitForAnswer
       -> generateRandomSpeech
     else
       say "<!aw man>."
+        or "Come on, this one's easy."
         or "Wrong!"
-        or "<!aww applesauce>. That wasn't it."
-        or "<!blast>."
+        or "<!aww applesauce>. That isn't it."
         or "Correct! ... <!just kidding>."
         or  "<!nuh uh>."
         or "Nice Try!"
+        or "You really don't know this?"
+        or "Uncultured swine."
+        or "Yikes."
+        or "L. O. L." 
+        or "Are you even trying?"
+        or "Are you serious?"
       say "Here it is again."
         or "Try again!"
       -> askForRepeat
@@ -193,16 +200,31 @@ waitForAnswer
   when AMAZON.HelpIntent
     or "can i get a hint"
     or "hint please"
+    or "hint"
     -> giveHint
 
   when AMAZON.StopIntent
-    -> goodbye
+    if @gameInProgress == true
+      say "Are you sure you want to quit?"
+      -> confirmGoodbye
+    else
+      -> goodbye
 
   otherwise
     say "Sorry, I didn't understand. If you want a hint, say, Alexa, help, otherwise say, Alexa, then the answer."
     say "If you want to hear all the options, say, Alexa, options."
     -> waitForAnswer
 
+confirmGoodbye
+  when AMAZON.YesIntent
+    -> goodbye
+  when AMAZON.NoIntent
+    -> waitForAnswer
+  otherwise
+    say "Sorry, I didn't understand. Are you sure you want to quit?"
+    -> confirmGoodbye
+
 goodbye
+  @gameInProgress = false
   END
 

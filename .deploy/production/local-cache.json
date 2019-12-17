@@ -1,12 +1,12 @@
 {
   "timestamps": {
     "ensuredDynamoTable": 1576146942691,
-    "ensureIAMRole-litexa_handler_lambda": 1576299649639,
+    "ensureIAMRole-litexa_handler_lambda": 1576491035911,
     "lambdaPermissionsChecked-release-0": 1576146946843,
     "ensuredCloudwatchLogGroup": 1576146947431,
-    "lambdaUpdated": 1576301223874
+    "lambdaUpdated": 1576491039204
   },
   "hashes": {
-    "lambdaSHA256": "QEJwY73Cc6wZKtob/3Fbr+y3pCjJMOjuSf1gsd3fcQM="
+    "lambdaSHA256": "qpdDav+Ccvz0xMONTFxcuSKJYCQX+ERk/dmuhf+X004="
   }
 }
