@@ -12,7 +12,7 @@ She'll speak in accents such as French, Korean, and much more!
 
 You'll be often asking yourself, what the hell is Alexa saying?
 
-[Read more here](keygolem.com/lost-in-translation/)
+[Read more here](//keygolem.com/lost-in-translation/)
 
 [Live on Amazon Skill Store](https://smile.amazon.com/dp/B082R3YQ3B/ref=sr_1_1)
 
