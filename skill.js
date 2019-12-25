@@ -27,6 +27,8 @@ Lost in translation is a fun game where Alexa will say something in an accent, a
 She'll speak in accents such as French, Korean, and much more! 
 
 You'll be often asking yourself, what the hell is Alexa saying?
+
+Contact Email: tcchong@hawaii.edu
                     `,
                     examplePhrases: [
                         'Alexa, launch Translation lost',

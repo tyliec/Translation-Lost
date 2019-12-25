@@ -2877,8 +2877,7 @@ enterState.playTutorial = async function(context) {
   context.say.push( "You would translate to," );
   context.say.push(  "<audio src='" + litexa.assetsRoot + "default/bag_of_potatoes2.mp3'/>"  );
   context.say.push( "You can ask me for help by saying, Alexa, help. Or ask me to repeat the phrase by saying, repeat." );
-  context.say.push( "If you want to know the accent, ask me, Alexa, what accent is this." );
-  context.say.push( "You can give up on a phrase by saying, Alexa, I give up." );
+  context.say.push( "You can give up on a phrase by saying, Alexa, skip." );
   context.say.push( "You can relist all of these options during the game by saying, Alexa, options." );
   context.db.write('tutorialHeard', true);
   context.nextState = 'getTopic';
@@ -2934,6 +2933,7 @@ enterState.getTopic = async function(context) {
   }
   context.db.write('gameStartedTime', context.now);
   context.db.write('score', 0);
+  context.db.write('gameInProgress', true);
   context.nextState = 'generateRandomSpeech';
 };
 processIntents.getTopic = async function(context, runOtherwise) {
@@ -3059,7 +3059,23 @@ processIntents.waitForPlayAgainAnswer = async function(context, runOtherwise) {
       context.nextState = 'getTopic';
       break;
     }
+    case 'AMAZON.StartOverIntent': {
+      context.say.push( "Alright. Let's go again." );
+      context.say.push( "Your last score was " + escapeSpeech( context.db.read('score') ) + " points." );
+      context.nextState = 'getTopic';
+      break;
+    }
     case 'AMAZON.NoIntent': {
+      context.say.push( "Goodbye." );
+      context.nextState = 'goodbye';
+      break;
+    }
+    case 'AMAZON.CancelIntent': {
+      context.say.push( "Goodbye." );
+      context.nextState = 'goodbye';
+      break;
+    }
+    case 'AMAZON.StopIntent': {
       context.say.push( "Goodbye." );
       context.nextState = 'goodbye';
       break;
@@ -3117,7 +3133,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
           title: escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ),
           content: escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ),
         };
-        switch(pickSayString(context, 3, 10)) {
+        switch(pickSayString(context, 3, 11)) {
           case 0:
             context.say.push( "Correcto!" );
             break;
@@ -3145,11 +3161,14 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
           case 8:
             context.say.push( "<say-as interpret-as='interjection'>wowza.</say-as>" );
             break;
-          default:
+          case 9:
             context.say.push( "<say-as interpret-as='interjection'>wowzer.</say-as>" );
             break;
+          default:
+            context.say.push( "About time!" );
+            break;
         }
-        context.say.push( "The answer was, " + escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
+        context.say.push( escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ) + "." );
         context.say.push( escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ) + "." );
         switch(pickSayString(context, 4, 3)) {
           case 0:
@@ -3166,18 +3185,18 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
         context.nextState = 'generateRandomSpeech';
       }
       else {
-        switch(pickSayString(context, 5, 7)) {
+        switch(pickSayString(context, 5, 13)) {
           case 0:
             context.say.push( "<say-as interpret-as='interjection'>aw man.</say-as>" );
             break;
           case 1:
-            context.say.push( "Wrong!" );
+            context.say.push( "Come on, this one's easy." );
             break;
           case 2:
-            context.say.push( "<say-as interpret-as='interjection'>aww applesauce.</say-as>" + " That wasn't it." );
+            context.say.push( "Wrong!" );
             break;
           case 3:
-            context.say.push( "<say-as interpret-as='interjection'>blast.</say-as>" );
+            context.say.push( "<say-as interpret-as='interjection'>aww applesauce.</say-as>" + " That isn't it." );
             break;
           case 4:
             context.say.push( "Correct! ... " + "<say-as interpret-as='interjection'>just kidding.</say-as>" );
@@ -3185,8 +3204,26 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
           case 5:
             context.say.push( "<say-as interpret-as='interjection'>nuh uh.</say-as>" );
             break;
-          default:
+          case 6:
             context.say.push( "Nice Try!" );
+            break;
+          case 7:
+            context.say.push( "You really don't know this?" );
+            break;
+          case 8:
+            context.say.push( "Uncultured swine." );
+            break;
+          case 9:
+            context.say.push( "Yikes." );
+            break;
+          case 10:
+            context.say.push( "L. O. L." );
+            break;
+          case 11:
+            context.say.push( "Are you even trying?" );
+            break;
+          default:
+            context.say.push( "Are you serious?" );
             break;
         }
         switch(pickSayString(context, 6, 2)) {
@@ -3213,7 +3250,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       }
       break;
     }
-    case 'I_GIVE_UP': {
+    case 'AMAZON.NextIntent': {
       context.card = {
         title: escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ),
         content: escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ),
@@ -3260,7 +3297,23 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       break;
     }
     case 'AMAZON.StopIntent': {
-      context.nextState = 'goodbye';
+      if (context.db.read('gameInProgress') === true) {
+        context.say.push( "Are you sure you want to quit?" );
+        context.nextState = 'confirmGoodbye';
+      }
+      else {
+        context.nextState = 'goodbye';
+      }
+      break;
+    }
+    case 'AMAZON.CancelIntent': {
+      if (context.db.read('gameInProgress') === true) {
+        context.say.push( "Are you sure you want to quit?" );
+        context.nextState = 'confirmGoodbye';
+      }
+      else {
+        context.nextState = 'goodbye';
+      }
       break;
     }
   }
@@ -3269,7 +3322,32 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
 exitState.waitForAnswer = async function(context) {
 };
 
+enterState.confirmGoodbye = async function(context) {
+};
+processIntents.confirmGoodbye = async function(context, runOtherwise) {
+  switch( context.intent ) {
+    default: {
+      if ( await processIntents.global(context, false) ) { return true; }
+      context.say.push( "Sorry, I didn't understand. Are you sure you want to quit?" );
+      context.nextState = 'confirmGoodbye';
+      break;
+    }
+    case 'AMAZON.YesIntent': {
+      context.nextState = 'goodbye';
+      break;
+    }
+    case 'AMAZON.NoIntent': {
+      context.nextState = 'waitForAnswer';
+      break;
+    }
+  }
+  return true;
+};
+exitState.confirmGoodbye = async function(context) {
+};
+
 enterState.goodbye = async function(context) {
+  context.db.write('gameInProgress', false);
   context.shouldEndSession = true;
 };
 processIntents.goodbye = async function(context, runOtherwise) {

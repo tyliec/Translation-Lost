@@ -3059,7 +3059,23 @@ processIntents.waitForPlayAgainAnswer = async function(context, runOtherwise) {
       context.nextState = 'getTopic';
       break;
     }
+    case 'AMAZON.StartOverIntent': {
+      context.say.push( "Alright. Let's go again." );
+      context.say.push( "Your last score was " + escapeSpeech( context.db.read('score') ) + " points." );
+      context.nextState = 'getTopic';
+      break;
+    }
     case 'AMAZON.NoIntent': {
+      context.say.push( "Goodbye." );
+      context.nextState = 'goodbye';
+      break;
+    }
+    case 'AMAZON.CancelIntent': {
+      context.say.push( "Goodbye." );
+      context.nextState = 'goodbye';
+      break;
+    }
+    case 'AMAZON.StopIntent': {
       context.say.push( "Goodbye." );
       context.nextState = 'goodbye';
       break;
@@ -3169,7 +3185,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
         context.nextState = 'generateRandomSpeech';
       }
       else {
-        switch(pickSayString(context, 5, 11)) {
+        switch(pickSayString(context, 5, 13)) {
           case 0:
             context.say.push( "<say-as interpret-as='interjection'>aw man.</say-as>" );
             break;
@@ -3180,7 +3196,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
             context.say.push( "Wrong!" );
             break;
           case 3:
-            context.say.push( "<say-as interpret-as='interjection'>aww applesauce.</say-as>" + " That wasn't it." );
+            context.say.push( "<say-as interpret-as='interjection'>aww applesauce.</say-as>" + " That isn't it." );
             break;
           case 4:
             context.say.push( "Correct! ... " + "<say-as interpret-as='interjection'>just kidding.</say-as>" );
@@ -3200,8 +3216,14 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
           case 9:
             context.say.push( "Yikes." );
             break;
-          default:
+          case 10:
             context.say.push( "L. O. L." );
+            break;
+          case 11:
+            context.say.push( "Are you even trying?" );
+            break;
+          default:
+            context.say.push( "Are you serious?" );
             break;
         }
         switch(pickSayString(context, 6, 2)) {
@@ -3228,7 +3250,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       }
       break;
     }
-    case 'I_GIVE_UP': {
+    case 'AMAZON.NextIntent': {
       context.card = {
         title: escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ),
         content: escapeSpeech( (await context.db.read('master').getAnnotation(context.db.read('speechKey'))) ),
@@ -3275,6 +3297,16 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       break;
     }
     case 'AMAZON.StopIntent': {
+      if (context.db.read('gameInProgress') === true) {
+        context.say.push( "Are you sure you want to quit?" );
+        context.nextState = 'confirmGoodbye';
+      }
+      else {
+        context.nextState = 'goodbye';
+      }
+      break;
+    }
+    case 'AMAZON.CancelIntent': {
       if (context.db.read('gameInProgress') === true) {
         context.say.push( "Are you sure you want to quit?" );
         context.nextState = 'confirmGoodbye';

@@ -86,7 +86,17 @@ waitForPlayAgainAnswer
     say "Alright. Let's go again."
     say "Your last score was @score points."
     -> getTopic
+  when AMAZON.StartOverIntent
+    say "Alright. Let's go again."
+    say "Your last score was @score points."
+    -> getTopic
   when AMAZON.NoIntent
+    say "Goodbye."
+    -> goodbye
+  when AMAZON.CancelIntent
+    say "Goodbye."
+    -> goodbye
+  when AMAZON.StopIntent
     say "Goodbye."
     -> goodbye
   otherwise
@@ -163,7 +173,8 @@ waitForAnswer
       say "Here it is again."
       -> askForRepeat
 
-  when "i give up"
+  when AMAZON.NextIntent 
+    or "i give up"
     or "i have no idea"
     or "skip this one"
     card "@master.getAnswer(@speechKey)"
@@ -204,6 +215,12 @@ waitForAnswer
     -> giveHint
 
   when AMAZON.StopIntent
+    if @gameInProgress == true
+      say "Are you sure you want to quit?"
+      -> confirmGoodbye
+    else
+      -> goodbye
+  when AMAZON.CancelIntent
     if @gameInProgress == true
       say "Are you sure you want to quit?"
       -> confirmGoodbye

@@ -1,44 +1,9 @@
-[assets] +308ms all asset conversion complete
+[assets] +307ms all asset conversion complete
 [assets] +0ms deploying assets
-[assets] +0ms loaded AWS profile default
-[assets] +600ms found S3 bucket lost-in-translation
-[assets] +1ms scanning assets, preparing hashes
-[assets] +9ms scanned 92 assets in project
+[assets] +1ms loaded AWS profile default
+[assets] +666ms found S3 bucket lost-in-translation
+[assets] +0ms scanning assets, preparing hashes
+[assets] +10ms scanned 92 assets in project
 [assets] +0ms fetching S3 object metadata [0-1000]
-[assets] +640ms 25 assets need uploading
-[assets] +1ms uploading be_afraid_be_very_afraid.mp3 -> lost-in-translation/production/default/be_afraid_be_very_afraid.mp3 [cf44b0e6]
-[assets] +1ms uploading do_or_do_not_there_is_no_try.mp3 -> lost-in-translation/production/default/do_or_do_not_there_is_no_try.mp3 [6278bd5b]
-[assets] +0ms uploading do_you_wanna_build_a_snowman.mp3 -> lost-in-translation/production/default/do_you_wanna_build_a_snowman.mp3 [fab75d8f]
-[assets] +1ms uploading get_busy_livin_or_get_busy_dyin.mp3 -> lost-in-translation/production/default/get_busy_livin_or_get_busy_dyin.mp3 [2e5b8ed9]
-[assets] +0ms uploading heres_johnny_dutch_6.mp3 -> lost-in-translation/production/default/heres_johnny_dutch_6.mp3 [bcb17883]
-[assets] +0ms 20 assets remaining in queue
-[assets] +1198ms segment uploaded in 1198ms
-[assets] +0ms uploading how_do_you_like_them_apples.mp3 -> lost-in-translation/production/default/how_do_you_like_them_apples.mp3 [e9ef69cd]
-[assets] +1ms uploading i_am_iron_man.mp3 -> lost-in-translation/production/default/i_am_iron_man.mp3 [55f5745e]
-[assets] +0ms uploading i_dont_want_to_survive_i_want_to_live.mp3 -> lost-in-translation/production/default/i_dont_want_to_survive_i_want_to_live.mp3 [f776775c]
-[assets] +0ms uploading i_feel_the_need_the_need_for_speed.mp3 -> lost-in-translation/production/default/i_feel_the_need_the_need_for_speed.mp3 [aea1587f]
-[assets] +0ms uploading i_love_the_smell_napalm_in_the_morning.mp3 -> lost-in-translation/production/default/i_love_the_smell_napalm_in_the_morning.mp3 [94b2b776]
-[assets] +1ms 15 assets remaining in queue
-[assets] +1407ms segment uploaded in 1407ms
-[assets] +1ms uploading i_never_look_back_darling_it_distracts_me_from_the_now.mp3 -> lost-in-translation/production/default/i_never_look_back_darling_it_distracts_me_from_the_now.mp3 [2f3175d6]
-[assets] +0ms uploading i_see_dead_people.mp3 -> lost-in-translation/production/default/i_see_dead_people.mp3 [c15f16d0]
-[assets] +0ms uploading i_solemnly_swear_i_am_up_to_no_good.mp3 -> lost-in-translation/production/default/i_solemnly_swear_i_am_up_to_no_good.mp3 [65733b6c]
-[assets] +1ms uploading ill_get_you_my_pretty_and_your_little_dog_too.mp3 -> lost-in-translation/production/default/ill_get_you_my_pretty_and_your_little_dog_too.mp3 [14ee0e69]
-[assets] +0ms uploading im_a_dude_playin_a_dude_disguised_as_another_dude.mp3 -> lost-in-translation/production/default/im_a_dude_playin_a_dude_disguised_as_another_dude.mp3 [ea6ccb5b]
-[assets] +0ms 10 assets remaining in queue
-[assets] +1383ms segment uploaded in 1383ms
-[assets] +0ms uploading im_king_of_the_world.mp3 -> lost-in-translation/production/default/im_king_of_the_world.mp3 [ec9a6a4f]
-[assets] +0ms uploading its_only_after_weve_lost_everything_that_were_free_to_do_anything.mp3 -> lost-in-translation/production/default/its_only_after_weve_lost_everything_that_were_free_to_do_anything.mp3 [aec0710a]
-[assets] +1ms uploading mama_says_stupid_is_as_stupid_does.mp3 -> lost-in-translation/production/default/mama_says_stupid_is_as_stupid_does.mp3 [7a60f120]
-[assets] +0ms uploading oh_what_a_day_what_a_lovely_day.mp3 -> lost-in-translation/production/default/oh_what_a_day_what_a_lovely_day.mp3 [e3ab7fbb]
-[assets] +0ms uploading our_fate_lives_within_us_you_only_have_to_be_brave_enough_to_see_it.mp3 -> lost-in-translation/production/default/our_fate_lives_within_us_you_only_have_to_be_brave_enough_to_see_it.mp3 [1d99862b]
-[assets] +0ms 5 assets remaining in queue
-[assets] +1494ms segment uploaded in 1494ms
-[assets] +0ms uploading remember_who_you_are.mp3 -> lost-in-translation/production/default/remember_who_you_are.mp3 [8adcc220]
-[assets] +0ms uploading run_forrest_run.mp3 -> lost-in-translation/production/default/run_forrest_run.mp3 [2bd75cb6]
-[assets] +1ms uploading some_people_are_worth_melting_for.mp3 -> lost-in-translation/production/default/some_people_are_worth_melting_for.mp3 [14d1034d]
-[assets] +0ms uploading terrified_mortified_petrified_stupified_by_you.mp3 -> lost-in-translation/production/default/terrified_mortified_petrified_stupified_by_you.mp3 [e4fc8bd6]
-[assets] +1ms uploading we_all_float_down_here.mp3 -> lost-in-translation/production/default/we_all_float_down_here.mp3 [67d1d1dc]
-[assets] +0ms 0 assets remaining in queue
-[assets] +1325ms segment uploaded in 1325ms
-[assets] +0ms asset deployment complete in 8067ms
+[assets] +669ms 0 assets need uploading
+[assets] +0ms asset deployment complete in 1345ms

@@ -688,7 +688,7 @@
           ]
         },
         {
-          "name": "I_GIVE_UP",
+          "name": "AMAZON.NextIntent",
           "samples": [
             "i give up",
             "i have no idea",
@@ -731,7 +731,8 @@
           "name": "AMAZON.HelpIntent",
           "samples": [
             "can i get a hint",
-            "hint please"
+            "hint please",
+            "hint"
           ]
         },
         {
