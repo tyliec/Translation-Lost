@@ -29,7 +29,7 @@ askForTutorial
     -> getTopic
   otherwise
     say "Do you want to hear the tutorial again?"
-    -> waitForAnswer
+    -> askForTutorial
 
 getTopic
   say "The current topic right now is, Movie Quotes."
@@ -215,11 +215,7 @@ waitForAnswer
     -> giveHint
 
   when AMAZON.StopIntent
-    if @gameInProgress == true
-      say "Are you sure you want to quit?"
-      -> confirmGoodbye
-    else
-      -> goodbye
+    -> goodbye
   when AMAZON.CancelIntent
     if @gameInProgress == true
       say "Are you sure you want to quit?"
@@ -236,6 +232,7 @@ confirmGoodbye
   when AMAZON.YesIntent
     -> goodbye
   when AMAZON.NoIntent
+    say "Okay, let's go back to the game."
     -> waitForAnswer
   otherwise
     say "Sorry, I didn't understand. Are you sure you want to quit?"
