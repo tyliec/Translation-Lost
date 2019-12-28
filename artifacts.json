@@ -4,7 +4,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/20/2019, 7:07:48 PM",
+            "date": "12/27/2019, 9:30:15 PM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -12,9 +12,9 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "eccaf40e4d65aa49eeea41a4bae707a1919f5aba",
+              "currentCommitHash": "f44a436d5ac1d2c2af42e2cf523ab41d97436b95",
               "currentCommitComment": [
-                "Fix Url"
+                "Added more Intent Handling for things people might say at various points"
               ],
               "uncommittedChanges": [
                 "[modified] .deploy/development/assets.log",
@@ -23,19 +23,14 @@
                 "[modified] .deploy/development/lambda/index.js",
                 "[modified] .deploy/development/local-cache.json",
                 "[modified] .deploy/development/manifest.log",
-                "[modified] .deploy/development/model-en-US.json",
-                "[modified] .deploy/development/skill.json",
                 "[modified] .deploy/production/assets.log",
                 "[modified] .deploy/production/lambda.log",
                 "[modified] .deploy/production/lambda.zip",
                 "[modified] .deploy/production/lambda/index.js",
                 "[modified] .deploy/production/local-cache.json",
                 "[modified] .deploy/production/manifest.log",
-                "[modified] .deploy/production/model-en-US.json",
-                "[modified] .deploy/production/skill.json",
                 "[modified] artifacts.json",
-                "[modified] litexa/main.litexa",
-                "[modified] skill.js"
+                "[modified] litexa/main.litexa"
               ]
             },
             "coreVersion": "0.3.1"
@@ -57,7 +52,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "ca7a049a436e1cf1606ebec838347914",
+          "skill-model-etag-en-US": "01026d1398b6a16a5807ad749b820fce",
           "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
         }
       ]
@@ -66,7 +61,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/20/2019, 7:11:55 PM",
+            "date": "12/27/2019, 9:31:04 PM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -74,9 +69,9 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "eccaf40e4d65aa49eeea41a4bae707a1919f5aba",
+              "currentCommitHash": "f44a436d5ac1d2c2af42e2cf523ab41d97436b95",
               "currentCommitComment": [
-                "Fix Url"
+                "Added more Intent Handling for things people might say at various points"
               ],
               "uncommittedChanges": [
                 "[modified] .deploy/development/assets.log",
@@ -85,19 +80,14 @@
                 "[modified] .deploy/development/lambda/index.js",
                 "[modified] .deploy/development/local-cache.json",
                 "[modified] .deploy/development/manifest.log",
-                "[modified] .deploy/development/model-en-US.json",
-                "[modified] .deploy/development/skill.json",
                 "[modified] .deploy/production/assets.log",
                 "[modified] .deploy/production/lambda.log",
                 "[modified] .deploy/production/lambda.zip",
                 "[modified] .deploy/production/lambda/index.js",
                 "[modified] .deploy/production/local-cache.json",
                 "[modified] .deploy/production/manifest.log",
-                "[modified] .deploy/production/model-en-US.json",
-                "[modified] .deploy/production/skill.json",
                 "[modified] artifacts.json",
-                "[modified] litexa/main.litexa",
-                "[modified] skill.js"
+                "[modified] litexa/main.litexa"
               ]
             },
             "coreVersion": "0.3.1"
@@ -119,7 +109,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_production_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.2430bb84-e485-4e2c-a609-59c81e0c0b92",
-          "skill-model-etag-en-US": "996910195ba9015ea3f5a6fc341af828",
+          "skill-model-etag-en-US": "4c18c24730967a133ffd85d72803dee6",
           "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
         }
       ]

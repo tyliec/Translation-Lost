@@ -2901,7 +2901,7 @@ processIntents.askForTutorial = async function(context, runOtherwise) {
     default: {
       if ( await processIntents.global(context, false) ) { return true; }
       context.say.push( "Do you want to hear the tutorial again?" );
-      context.nextState = 'waitForAnswer';
+      context.nextState = 'askForTutorial';
       break;
     }
     case 'AMAZON.YesIntent': {
@@ -3297,13 +3297,7 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       break;
     }
     case 'AMAZON.StopIntent': {
-      if (context.db.read('gameInProgress') === true) {
-        context.say.push( "Are you sure you want to quit?" );
-        context.nextState = 'confirmGoodbye';
-      }
-      else {
-        context.nextState = 'goodbye';
-      }
+      context.nextState = 'goodbye';
       break;
     }
     case 'AMAZON.CancelIntent': {
@@ -3337,6 +3331,7 @@ processIntents.confirmGoodbye = async function(context, runOtherwise) {
       break;
     }
     case 'AMAZON.NoIntent': {
+      context.say.push( "Okay, let's go back to the game." );
       context.nextState = 'waitForAnswer';
       break;
     }
