@@ -1,12 +1,9 @@
-[assets] +298ms all asset conversion complete
-[assets] +0ms deploying assets
-[assets] +1ms loaded AWS profile default
-[assets] +673ms found S3 bucket lost-in-translation
+[assets] +287ms all asset conversion complete
+[assets] +1ms deploying assets
+[assets] +0ms loaded AWS profile default
+[assets] +872ms found S3 bucket lost-in-translation
 [assets] +0ms scanning assets, preparing hashes
-[assets] +9ms scanned 92 assets in project
-[assets] +1ms fetching S3 object metadata [0-1000]
-[assets] +754ms 1 assets need uploading
-[assets] +0ms uploading heres_johnny.mp3 -> lost-in-translation/production/default/heres_johnny.mp3 [bcb17883]
-[assets] +1ms 0 assets remaining in queue
-[assets] +793ms segment uploaded in 792ms
-[assets] +0ms asset deployment complete in 2231ms
+[assets] +11ms scanned 92 assets in project
+[assets] +0ms fetching S3 object metadata [0-1000]
+[assets] +761ms 0 assets need uploading
+[assets] +0ms asset deployment complete in 1644ms

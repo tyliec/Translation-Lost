@@ -4,7 +4,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/27/2019, 9:53:28 PM",
+            "date": "12/29/2019, 2:43:54 PM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -12,9 +12,9 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "b9b89fd4d7cf5f9eac74b41f8b8240d7a3052348",
+              "currentCommitHash": "eb43b7a2d9ed01b1e9b19a98e74038cd064dc9c3",
               "currentCommitComment": [
-                "Merge branch 'master' of https://github.com/Viltaria/Translation-Lost"
+                "Merge branch 'master' of github.com:Viltaria/Translation-Lost"
               ],
               "uncommittedChanges": []
             },
@@ -37,7 +37,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "db9047189ad5f07983eba506d44f1209",
+          "skill-model-etag-en-US": "87b0bb38d73c8b91d3d8d0dfcb359c38",
           "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
         }
       ]
@@ -46,7 +46,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/27/2019, 9:54:15 PM",
+            "date": "12/29/2019, 2:44:46 PM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -54,15 +54,18 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "b9b89fd4d7cf5f9eac74b41f8b8240d7a3052348",
+              "currentCommitHash": "eb43b7a2d9ed01b1e9b19a98e74038cd064dc9c3",
               "currentCommitComment": [
-                "Merge branch 'master' of https://github.com/Viltaria/Translation-Lost"
+                "Merge branch 'master' of github.com:Viltaria/Translation-Lost"
               ],
               "uncommittedChanges": [
                 "[modified] .deploy/development/assets.log",
                 "[modified] .deploy/development/lambda.log",
+                "[modified] .deploy/development/lambda.zip",
+                "[modified] .deploy/development/lambda/index.js",
                 "[modified] .deploy/development/local-cache.json",
                 "[modified] .deploy/development/manifest.log",
+                "[modified] .test/referenceTester.js",
                 "[modified] artifacts.json"
               ]
             },
@@ -85,7 +88,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_production_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.2430bb84-e485-4e2c-a609-59c81e0c0b92",
-          "skill-model-etag-en-US": "ec160a6b3d25f4ff9ba1d7acff7a5f39",
+          "skill-model-etag-en-US": "087f09657f71b00c77a89a6fd456916e",
           "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
         }
       ]

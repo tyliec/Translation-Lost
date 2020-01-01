@@ -1676,7 +1676,7 @@ jsonSourceFiles['database.json'] = {
   "get_busy_livin_or_get_busy_dyin": {
     "accent": "Romanian",
     "hints": [
-      "Quote from the movie Good Will Hunting"
+      "Quote from the movie Shawshank Redemption"
     ],
     "answer": "Get busy livin', or get busy dyin'",
     "answer_annotation": "Spoken by various characters from the movie The Shawshank Redemption",
