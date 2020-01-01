@@ -1,16 +1,15 @@
-[lambda] +1ms deploying lambda
-[lambda] +16ms loaded AWS profile default
-[lambda] +316ms considering node_modules
-[lambda] +1ms no package.json found at /Users/tylerchong/Desktop/workspace/code/lost-in-translation/litexa/package.json, skipping node_modules
-[lambda] +39ms wrote index.js
-[lambda] +0ms beginning zip archive
-[lambda] +47ms Platform: darwin
-[lambda] +2ms zip archiving complete in 49ms
-[lambda] +1ms zip SHA: oD2m2kWzjJKRj3o/bzBXl1N3QxasYGvLrhEe5/bIVE8=
+[lambda] +0ms deploying lambda
+[lambda] +19ms loaded AWS profile default
+[lambda] +340ms considering node_modules
+[lambda] +0ms no package.json found at /Users/tylerchong/Desktop/workspace/code/lost-in-translation/litexa/package.json, skipping node_modules
+[lambda] +38ms beginning zip archive
+[lambda] +46ms Platform: darwin
+[lambda] +0ms zip archiving complete in 46ms
+[lambda] +2ms zip SHA: ksKdaVdAqVtBqHCHTGiCPdH+ydh4JlXOnqAuEWuid+8=
 [lambda] +0ms fetching Lambda lost-in-translation_development_litexa_handler configuration
-[lambda] +622ms fetched Lambda configuration
-[lambda] +54ms ensuring IAM role litexa_handler_lambda
-[lambda] +805ms pulling attached policies for IAM role litexa_handler_lambda
-[lambda] +558ms IAM Role litexa_handler_lambda ready
-[lambda] +1ms updating code for Lambda function lost-in-translation_development_litexa_handler
-[lambda] +2339ms lambda deployment complete in 4801ms
+[lambda] +1111ms fetched Lambda configuration
+[lambda] +56ms ensuring IAM role litexa_handler_lambda
+[lambda] +565ms pulling attached policies for IAM role litexa_handler_lambda
+[lambda] +612ms IAM Role litexa_handler_lambda ready
+[lambda] +2ms Lambda function lost-in-translation_development_litexa_handler code already up to date
+[lambda] +543ms lambda deployment complete in 3333ms

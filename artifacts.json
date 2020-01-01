@@ -4,7 +4,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/29/2019, 2:43:54 PM",
+            "date": "1/1/2020, 1:05:44 AM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -12,11 +12,20 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "eb43b7a2d9ed01b1e9b19a98e74038cd064dc9c3",
+              "currentCommitHash": "95eead773724d83afcc29e53b3f9234f5779549e",
               "currentCommitComment": [
-                "Merge branch 'master' of github.com:Viltaria/Translation-Lost"
+                "Deployment"
               ],
-              "uncommittedChanges": []
+              "uncommittedChanges": [
+                "[modified] .deploy/production/assets.log",
+                "[modified] .deploy/production/lambda.log",
+                "[modified] .deploy/production/lambda.zip",
+                "[modified] .deploy/production/local-cache.json",
+                "[modified] .deploy/production/manifest.log",
+                "[modified] artifacts.json",
+                "[modified] litexa/assets/icon-108.png",
+                "[modified] litexa/assets/icon-512.png"
+              ]
             },
             "coreVersion": "0.3.1"
           },
@@ -25,11 +34,11 @@
             "default": {
               "icon-108.png": {
                 "url": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/default/icon-108.png",
-                "md5": "2676372abe8cfa19109240d40c122152"
+                "md5": "814a788ebf162131f550fe8b7dab3ea0"
               },
               "icon-512.png": {
                 "url": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/development/default/icon-512.png",
-                "md5": "c477ac11d4a412aebd26b8cd676f124a"
+                "md5": "c765e44c7e4e4369e5d547d365b62f6a"
               }
             }
           },
@@ -37,8 +46,8 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "87b0bb38d73c8b91d3d8d0dfcb359c38",
-          "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
+          "skill-model-etag-en-US": "687de319e932615b3b03f17aca3cbf13",
+          "skill-manifest-assets-md5": "814a788ebf162131f550fe8b7dab3ea0c765e44c7e4e4369e5d547d365b62f6a"
         }
       ]
     },
@@ -46,7 +55,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "12/29/2019, 2:44:46 PM",
+            "date": "1/1/2020, 1:04:34 AM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -54,19 +63,13 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "eb43b7a2d9ed01b1e9b19a98e74038cd064dc9c3",
+              "currentCommitHash": "95eead773724d83afcc29e53b3f9234f5779549e",
               "currentCommitComment": [
-                "Merge branch 'master' of github.com:Viltaria/Translation-Lost"
+                "Deployment"
               ],
               "uncommittedChanges": [
-                "[modified] .deploy/development/assets.log",
-                "[modified] .deploy/development/lambda.log",
-                "[modified] .deploy/development/lambda.zip",
-                "[modified] .deploy/development/lambda/index.js",
-                "[modified] .deploy/development/local-cache.json",
-                "[modified] .deploy/development/manifest.log",
-                "[modified] .test/referenceTester.js",
-                "[modified] artifacts.json"
+                "[modified] litexa/assets/icon-108.png",
+                "[modified] litexa/assets/icon-512.png"
               ]
             },
             "coreVersion": "0.3.1"
@@ -76,11 +79,11 @@
             "default": {
               "icon-108.png": {
                 "url": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/production/default/icon-108.png",
-                "md5": "2676372abe8cfa19109240d40c122152"
+                "md5": "814a788ebf162131f550fe8b7dab3ea0"
               },
               "icon-512.png": {
                 "url": "https://s3.us-east-1.amazonaws.com/lost-in-translation/lost-in-translation/production/default/icon-512.png",
-                "md5": "c477ac11d4a412aebd26b8cd676f124a"
+                "md5": "c765e44c7e4e4369e5d547d365b62f6a"
               }
             }
           },
@@ -88,8 +91,8 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_production_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.2430bb84-e485-4e2c-a609-59c81e0c0b92",
-          "skill-model-etag-en-US": "087f09657f71b00c77a89a6fd456916e",
-          "skill-manifest-assets-md5": "2676372abe8cfa19109240d40c122152c477ac11d4a412aebd26b8cd676f124a"
+          "skill-model-etag-en-US": "6f763f94705b479097c772dd545a47b0",
+          "skill-manifest-assets-md5": "814a788ebf162131f550fe8b7dab3ea0c765e44c7e4e4369e5d547d365b62f6a"
         }
       ]
     }
