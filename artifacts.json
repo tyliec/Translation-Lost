@@ -4,7 +4,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "1/1/2020, 1:05:44 AM",
+            "date": "2/1/2020, 10:36:01 PM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -12,19 +12,27 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "95eead773724d83afcc29e53b3f9234f5779549e",
+              "currentCommitHash": "e48059d1a37c27761a1895bbaef5a3df022780d9",
               "currentCommitComment": [
-                "Deployment"
+                "Update Icon"
               ],
               "uncommittedChanges": [
+                "[modified] .deploy/development/assets.log",
+                "[modified] .deploy/development/lambda.log",
+                "[modified] .deploy/development/lambda.zip",
+                "[modified] .deploy/development/lambda/index.js",
+                "[modified] .deploy/development/local-cache.json",
+                "[modified] .deploy/development/manifest.log",
                 "[modified] .deploy/production/assets.log",
                 "[modified] .deploy/production/lambda.log",
                 "[modified] .deploy/production/lambda.zip",
+                "[modified] .deploy/production/lambda/index.js",
                 "[modified] .deploy/production/local-cache.json",
                 "[modified] .deploy/production/manifest.log",
                 "[modified] artifacts.json",
-                "[modified] litexa/assets/icon-108.png",
-                "[modified] litexa/assets/icon-512.png"
+                "[modified] litexa/Master.js",
+                "[modified] litexa/database.json",
+                "[modified] litexa/main.litexa"
               ]
             },
             "coreVersion": "0.3.1"
@@ -46,7 +54,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_development_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.d58c4035-810d-4862-ab87-7f31b44c3573",
-          "skill-model-etag-en-US": "687de319e932615b3b03f17aca3cbf13",
+          "skill-model-etag-en-US": "24b5ed2371b42c49f98be7674b34912c",
           "skill-manifest-assets-md5": "814a788ebf162131f550fe8b7dab3ea0c765e44c7e4e4369e5d547d365b62f6a"
         }
       ]
@@ -55,7 +63,7 @@
       "versions": [
         {
           "lastDeployment": {
-            "date": "1/1/2020, 1:04:34 AM",
+            "date": "2/1/2020, 10:36:53 PM",
             "deploymentTypes": {
               "lambda": true,
               "assets": true,
@@ -63,13 +71,29 @@
               "manifest": true
             },
             "git": {
-              "currentCommitHash": "95eead773724d83afcc29e53b3f9234f5779549e",
+              "currentCommitHash": "e48059d1a37c27761a1895bbaef5a3df022780d9",
               "currentCommitComment": [
-                "Deployment"
+                "Update Icon"
               ],
               "uncommittedChanges": [
-                "[modified] litexa/assets/icon-108.png",
-                "[modified] litexa/assets/icon-512.png"
+                "[modified] .deploy/development/assets.log",
+                "[modified] .deploy/development/lambda.log",
+                "[modified] .deploy/development/lambda.zip",
+                "[modified] .deploy/development/lambda/index.js",
+                "[modified] .deploy/development/local-cache.json",
+                "[modified] .deploy/development/manifest.log",
+                "[modified] .deploy/development/model-en-US.json",
+                "[modified] .deploy/production/assets.log",
+                "[modified] .deploy/production/lambda.log",
+                "[modified] .deploy/production/lambda.zip",
+                "[modified] .deploy/production/lambda/index.js",
+                "[modified] .deploy/production/local-cache.json",
+                "[modified] .deploy/production/manifest.log",
+                "[modified] .test/referenceTester.js",
+                "[modified] artifacts.json",
+                "[modified] litexa/Master.js",
+                "[modified] litexa/database.json",
+                "[modified] litexa/main.litexa"
               ]
             },
             "coreVersion": "0.3.1"
@@ -91,7 +115,7 @@
           "iamRole-litexa_handler_lambda": "arn:aws:iam::698018070896:role/litexa_handler_lambda",
           "lambdaARN": "arn:aws:lambda:us-east-1:698018070896:function:lost-in-translation_production_litexa_handler:release-0",
           "skillId": "amzn1.ask.skill.2430bb84-e485-4e2c-a609-59c81e0c0b92",
-          "skill-model-etag-en-US": "6f763f94705b479097c772dd545a47b0",
+          "skill-model-etag-en-US": "85a4a8190ea30c531c22e8dd2024c2de",
           "skill-manifest-assets-md5": "814a788ebf162131f550fe8b7dab3ea0c765e44c7e4e4369e5d547d365b62f6a"
         }
       ]

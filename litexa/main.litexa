@@ -123,6 +123,10 @@ waitForAnswer
   when "it's $answer"
     or "$answer"
     with $answer = Master.js:getPotentialAnswers
+    log "What I heard:"
+    log $answer
+    log "Correct Answer:"
+    log @master.getAnswer(@speechKey)
     if $answer and $answer == @master.getAnswer(@speechKey)
       card "@master.getAnswer(@speechKey)"
         content: "@master.getAnnotation(@speechKey)"

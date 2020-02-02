@@ -998,7 +998,7 @@ jsonSourceFiles['database.json'] = {
       "Darth Vader",
       "Luke Skywalker"
     ],
-    "answer": "Luke, I am your father",
+    "answer": "Luke I am your father",
     "answer_annotation": "Spoken by the character Darth Vader, voiced by James Earl Jones, from the Star Wars movie series",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1043,7 +1043,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Gone with the Wind",
       "Clark Gable"
     ],
-    "answer": "Frankly my dear, I don't give a damn",
+    "answer": "Frankly my dear I don't give a damn",
     "answer_annotation": "Spoken by the character Rhett Butler, played by Clark Gable, from the movie, Gone with the Wind",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1054,7 +1054,7 @@ jsonSourceFiles['database.json'] = {
       "Clint Eastwood",
       "Quote from the movie, Sudden Impact"
     ],
-    "answer": "Go ahead, make my day",
+    "answer": "Go ahead make my day",
     "answer_annotation": "Spoken by the character Harry Callahan, played by Clint Eastwood, from the movie, Sudden Impact",
     "type": "Movie Quotes",
     "difficulty": "4"
@@ -1065,7 +1065,7 @@ jsonSourceFiles['database.json'] = {
       "zero zero seven",
       "famous spy movie series"
     ],
-    "answer": "Bond, James Bond",
+    "answer": "Bond James Bond",
     "answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
     "type": "Movie Quotes",
     "difficulty": "4"
@@ -1100,7 +1100,7 @@ jsonSourceFiles['database.json'] = {
       "Apollo 13",
       "NASA"
     ],
-    "answer": "Houston, we have a problem",
+    "answer": "Houston we have a problem",
     "answer_annotation": "Spoken by the character Jim Lovell, played by Tom Hanks, from the movie, Apollo 13",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1181,7 +1181,7 @@ jsonSourceFiles['database.json'] = {
       "Witchcraft and Wizardry",
       "Quote from Harry Potter"
     ],
-    "answer": "You're a wizard, Harry",
+    "answer": "You're a wizard Harry",
     "answer_annotation": "Spoken by the character Rubeus Hagrid, played by Robbie Coltrane, from the Harry Potter movie series",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1217,7 +1217,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from Spider-man series",
       "Uncle Ben"
     ],
-    "answer": "With great power, comes great responsibility",
+    "answer": "With great power comes great responsibility",
     "answer_annotation": "Spoken by the character Uncle Ben from the Spider-man series",
     "type": "Movie Quotes",
     "difficulty": "5"
@@ -1227,7 +1227,7 @@ jsonSourceFiles['database.json'] = {
     "hints": [
       "Quote from the movie Mad Max: Fury Road"
     ],
-    "answer": "You will ride eternal, shiny, and chrome",
+    "answer": "You will ride eternal shiny and chrome",
     "answer_annotation": "Spoken by Keays-Byrne as Immortan Joe from the movie Mad Max: Fury Road",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1238,7 +1238,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, The Incredibles",
       "Spoken by Frozone"
     ],
-    "answer": "Honey, Where is my super suit",
+    "answer": "Honey Where is my super suit",
     "answer_annotation": "Spoken by the character Frozone, voiced by Samuel L. Jackson, from the movie, The Incredibles",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1316,7 +1316,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, E.T. the Extra-Terrestrial",
       "Spoken by E.T."
     ],
-    "answer": "E.T. Phone home",
+    "answer": "ET Phone home",
     "answer_annotation": "Spoken by E.T. from the movie, E.T. the Extra-Terrestrial",
     "type": "Movie Quotes",
     "difficulty": "1"
@@ -1360,7 +1360,7 @@ jsonSourceFiles['database.json'] = {
       "007",
       "A spy's favorite drink"
     ],
-    "answer": "A martini. Shaken, not stirred",
+    "answer": "A martini Shaken not stirred",
     "answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
     "type": "Movie Quotes",
     "difficulty": "8"
@@ -1371,7 +1371,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Forrest Gump",
       "Spoken by Tom Hanks as Forrest Gump"
     ],
-    "answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+    "answer": "Mama always said life was like a box of chocolates You never know what you're gonna get",
     "answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
     "type": "Movie Quotes",
     "difficulty": "10"
@@ -1392,7 +1392,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Braveheart",
       "Spoken by the character William Wallace, played by Mel Gibson"
     ],
-    "answer": "They may take our lives, but they'll never take our freedom!",
+    "answer": "They may take our lives but they'll never take our freedom!",
     "answer_annotation": "Spoken by the character William Wallace, played by Mel Gibson, from the movie, Braveheart",
     "type": "Movie Quotes",
     "difficulty": "4"
@@ -1403,7 +1403,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Clueless",
       "Spoken by the character Cher, played by Alicia Silverstone"
     ],
-    "answer": "Oh my god, I am totally buggin'!",
+    "answer": "Oh my god I am totally bugging!",
     "answer_annotation": "Spoken by the character Cher, played by Alicia Silverstone, from the movie, Clueless",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1414,7 +1414,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Snow White and the Seven Dwarves",
       "Spoken by the character Evil Queen, voiced by Lucille La Verne"
     ],
-    "answer": "Magic Mirror on the wall, who is the fairest one of all?",
+    "answer": "Magic Mirror on the wall who is the fairest one of all?",
     "answer_annotation": "Spoken by the character Evil Queen, voiced by Lucille La Verne, from the movie, Snow White and the Seven Dwarves",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1425,7 +1425,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, The Karate Kid",
       "Spoken by the character Mr. Miyagi, played by Noriyuki Morita"
     ],
-    "answer": "Wax on, wax off",
+    "answer": "Wax on wax off",
     "answer_annotation": "Spoken by the character Mr. Miyagi, played by Noriyuki Morita, from the movie, The Karate Kid",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1469,7 +1469,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Mean Girls",
       "Spoken by the character Regina George, played by Rachel McAdams"
     ],
-    "answer": "Stop trying to make 'fetch' happen. It's not going to happen",
+    "answer": "Stop trying to make fetch happen It's not going to happen",
     "answer_annotation": "Spoken by the character Regina George, played by Rachel McAdams, from the movie, Mean Girls",
     "type": "Movie Quotes",
     "difficulty": "8"
@@ -1480,7 +1480,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Mean Girls",
       "Spoken by the character Karen Smith, played by Amanda Seyfried"
     ],
-    "answer": "On Wednesdays, we wear pink",
+    "answer": "On Wednesdays we wear pink",
     "answer_annotation": "Spoken by the character Karen Smith, played by Amanda Seyfried, from the movie, Mean Girls",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1491,7 +1491,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Mean Girls",
       "Spoken by the character Regina George, played by Rachel McAdams"
     ],
-    "answer": "Get in loser, we're going shopping",
+    "answer": "Get in loser we're going shopping",
     "answer_annotation": "Spoken by the character Regina George, played by Rachel McAdams, from the movie, Mean Girls",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1513,7 +1513,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Back to the Future",
       "Spoken by the character Dr. Emmett Brown, played by Christopher Lloyd"
     ],
-    "answer": "Roads? Where we're going we don't need roads",
+    "answer": "Roads Where we're going we don't need roads",
     "answer_annotation": "Spoken by the character Dr. Emmett Brown, played by Christopher Lloyd, from the movie, Back to the Future",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1525,7 +1525,7 @@ jsonSourceFiles['database.json'] = {
       "Spoken by the character Margo Channing, played by Bette Davis",
       "the last word, 'night', is often misquoted as 'ride'"
     ],
-    "answer": "Fasten your seatbelts. It's going to be a bumpy night",
+    "answer": "Fasten your seatbelts It's going to be a bumpy night",
     "answer_annotation": "Spoken by the character Margo Channing, played by Bette Davis, from the movie, All about Eve",
     "type": "Movie Quotes",
     "difficulty": "7"
@@ -1558,7 +1558,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Ratatouille",
       "Spoken by the character Auguste Gusteau, voiced by Brad Garrett"
     ],
-    "answer": "Not everyone can become a great artist, but a great artist can come from anywhere",
+    "answer": "Not everyone can become a great artist but a great artist can come from anywhere",
     "answer_annotation": "Spoken by the character Auguste Gusteau, voiced by Brad Garrett, from the movie, Ratatouille",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1569,7 +1569,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Finding Nemo",
       "Spoken by the character Bruce, voiced by Barry Humphries"
     ],
-    "answer": "Fish are friends, not food",
+    "answer": "Fish are friends not food",
     "answer_annotation": "Spoken by the character Bruce, voiced by Barry Humphries, from the movie, Finding Nemo",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1613,7 +1613,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie, Batman Begins",
       "Spoken by the character Batman, played by Christian Bale"
     ],
-    "answer": "It’s not who I am underneath, but what I do that defines me",
+    "answer": "It’s not who I am underneath but what I do that defines me",
     "answer_annotation": "Spoken by the character Batman, played by Christian Bale, from the movie, Batman Begins",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1668,7 +1668,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie Tropic Thunder",
       "Spoken by Robert Downey Jr. as Kirk Lazarus"
     ],
-    "answer": "I'm a dude playin' a dude disguised as another dude!",
+    "answer": "I'm a dude playing a dude disguised as another dude!",
     "answer_annotation": "Spoken by Robert Downey Jr. as Kirk Lazarus in the movie Tropic Thunder",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1678,7 +1678,7 @@ jsonSourceFiles['database.json'] = {
     "hints": [
       "Quote from the movie Shawshank Redemption"
     ],
-    "answer": "Get busy livin', or get busy dyin'",
+    "answer": "Get busy living or get busy dying",
     "answer_annotation": "Spoken by various characters from the movie The Shawshank Redemption",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1711,7 +1711,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie A Beautiful Mind",
       "Spoken by Russell Crowe as John Nash"
     ],
-    "answer": "Terrified... mortified petrified, stupified by you",
+    "answer": "Terrified mortified petrified stupified by you",
     "answer_annotation": "Spoken by Russell Crowe as John Nash from the movie A Beautiful Mind",
     "type": "Movie Quotes",
     "difficulty": "5"
@@ -1722,7 +1722,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie Star Wars: the Empire Strikes Back",
       "Spoken by Frank Oz as Yoda"
     ],
-    "answer": "Do, or do not. There is no 'try'",
+    "answer": "Do or do not There is no try",
     "answer_annotation": "Spoken by Frank Oz as Yoda from the movie Star Wars: the Empire Strikes Back",
     "type": "Movie Quotes",
     "difficulty": "2"
@@ -1744,7 +1744,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie The Wizard of Oz",
       "Spoken by Margaret Hamilton as The Wicked Witch of the West"
     ],
-    "answer": "I'll get you, my pretty, and your little dog, too!",
+    "answer": "I'll get you my pretty and your little dog too!",
     "answer_annotation": "Spoken by Margaret Hamilton as The Wicked Witch of the West from the movie The Wizard of Oz",
     "type": "Movie Quotes",
     "difficulty": "7"
@@ -1755,7 +1755,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie Top Gun",
       "Spoken by Tom Cruise as Pete 'Maverick' Mitchell"
     ],
-    "answer": "I feel the need, the need for speed!",
+    "answer": "I feel the need the need for speed!",
     "answer_annotation": "Spoken by Tom Cruise as Pete 'Maverick' Mitchell from the movie Top Gun",
     "type": "Movie Quotes",
     "difficulty": "8"
@@ -1788,7 +1788,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie Forrest Gump",
       "Spoken by Tom Hanks as Forrest Gump"
     ],
-    "answer": "Run, Forrest, Run!",
+    "answer": "Run Forrest Run!",
     "answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1810,7 +1810,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie Forrest Gump",
       "Spoken by Tom Hanks as Forrest Gump"
     ],
-    "answer": "Mama says, 'Stupid is as stupid does",
+    "answer": "Mama says Stupid is as stupid does",
     "answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1821,7 +1821,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie The Fly",
       "Spoken by Geena Davis as Veronica 'Ronnie' Quaife"
     ],
-    "answer": "Be afraid. Be very afraid",
+    "answer": "Be afraid Be very afraid",
     "answer_annotation": "Spoken by Geena Davis as Veronica 'Ronnie' Quaife from the movie The Fly",
     "type": "Movie Quotes",
     "difficulty": "6"
@@ -1832,7 +1832,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie Mad Max: Fury Road",
       "Spoken by Nicholas Hoult as Nux"
     ],
-    "answer": "Oh what a day. What a lovely day!",
+    "answer": "Oh what a day What a lovely day!",
     "answer_annotation": "Spoken by Nicholas Hoult as Nux from the movie Mad Max: Fury Road",
     "type": "Movie Quotes",
     "difficulty": "3"
@@ -1898,7 +1898,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie Brave",
       "Spoken by Kelly Macdonald as Merida"
     ],
-    "answer": "Our fate lives within us. You only have to be brave enough to see it",
+    "answer": "Our fate lives within us You only have to be brave enough to see it",
     "answer_annotation": "Spoken by Kelly Macdonald as Merida from the movie Brave",
     "type": "Movie Quotes",
     "difficulty": "6"
@@ -1909,7 +1909,7 @@ jsonSourceFiles['database.json'] = {
       "Quote from the movie The Incredibles",
       "Spoken by Brad Bird as Edna Mode"
     ],
-    "answer": "I never look back, darling! It distracts me from the now",
+    "answer": "I never look back darling It distracts me from the now",
     "answer_annotation": "Spoken by Brad Bird as Edna Mode from the movie The Incredibles",
     "type": "Movie Quotes",
     "difficulty": "7"
@@ -1922,7 +1922,7 @@ jsonSourceFiles['database.json'] = {
       "Spoken by Jeff Garlin as Captain B. McCrea",
       "Spoken by Chiwetel Ejiofor as Solomon Northup"
     ],
-    "answer": "I don't want to survive.  I want to live",
+    "answer": "I don't want to survive I want to live",
     "answer_annotation": "Spoken by Jeff Garlin as Captain B. McCrea from the movie Wall-E and by Chiwetel Ejiofor as Solomon Northup from the movie Twelve Years A Slave",
     "type": "Movie Quotes",
     "difficulty": "7"
@@ -2727,90 +2727,90 @@ exports.getPotentialAnswers = function() {
 		name: 'ANSWER_LIST',
 		values: [
 			"I'll be back",
-			"Luke, I am your father",
+			"Luke I am your father",
 			"I'm going to make him an offer he can't refuse",
 			"May the force be with you",
 			"You talking to me",
-			"Frankly my dear, I don't give a damn",
-			"Go ahead, make my day",
-			"Bond, James Bond",
+			"Frankly my dear I don't give a damn",
+			"Go ahead make my day",
+			"Bond James Bond",
 			"Show me the money",
 			"You can't handle the truth",
-			"Houston, we have a problem",
+			"Houston we have a problem",
 			"Elementary my dear Watson",
 			"Hasta la vista baby",
 			"My precious",
 			"I am Groot",
 			"I want to play a game",
 			"This is Sparta",
-			"You're a wizard, Harry",
+			"You're a wizard Harry",
 			"Just keep swimming",
 			"I volunteer as tribute",
-			"With great power, comes great responsibility",
-			"You will ride eternal, shiny, and chrome",
-			"Honey, Where is my super suit",
+			"With great power comes great responsibility",
+			"You will ride eternal shiny and chrome",
+			"Honey Where is my super suit",
 			"Why so serious",
 			"You shall not pass",
 			"Are you not entertained",
 			"You sit on a throne of lies",
 			"I live my life a quarter mile at a time",
 			"I can do this all day",
-			"E.T. Phone home",
+			"ET Phone home",
 			"Rosebud",
 			"There's no place like home",
 			"Say hello to my little friend",
-			"A martini. Shaken, not stirred",
-			"Mama always said life was like a box of chocolates. You never know what you're gonna get",
+			"A martini Shaken not stirred",
+			"Mama always said life was like a box of chocolates You never know what you're gonna get",
 			"Love means never having to say you're sorry",
-			"They may take our lives, but they'll never take our freedom!",
-			"Oh my god, I am totally buggin'!",
-			"Magic Mirror on the wall, who is the fairest one of all?",
-			"Wax on, wax off",
+			"They may take our lives but they'll never take our freedom!",
+			"Oh my god I am totally bugging!",
+			"Magic Mirror on the wall who is the fairest one of all?",
+			"Wax on wax off",
 			"Alright alright alright",
 			"The Dude abides",
 			"That is so fetch!",
-			"Stop trying to make 'fetch' happen. It's not going to happen",
-			"On Wednesdays, we wear pink",
-			"Get in loser, we're going shopping",
+			"Stop trying to make fetch happen It's not going to happen",
+			"On Wednesdays we wear pink",
+			"Get in loser we're going shopping",
 			"Why don't you make like a tree and get outta here",
-			"Roads? Where we're going we don't need roads",
-			"Fasten your seatbelts. It's going to be a bumpy night",
+			"Roads Where we're going we don't need roads",
+			"Fasten your seatbelts It's going to be a bumpy night",
 			"To infinity and beyond!",
 			"No capes!",
-			"Not everyone can become a great artist, but a great artist can come from anywhere",
-			"Fish are friends, not food",
+			"Not everyone can become a great artist but a great artist can come from anywhere",
+			"Fish are friends not food",
 			"You're gonna need a bigger boat",
 			"You're embarrassing me in front of the wizards",
 			"I'm batman",
-			"It’s not who I am underneath, but what I do that defines me",
+			"It’s not who I am underneath but what I do that defines me",
 			"Some men just want to watch the world burn",
 			"You mustn't be afraid to dream a little bigger darling",
 			"I wish I knew how to quit you",
 			"I am Iron Man",
-			"I'm a dude playin' a dude disguised as another dude!",
-			"Get busy livin', or get busy dyin'",
+			"I'm a dude playing a dude disguised as another dude!",
+			"Get busy living or get busy dying",
 			"How do you like them apples?",
 			"We all float down here",
-			"Terrified... mortified petrified, stupified by you",
-			"Do, or do not. There is no 'try'",
+			"Terrified mortified petrified stupified by you",
+			"Do or do not There is no try",
 			"I'm king of the world",
-			"I'll get you, my pretty, and your little dog, too!",
-			"I feel the need, the need for speed!",
+			"I'll get you my pretty and your little dog too!",
+			"I feel the need the need for speed!",
 			"Here's Johnny!",
 			"I see dead people",
-			"Run, Forrest, Run!",
+			"Run Forrest Run!",
 			"It's only after we've lost everything that we're free to do anything",
-			"Mama says, 'Stupid is as stupid does",
-			"Be afraid. Be very afraid",
-			"Oh what a day. What a lovely day!",
+			"Mama says Stupid is as stupid does",
+			"Be afraid Be very afraid",
+			"Oh what a day What a lovely day!",
 			"I love the smell of napalm in the morning",
 			"I solemnly swear I am up to no good",
 			"Remember who you are",
 			"Do you wanna build a snowman?",
 			"Some people are worth melting for",
-			"Our fate lives within us. You only have to be brave enough to see it",
-			"I never look back, darling! It distracts me from the now",
-			"I don't want to survive.  I want to live"
+			"Our fate lives within us You only have to be brave enough to see it",
+			"I never look back darling It distracts me from the now",
+			"I don't want to survive I want to live"
 		]
 	};
 }
@@ -3128,6 +3128,10 @@ processIntents.waitForAnswer = async function(context, runOtherwise) {
       break;
     }
     case 'ITS_ANSWER': {
+      exports.Logging.log(JSON.stringify("What I heard:"));
+      exports.Logging.log(JSON.stringify(context.slots.answer));
+      exports.Logging.log(JSON.stringify("Correct Answer:"));
+      exports.Logging.log(JSON.stringify(await context.db.read('master').getAnswer(context.db.read('speechKey'))));
       if (context.slots.answer && (context.slots.answer === await context.db.read('master').getAnswer(context.db.read('speechKey')))) {
         context.card = {
           title: escapeSpeech( (await context.db.read('master').getAnswer(context.db.read('speechKey'))) ),

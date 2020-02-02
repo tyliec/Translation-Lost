@@ -10,7 +10,7 @@
 	"luke_i_am_your_father": {
 		"accent": "Norwegian",
 		"hints": ["Star Wars", "Darth Vader", "Luke Skywalker"],
-		"answer": "Luke, I am your father",
+		"answer": "Luke I am your father",
 		"answer_annotation": "Spoken by the character Darth Vader, voiced by James Earl Jones, from the Star Wars movie series",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -42,7 +42,7 @@
 	"frankly_my_dear_i_dont_give_a_damn": {
 		"accent": "Australian",
 		"hints": ["Quote from the movie, Gone with the Wind", "Clark Gable"],
-		"answer": "Frankly my dear, I don't give a damn",
+		"answer": "Frankly my dear I don't give a damn",
 		"answer_annotation": "Spoken by the character Rhett Butler, played by Clark Gable, from the movie, Gone with the Wind",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -50,7 +50,7 @@
 	"go_ahead_make_my_day": {
 		"accent": "French",
 		"hints": ["Clint Eastwood", "Quote from the movie, Sudden Impact"],
-		"answer": "Go ahead, make my day",
+		"answer": "Go ahead make my day",
 		"answer_annotation": "Spoken by the character Harry Callahan, played by Clint Eastwood, from the movie, Sudden Impact",
 		"type": "Movie Quotes",
 		"difficulty": "4"
@@ -58,7 +58,7 @@
 	"bond_james_bond": {
 		"accent": "Turkish",
 		"hints": ["zero zero seven", "famous spy movie series"],
-		"answer": "Bond, James Bond",
+		"answer": "Bond James Bond",
 		"answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
 		"type": "Movie Quotes",
 		"difficulty": "4"
@@ -82,7 +82,7 @@
 	"houston_we_have_a_problem": {
 		"accent": "German",
 		"hints": ["Apollo 13", "NASA"],
-		"answer": "Houston, we have a problem",
+		"answer": "Houston we have a problem",
 		"answer_annotation": "Spoken by the character Jim Lovell, played by Tom Hanks, from the movie, Apollo 13",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -138,7 +138,7 @@
    	 "youre_a_wizard_harry": {
 		"accent": "french",
 		"hints": ["Witchcraft and Wizardry", "Quote from Harry Potter"],
-		"answer": "You're a wizard, Harry",
+		"answer": "You're a wizard Harry",
 		"answer_annotation": "Spoken by the character Rubeus Hagrid, played by Robbie Coltrane, from the Harry Potter movie series",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -162,7 +162,7 @@
 	"with_great_power_comes_great_responsibility": {
 		"accent": "Dutch",
 		"hints": ["Quote from Spider-man series", "Uncle Ben"],
-		"answer": "With great power, comes great responsibility",
+		"answer": "With great power comes great responsibility",
 		"answer_annotation": "Spoken by the character Uncle Ben from the Spider-man series",
 		"type": "Movie Quotes",
 		"difficulty": "5"
@@ -170,7 +170,7 @@
 	"you_will_ride_eternal_shiny_and_chrome": {
 		"accent": "Dutch",
 		"hints": ["Quote from the movie Mad Max: Fury Road"],
-		"answer": "You will ride eternal, shiny, and chrome",
+		"answer": "You will ride eternal shiny and chrome",
 		"answer_annotation": "Spoken by Keays-Byrne as Immortan Joe from the movie Mad Max: Fury Road",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -178,7 +178,7 @@
 	"honey_where_is_my_super_suit": {
 		"accent": "Arabic",
 		"hints": ["Quote from the movie, The Incredibles", "Spoken by Frozone"],
-		"answer": "Honey, Where is my super suit",
+		"answer": "Honey Where is my super suit",
 		"answer_annotation": "Spoken by the character Frozone, voiced by Samuel L. Jackson, from the movie, The Incredibles",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -234,7 +234,7 @@
 	"e_t_phone_home": {
 		"accent": "Chinese",
 		"hints": ["Quote from the movie, E.T. the Extra-Terrestrial", "Spoken by E.T."],
-		"answer": "E.T. Phone home",
+		"answer": "ET Phone home",
 		"answer_annotation": "Spoken by E.T. from the movie, E.T. the Extra-Terrestrial",
 		"type": "Movie Quotes",
 		"difficulty": "1"
@@ -266,7 +266,7 @@
 	"a_martini_shaken_not_stirred": {
 		"accent": "Japanese",
 		"hints": ["007", "A spy's favorite drink"],
-		"answer": "A martini. Shaken, not stirred",
+		"answer": "A martini Shaken not stirred",
 		"answer_annotation": "Spoken by the character James Bond from the James Bond movie series",
 		"type": "Movie Quotes",
 		"difficulty": "8"
@@ -274,7 +274,7 @@
 	"mama_always_said_life_was_like_a_box_of_chocolates_you_never_know_what_youre_gonna_get": {
 		"accent": "Korean",
 		"hints": ["Quote from the movie, Forrest Gump", "Spoken by Tom Hanks as Forrest Gump"],
-		"answer": "Mama always said life was like a box of chocolates. You never know what you're gonna get",
+		"answer": "Mama always said life was like a box of chocolates You never know what you're gonna get",
 		"answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
 		"type": "Movie Quotes",
 		"difficulty": "10"
@@ -290,7 +290,7 @@
 	"they_may_take_our_lives_but_theyll_never_take_our_freedom": {
 		"accent": "German",
 		"hints": ["Quote from the movie, Braveheart", "Spoken by the character William Wallace, played by Mel Gibson"],
-		"answer": "They may take our lives, but they'll never take our freedom!",
+		"answer": "They may take our lives but they'll never take our freedom!",
 		"answer_annotation": "Spoken by the character William Wallace, played by Mel Gibson, from the movie, Braveheart",
 		"type": "Movie Quotes",
 		"difficulty": "4"
@@ -298,7 +298,7 @@
 	"oh_my_god_i_am_totally_buggin": {
 		"accent": "Chinese",
 		"hints": ["Quote from the movie, Clueless", "Spoken by the character Cher, played by Alicia Silverstone"],
-		"answer": "Oh my god, I am totally buggin'!",
+		"answer": "Oh my god I am totally bugging!",
 		"answer_annotation": "Spoken by the character Cher, played by Alicia Silverstone, from the movie, Clueless",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -306,7 +306,7 @@
 	"magic_mirror_on_the_wall_who_is_the_fairest_one_of_all": {
 		"accent": "Portuguese",
 		"hints": ["Quote from the movie, Snow White and the Seven Dwarves", "Spoken by the character Evil Queen, voiced by Lucille La Verne"],
-		"answer": "Magic Mirror on the wall, who is the fairest one of all?",
+		"answer": "Magic Mirror on the wall who is the fairest one of all?",
 		"answer_annotation": "Spoken by the character Evil Queen, voiced by Lucille La Verne, from the movie, Snow White and the Seven Dwarves",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -314,7 +314,7 @@
 	"wax_on_wax_off": {
 		"accent": "Polish",
 		"hints": ["Quote from the movie, The Karate Kid", "Spoken by the character Mr. Miyagi, played by Noriyuki Morita"],
-		"answer": "Wax on, wax off",
+		"answer": "Wax on wax off",
 		"answer_annotation": "Spoken by the character Mr. Miyagi, played by Noriyuki Morita, from the movie, The Karate Kid",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -346,7 +346,7 @@
 	"stop_trying_to_make_fetch_happen_its_not_going_to_happen": {
 		"accent": "Turkish",
 		"hints": ["Quote from the movie, Mean Girls", "Spoken by the character Regina George, played by Rachel McAdams"],
-		"answer": "Stop trying to make 'fetch' happen. It's not going to happen",
+		"answer": "Stop trying to make fetch happen It's not going to happen",
 		"answer_annotation": "Spoken by the character Regina George, played by Rachel McAdams, from the movie, Mean Girls",
 		"type": "Movie Quotes",
 		"difficulty": "8"
@@ -354,7 +354,7 @@
 	"on_wednesdays_we_wear_pink": {
 		"accent": "Italian",
 		"hints": ["Quote from the movie, Mean Girls", "Spoken by the character Karen Smith, played by Amanda Seyfried"],
-		"answer": "On Wednesdays, we wear pink",
+		"answer": "On Wednesdays we wear pink",
 		"answer_annotation": "Spoken by the character Karen Smith, played by Amanda Seyfried, from the movie, Mean Girls",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -362,7 +362,7 @@
 	"get_in_loser_were_going_shopping": {
 		"accent": "Russian",
 		"hints": ["Quote from the movie, Mean Girls", "Spoken by the character Regina George, played by Rachel McAdams"],
-		"answer": "Get in loser, we're going shopping",
+		"answer": "Get in loser we're going shopping",
 		"answer_annotation": "Spoken by the character Regina George, played by Rachel McAdams, from the movie, Mean Girls",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -378,7 +378,7 @@
 	"roads_where_were_going_we_dont_need_roads": {
 		"accent": "Castilian Spanish",
 		"hints": ["Quote from the movie, Back to the Future", "Spoken by the character Dr. Emmett Brown, played by Christopher Lloyd"],
-		"answer": "Roads? Where we're going we don't need roads",
+		"answer": "Roads Where we're going we don't need roads",
 		"answer_annotation": "Spoken by the character Dr. Emmett Brown, played by Christopher Lloyd, from the movie, Back to the Future",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -386,7 +386,7 @@
 	"fasten_your_seatbelts_its_going_to_be_a_bumpy_night": {
 		"accent": "Japanese",
 		"hints": ["Quote from the movie, All about Eve", "Spoken by the character Margo Channing, played by Bette Davis", "the last word, 'night', is often misquoted as 'ride'"],
-		"answer": "Fasten your seatbelts. It's going to be a bumpy night",
+		"answer": "Fasten your seatbelts It's going to be a bumpy night",
 		"answer_annotation": "Spoken by the character Margo Channing, played by Bette Davis, from the movie, All about Eve",
 		"type": "Movie Quotes",
 		"difficulty": "7"
@@ -410,7 +410,7 @@
 	"not_everyone_can_become_a_great_artist_but_a_great_artist_can_come_from_anywhere": {
 		"accent": "Chinese",
 		"hints": ["Quote from the movie, Ratatouille", "Spoken by the character Auguste Gusteau, voiced by Brad Garrett"],
-		"answer": "Not everyone can become a great artist, but a great artist can come from anywhere",
+		"answer": "Not everyone can become a great artist but a great artist can come from anywhere",
 		"answer_annotation": "Spoken by the character Auguste Gusteau, voiced by Brad Garrett, from the movie, Ratatouille",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -418,7 +418,7 @@
 	"fish_are_friends_not_food": {
 		"accent": "Swedish",
 		"hints": ["Quote from the movie, Finding Nemo", "Spoken by the character Bruce, voiced by Barry Humphries"],
-		"answer": "Fish are friends, not food",
+		"answer": "Fish are friends not food",
 		"answer_annotation": "Spoken by the character Bruce, voiced by Barry Humphries, from the movie, Finding Nemo",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -450,7 +450,7 @@
 	"its_not_who_i_am_underneath_but_what_i_do_that_defines_me": {
 		"accent": "Italian",
 		"hints": ["Quote from the movie, Batman Begins", "Spoken by the character Batman, played by Christian Bale"],
-		"answer": "It’s not who I am underneath, but what I do that defines me",
+		"answer": "It’s not who I am underneath but what I do that defines me",
 		"answer_annotation": "Spoken by the character Batman, played by Christian Bale, from the movie, Batman Begins",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -490,7 +490,7 @@
 	"im_a_dude_playin_a_dude_disguised_as_another_dude": {
 		"accent": "Danish",
 		"hints": ["Quote from the movie Tropic Thunder", "Spoken by Robert Downey Jr. as Kirk Lazarus"],
-		"answer": "I'm a dude playin' a dude disguised as another dude!",
+		"answer": "I'm a dude playing a dude disguised as another dude!",
 		"answer_annotation": "Spoken by Robert Downey Jr. as Kirk Lazarus in the movie Tropic Thunder",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -498,7 +498,7 @@
 	"get_busy_livin_or_get_busy_dyin": {
 		"accent": "Romanian",
 		"hints": ["Quote from the movie Shawshank Redemption"],
-		"answer": "Get busy livin', or get busy dyin'",
+		"answer": "Get busy living or get busy dying",
 		"answer_annotation": "Spoken by various characters from the movie The Shawshank Redemption",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -522,7 +522,7 @@
 	"terrified_mortified_petrified_stupified_by_you": {
 		"accent": "Swedish",
 		"hints": ["Quote from the movie A Beautiful Mind", "Spoken by Russell Crowe as John Nash"],
-		"answer": "Terrified... mortified petrified, stupified by you",
+		"answer": "Terrified mortified petrified stupified by you",
 		"answer_annotation": "Spoken by Russell Crowe as John Nash from the movie A Beautiful Mind",
 		"type": "Movie Quotes",
 		"difficulty": "5"
@@ -530,7 +530,7 @@
 	"do_or_do_not_there_is_no_try": {
 		"accent": "Welsh",
 		"hints": ["Quote from the movie Star Wars: the Empire Strikes Back", "Spoken by Frank Oz as Yoda"],
-		"answer": "Do, or do not. There is no 'try'",
+		"answer": "Do or do not There is no try",
 		"answer_annotation": "Spoken by Frank Oz as Yoda from the movie Star Wars: the Empire Strikes Back",
 		"type": "Movie Quotes",
 		"difficulty": "2"
@@ -546,7 +546,7 @@
 	"ill_get_you_my_pretty_and_your_little_dog_too": {
 		"accent": "Norwegian",
 		"hints": ["Quote from the movie The Wizard of Oz", "Spoken by Margaret Hamilton as The Wicked Witch of the West"],
-		"answer": "I'll get you, my pretty, and your little dog, too!",
+		"answer": "I'll get you my pretty and your little dog too!",
 		"answer_annotation": "Spoken by Margaret Hamilton as The Wicked Witch of the West from the movie The Wizard of Oz",
 		"type": "Movie Quotes",
 		"difficulty": "7"
@@ -554,7 +554,7 @@
 	"i_feel_the_need_the_need_for_speed": {
 		"accent": "Korean",
 		"hints": ["Quote from the movie Top Gun", "Spoken by Tom Cruise as Pete 'Maverick' Mitchell"],
-		"answer": "I feel the need, the need for speed!",
+		"answer": "I feel the need the need for speed!",
 		"answer_annotation": "Spoken by Tom Cruise as Pete 'Maverick' Mitchell from the movie Top Gun",
 		"type": "Movie Quotes",
 		"difficulty": "8"
@@ -578,7 +578,7 @@
 	"run_forrest_run": {
 		"accent": "Russian",
 		"hints": ["Quote from the movie Forrest Gump", "Spoken by Tom Hanks as Forrest Gump"],
-		"answer": "Run, Forrest, Run!",
+		"answer": "Run Forrest Run!",
 		"answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -594,7 +594,7 @@
 	"mama_says_stupid_is_as_stupid_does": {
 		"accent": "Danish",
 		"hints": ["Quote from the movie Forrest Gump", "Spoken by Tom Hanks as Forrest Gump"],
-		"answer": "Mama says, 'Stupid is as stupid does",
+		"answer": "Mama says Stupid is as stupid does",
 		"answer_annotation": "Spoken by Tom Hanks as Forrest Gump from the movie Forrest Gump",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -602,7 +602,7 @@
 	"be_afraid_be_very_afraid": {
 		"accent": "Japanese",
 		"hints": ["Quote from the movie The Fly", "Spoken by Geena Davis as Veronica 'Ronnie' Quaife"],
-		"answer": "Be afraid. Be very afraid",
+		"answer": "Be afraid Be very afraid",
 		"answer_annotation": "Spoken by Geena Davis as Veronica 'Ronnie' Quaife from the movie The Fly",
 		"type": "Movie Quotes",
 		"difficulty": "6"
@@ -610,7 +610,7 @@
 	"oh_what_a_day_what_a_lovely_day": {
 		"accent": "Russian",
 		"hints": ["Quote from the movie Mad Max: Fury Road", "Spoken by Nicholas Hoult as Nux"],
-		"answer": "Oh what a day. What a lovely day!",
+		"answer": "Oh what a day What a lovely day!",
 		"answer_annotation": "Spoken by Nicholas Hoult as Nux from the movie Mad Max: Fury Road",
 		"type": "Movie Quotes",
 		"difficulty": "3"
@@ -658,7 +658,7 @@
 	"our_fate_lives_within_us_you_only_have_to_be_brave_enough_to_see_it": {
 		"accent": "Castilian Spanish",
 		"hints": ["Quote from the movie Brave", "Spoken by Kelly Macdonald as Merida"],
-		"answer": "Our fate lives within us. You only have to be brave enough to see it",
+		"answer": "Our fate lives within us You only have to be brave enough to see it",
 		"answer_annotation": "Spoken by Kelly Macdonald as Merida from the movie Brave",
 		"type": "Movie Quotes",
 		"difficulty": "6"
@@ -666,7 +666,7 @@
 	"i_never_look_back_darling_it_distracts_me_from_the_now": {
 		"accent": "Portuguese",
 		"hints": ["Quote from the movie The Incredibles", "Spoken by Brad Bird as Edna Mode"],
-		"answer": "I never look back, darling! It distracts me from the now",
+		"answer": "I never look back darling It distracts me from the now",
 		"answer_annotation": "Spoken by Brad Bird as Edna Mode from the movie The Incredibles",
 		"type": "Movie Quotes",
 		"difficulty": "7"
@@ -674,7 +674,7 @@
 	"i_dont_want_to_survive_i_want_to_live": {
 		"accent": "Korean",
 		"hints": ["Quote from the movie Wall-E", "Quote from the movie Twelve Years A Slave", "Spoken by Jeff Garlin as Captain B. McCrea", "Spoken by Chiwetel Ejiofor as Solomon Northup"],
-		"answer": "I don't want to survive.  I want to live",
+		"answer": "I don't want to survive I want to live",
 		"answer_annotation": "Spoken by Jeff Garlin as Captain B. McCrea from the movie Wall-E and by Chiwetel Ejiofor as Solomon Northup from the movie Twelve Years A Slave",
 		"type": "Movie Quotes",
 		"difficulty": "7"
