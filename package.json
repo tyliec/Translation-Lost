@@ -28,7 +28,7 @@
     "sinon": "7.2.3",
     "source-map-support": "0.5.10",
     "webpack": "4.28.4",
-    "webpack-cli": "3.2.1"
+    "webpack-cli": "3.3.12"
   },
   "dependencies": {
     "pino": "5.10.6",
